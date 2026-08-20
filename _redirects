@@ -1,0 +1,12 @@
+# 구 URL → 신규 구조
+/greetings        /group/message/     301
+/about_us         /group/about/       301
+/about_us2        /group/about/       301
+/npl              /model/ai-sourcing/ 301
+/construction     /model/space/       301
+/academy          /model/             301
+/portfolio        /model/assets/      301
+/business/*       /model/             301
+/expertise/*      /model/             301
+/insight/*        /news/              301
+/technology       /model/ai-sourcing/ 301
