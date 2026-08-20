@@ -9,7 +9,7 @@ BODY = r'''
   <div class="hero-in">
     <div>
       <span class="eyebrow">HMK HOLDINGS GROUP</span>
-      <h1>싸게 사고, 수익을 만들고,<br><span class="accent">자산을 유동화</span>합니다.</h1>
+      <h1>싸게 사고,<br>자산가치 극대화,<br><span class="accent">자산을 유동화</span>합니다.</h1>
       <p class="lead">AI 프롭테크로 저평가 부동산을 감정가 대비 20% 이하로 확보하고, 한 건물에 세 개의 수익을 겹쳐 넣는 공간수익화 모델로 임대수익을 끌어올립니다. 그리고 그 자산을 유동화해 다시 다음 자산으로 순환시킵니다.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="/model/">사업모델 보기 __ARR__</a>
@@ -39,68 +39,11 @@ BODY = r'''
       <div class="fact"><div class="num">450<small>% 이상</small></div><div class="lb">일반 상가 대비 수익 창출</div><div class="sb">공간수익화 모델 적용 시</div><span class="chip">모델 기준</span></div>
       <div class="fact"><div class="num">3<small>건</small></div><div class="lb">확보·전환 진행 자산</div><div class="sb">일산 · 화성 · 강동</div><span class="chip">2026.08 기준</span></div>
     </div>
-    <p class="note-plain rv" style="margin-top:16px">· 위 수치는 그룹 사업모델과 내부 기준에 따른 값이며, 개별 자산의 결과는 물건과 시장 상황에 따라 달라질 수 있습니다. 세부 산출 전제는 상담 시 안내드립니다.</p>
   </div>
 </section>
 
-<!-- 03 순환모델 -->
-<section class="sec sec-warm">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">BUSINESS MODEL</span><h2>네 단계가<br>하나의 고리로 돌아갑니다</h2></div>
-      <p class="lead">각 단계를 다른 회사에 맡기지 않습니다. 발굴부터 유동화까지 그룹이 직접 수행하기 때문에 판단이 빠르고 정확합니다.</p>
-    </div>
-    <div class="cyc">
-      <div class="cyc-c rv"><div class="no">01</div><h3>AI 프롭테크<br>초저가 매입</h3><p>월 23만 건 이상의 물건 데이터를 분석해 저평가 자산을 선별하고, 권리 문제를 해결해 감정가 대비 20% 이하로 확보합니다.</p><div class="arw">→</div></div>
-      <div class="cyc-c rv"><div class="no">02</div><h3>HMK<br>공간수익화 모델</h3><p>공유창고·창고형 할인매장·라이브커머스를 한 건물에 결합해, 단일 임차 구조로는 나올 수 없는 임대수익을 만듭니다.</p><div class="arw">→</div></div>
-      <div class="cyc-c rv"><div class="no">03</div><h3>토큰증권<br>자산 유동화</h3><p>안정된 운영 수익(NOI)을 근거로 자산가치를 재평가받고, 2027년 2월 4일 시행되는 제도에 맞춰 발행·상장을 준비하고 있습니다.</p><div class="arw">→</div></div>
-      <div class="cyc-c last rv"><div class="no">04</div><h3>재투자<br>선순환 확장</h3><p>유동화로 회수한 자금을 다음 자산 매입에 다시 투입합니다. 반복할수록 속도와 정확도가 올라갑니다.</p></div>
-    </div>
-    <div class="loop rv">↻ &nbsp;01 → 02 → 03 → 04 → 다시 01. 이 순환이 HMK 밸류업 모델입니다.</div>
-  </div>
-</section>
-
-<!-- 04 공간수익화 -->
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">SPACE MONETIZING</span><h2>한 건물에 세 개의 수익이<br>겹쳐 있습니다</h2></div>
-      <p class="lead">층마다 다른 콘텐츠를 넣고 물류 동선을 공유합니다. 같은 면적에서 더 많은 수익이 나오는 이유입니다.</p>
-    </div>
-    <div class="split">
-      <figure class="figure rv">
-        <img src="/assets/model/ecosystem.jpg" alt="한 자산에서 세 가지 수익이 연결되는 HMK Value-Up 생태계 구조도" width="1448" height="1086">
-        <figcaption>공유창고 · 창고형 할인매장 · 라이브커머스가 통합 물류 코어로 연결됩니다</figcaption>
-      </figure>
-      <div class="rv">
-        <div class="floors">
-          <div class="floor"><div class="lv">2F</div><div><b>라이브커머스 스튜디오</b><span>입점 셀러의 방송 제작과 송출. 유튜브·네이버 등 외부 채널로 판매를 확장합니다.</span></div></div>
-          <div class="floor"><div class="lv">1F</div><div><b>창고형 할인매장 · 공동구매</b><span>오프라인 고객 접점. 매입한 상품을 직접 판매하고 온라인 쇼핑몰과 연동합니다.</span></div></div>
-          <div class="floor"><div class="lv">B1</div><div><b>무인 공유창고 오렌지</b><span>비대면 계약·스마트 출입·24시간 CCTV로 상주 인력 없이 운영합니다.</span></div></div>
-          <div class="floor core"><div class="lv">CORE</div><div><b>통합 물류·운영 코어</b><span>재고 관리 → 포장·검수 → 배송·출고를 하나의 시스템으로 연결해 운영비를 낮춥니다.</span></div></div>
-        </div>
-        <a class="btn btn-ghost" style="margin-top:24px" href="/model/space/">공간수익화 모델 자세히 __ARR__</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 밸류업 효과 -->
-<section class="sec sec-cool">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">VALUE-UP EFFECT</span><h2>같은 건물, 달라지는 수익 구조</h2></div>
-      <p class="lead">단일 임차 구조에서는 임대료 하나가 전부입니다. 세 개의 수익원을 겹치면 현금흐름과 자산가치가 함께 움직입니다.</p>
-    </div>
-    <figure class="figure rv">
-      <img src="/assets/model/before-after.jpg" alt="저활용 자산과 HMK Value-Up 자산의 수익 구조 비교" width="1448" height="1086">
-      <figcaption>수익 구조 개선에 따른 밸류업 예시 — 자산 조건에 따라 결과는 달라질 수 있습니다</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- 06 보유 자산 -->
-<section class="sec">
+<!-- 03 보유 자산 -->
+<section class="sec" style="padding-top:clamp(56px,6vw,84px)">
   <div class="wrap">
     <div class="sec-head rv">
       <div><span class="eyebrow">PORTFOLIO</span><h2>좋은 입지 위에 서 있는<br>보유 부동산</h2></div>
@@ -129,12 +72,66 @@ BODY = r'''
   </div>
 </section>
 
+<!-- 04 순환모델 -->
+<section class="sec sec-warm">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">BUSINESS MODEL</span><h2>네 단계가<br>하나의 고리로 돌아갑니다</h2></div>
+      <p class="lead">각 단계를 다른 회사에 맡기지 않습니다. 발굴부터 유동화까지 그룹이 직접 수행하기 때문에 판단이 빠르고 정확합니다.</p>
+    </div>
+    <div class="cyc">
+      <div class="cyc-c rv"><div class="no">01</div><h3>AI 프롭테크<br>초저가 매입</h3><p>월 23만 건 이상의 물건 데이터를 분석해 저평가 자산을 선별하고, 권리 문제를 해결해 감정가 대비 20% 이하로 확보합니다.</p><div class="arw">→</div></div>
+      <div class="cyc-c rv"><div class="no">02</div><h3>HMK<br>공간수익화 모델</h3><p>공유창고·창고형 할인매장·라이브커머스를 한 건물에 결합해, 단일 임차 구조로는 나올 수 없는 임대수익을 만듭니다.</p><div class="arw">→</div></div>
+      <div class="cyc-c rv"><div class="no">03</div><h3>토큰증권<br>자산 유동화</h3><p>안정된 운영 수익(NOI)을 근거로 자산가치를 재평가받고, 2027년 2월 4일 시행되는 제도에 맞춰 발행·상장을 준비하고 있습니다.</p><div class="arw">→</div></div>
+      <div class="cyc-c last rv"><div class="no">04</div><h3>재투자<br>선순환 확장</h3><p>유동화로 회수한 자금을 다음 자산 매입에 다시 투입합니다. 반복할수록 속도와 정확도가 올라갑니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 공간수익화 -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">SPACE MONETIZING</span><h2>HMK의 3 in 1<br>공간수익화 전략</h2></div>
+      <p class="lead">층마다 다른 콘텐츠를 넣고 물류 동선을 공유합니다. 같은 면적에서 더 많은 수익이 나오는 이유입니다.</p>
+    </div>
+    <div class="split">
+      <figure class="figure rv">
+        <img src="/assets/model/ecosystem.jpg" alt="한 자산에서 세 가지 수익이 연결되는 HMK Value-Up 생태계 구조도" width="1448" height="1086">
+        <figcaption>공유창고 · 창고형 할인매장 · 라이브커머스가 통합 물류 코어로 연결됩니다</figcaption>
+      </figure>
+      <div class="rv">
+        <div class="floors">
+          <div class="floor"><div class="lv">2F</div><div><b>라이브커머스 스튜디오</b><span>입점 셀러의 방송 제작과 송출. 유튜브·네이버 등 외부 채널로 판매를 확장합니다.</span></div></div>
+          <div class="floor"><div class="lv">1F</div><div><b>창고형 할인매장 · 공동구매</b><span>오프라인 고객 접점. 매입한 상품을 직접 판매하고 온라인 쇼핑몰과 연동합니다.</span></div></div>
+          <div class="floor"><div class="lv">B1</div><div><b>무인 공유창고 오렌지</b><span>비대면 계약·스마트 출입·24시간 CCTV로 상주 인력 없이 운영합니다.</span></div></div>
+          <div class="floor core"><div class="lv">CORE</div><div><b>통합 물류·운영 코어</b><span>재고 관리 → 포장·검수 → 배송·출고를 하나의 시스템으로 연결해 운영비를 낮춥니다.</span></div></div>
+        </div>
+        <a class="btn btn-ghost" style="margin-top:24px" href="/model/space/">공간수익화 모델 자세히 __ARR__</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 밸류업 효과 -->
+<section class="sec sec-cool">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">VALUE-UP EFFECT</span><h2>같은 건물, 달라지는 수익 구조</h2></div>
+      <p class="lead">단일 임차 구조에서는 임대료 하나가 전부입니다. 세 개의 수익원을 겹치면 현금흐름과 자산가치가 함께 움직입니다.</p>
+    </div>
+    <figure class="figure rv">
+      <img src="/assets/model/before-after.jpg" alt="저활용 자산과 HMK Value-Up 자산의 수익 구조 비교" width="1448" height="1086">
+      <figcaption>수익 구조 개선에 따른 밸류업 예시 — 자산 조건에 따라 결과는 달라질 수 있습니다</figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- 07 계열사 -->
 <section class="sec sec-warm">
   <div class="wrap">
     <div class="sec-head rv">
       <div><span class="eyebrow">AFFILIATES</span><h2>다섯 개 계열사가<br>한 흐름으로 움직입니다</h2></div>
-      <p class="lead">기능별로 법인을 나눠 책임을 분명히 하고, 그룹이 전체 전략을 조율합니다.</p>
     </div>
     <div class="grid g5">
       <a class="card rv" href="/affiliates/loan/"><div class="card-ic">🏢</div><h3 style="font-size:17px">HMK 대부</h3><p>AI 프롭테크 소싱 · 채권매입 · 경공매</p></a>
