@@ -27,6 +27,7 @@ NAV = [
         ("HMK 오렌지마켓", "/affiliates/market/"),
         ("HMK 라이브커머스", "/affiliates/live/"),
         ("HMK E커머스", "/affiliates/ecommerce/"),
+        ("관련 사이트 안내", "/sites/"),
     ]),
     ("뉴스", "/news/", "NEWS", []),
     ("채용", "/careers/", "CAREERS", []),
@@ -104,7 +105,8 @@ def header_html(active):
     return f"""<div class="site-top">
   <div class="utility"><div class="uwrap">
     <span class="u-tag">REAL ESTATE VALUE-UP GROUP</span>
-    <a href="https://hmkstorage.com" target="_blank" rel="noopener">공유창고 오렌지<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="/sites/">관련 사이트</a>
+    <a href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <a href="/careers/">채용</a>
     <a class="u-tel" href="tel:1555-5335">1555-5335</a>
   </div></div>
@@ -144,7 +146,21 @@ FOOTER = f"""<footer class="footer"><div class="wrap">
       <li><a href="tel:1555-5335">대표전화 1555-5335</a></li>
       <li><a href="mailto:hmkholdings@hmkholdings.com">hmkholdings@hmkholdings.com</a></li>
       <li><a href="/group/location/">오시는길</a></li>
-      <li><a href="/contact/">물건 제안·제휴 문의</a></li></ul></div>
+      <li><a href="/contact/">물건 제안·제휴 문의</a></li>
+      <li><a href="/sites/">관련 사이트 안내</a></li></ul></div>
+  </div>
+  <div class="family">
+    <span class="flabel">FAMILY SITES</span>
+    <div class="flinks">
+      <a href="https://hmkstorage.pages.dev" target="_blank" rel="noopener">HMK 스토리지</a>
+      <a href="https://hmknplauction.pages.dev" target="_blank" rel="noopener">HMK 대부</a>
+      <a href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고</a>
+      <a href="https://hmkorangemarket.pages.dev" target="_blank" rel="noopener">오렌지 창고마켓</a>
+      <a href="https://orangelivehub.pages.dev" target="_blank" rel="noopener">오렌지 라이브쇼핑</a>
+      <a href="https://orangemembership.pages.dev" target="_blank" rel="noopener">오렌지 멤버십</a>
+      <a href="https://hmkinvestment.pages.dev" target="_blank" rel="noopener">HMK 투자안내</a>
+      <a href="/sites/" class="fall">전체 보기 →</a>
+    </div>
   </div>
   <div class="fbot">
     <div class="legal">

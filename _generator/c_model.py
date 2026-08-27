@@ -215,6 +215,11 @@ SPACE_BODY = r'''
       <img src="/assets/model/before-after.jpg" alt="저활용 자산과 HMK Value-Up 자산의 연간 수익·임대수익률·자산가치 비교" width="1448" height="1086">
       <figcaption>수익 구조 개선에 따른 밸류업 예시입니다. 자산 조건과 시장 상황에 따라 결과는 달라질 수 있습니다.</figcaption>
     </figure>
+    <div class="grid g3 rv" style="margin-top:26px">
+      <a class="card" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="card-ic">🧡</div><h3 style="font-size:17px">오렌지 공유창고</h3><p>B1 무인 보관 서비스 — 지점·요금·비대면 계약 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://hmkorangemarket.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>1F 창고형 할인매장 — 취급 상품·매장·입점 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://orangelivehub.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브쇼핑</h3><p>2F 라이브커머스 — 방송 일정·상품·셀러 입점</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
     <div class="note-box rv" style="margin-top:22px"><b>안내</b> — 공간수익화 모델을 적용한 자산은 <strong>일반 상가 대비 450% 이상의 수익 창출</strong>을 목표로 설계됩니다. 위 도표의 수치는 모델 적용 예시이며, 실제 결과는 자산의 입지·면적·운영 상황에 따라 달라집니다. 수익을 보장하지 않습니다.</div>
   </div>
 </section>
@@ -270,6 +275,10 @@ LIQ_BODY = r'''
       </table>
     </div>
     <p class="note-plain rv" style="margin-top:18px">· 위 일정은 현재 준비 상황에 대한 안내이며, 규제 환경과 시장 여건에 따라 변경될 수 있습니다. 확정 사항은 공식 채널로 공지합니다.</p>
+    <div class="note-box rv" style="margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+      <div><b>사업 개요를 더 자세히 보고 싶으시다면</b><br>그룹의 사업 구조와 강점을 정리한 안내 채널을 별도로 운영하고 있습니다. 게재 내용은 사업 소개이며 투자 권유가 아닙니다.</div>
+      <a class="btn btn-primary btn-sm" href="https://hmkinvestment.pages.dev" target="_blank" rel="noopener">HMK 투자안내 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
   </div>
 </section>
 '''.replace("__SPEC__", LIQ_SPEC) + CTA

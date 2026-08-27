@@ -74,6 +74,7 @@ CAREERS = r'''
     </div>
     <div class="prose rv" style="margin-top:34px">
       <p>수시 채용으로 운영합니다. 이력서를 <a href="mailto:hmkholdings@hmkholdings.com" style="text-decoration:underline;font-weight:700">hmkholdings@hmkholdings.com</a>으로 보내주시면 검토 후 개별 연락드립니다. 지원 서류는 채용 목적 외에 사용하지 않으며, 전형 종료 후 관계 법령에 따라 파기합니다.</p>
+      <p style="font-size:14.5px;color:var(--ink-soft)">· <b>인재·파트너 모집 전용 홈페이지</b>를 준비하고 있습니다. 오픈 전까지는 위 이메일 또는 <a href="/contact/?type=partner" style="text-decoration:underline">문의 페이지</a>를 이용해 주세요.<br>· 계열사별 채용 소식은 <a href="/sites/" style="text-decoration:underline">각 계열사 홈페이지</a>에서도 안내됩니다.</p>
     </div>
   </div>
 </section>
@@ -143,6 +144,8 @@ CONTACT = r'''
           <p style="margin-top:12px"><a href="mailto:hmkholdings@hmkholdings.com" style="color:var(--orange-deep);font-weight:700;font-size:14.5px">hmkholdings@hmkholdings.com</a></p>
           <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
           <p style="font-size:14px"><b>방문 상담 (예약제)</b><br>서울 강남구 봉은사로 129-1<br>751빌딩 3층<br><a href="/group/location/" style="text-decoration:underline">오시는길 보기</a></p>
+          <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+          <p style="font-size:14px"><b>서비스별 문의</b><br>공유창고 이용, 매장 입점, 셀러 신청 등은 해당 서비스 사이트에서 더 빠르게 안내받으실 수 있습니다.<br><a href="/sites/" style="text-decoration:underline;font-weight:700;color:var(--orange-deep)">관련 사이트 안내</a></p>
         </div>
       </aside>
     </div>

@@ -140,6 +140,17 @@ BODY = r'''
       <a class="card rv" href="/affiliates/live/"><div class="card-ic">🎥</div><h3 style="font-size:17px">HMK 라이브커머스</h3><p>방송 제작·송출 · 셀러 통합관리</p></a>
       <a class="card rv" href="/affiliates/ecommerce/"><div class="card-ic">💻</div><h3 style="font-size:17px">HMK E커머스</h3><p>오렌지 1,000원마켓 · 온라인 쇼핑몰</p></a>
     </div>
+
+    <div class="sec-head rv" style="margin-top:clamp(56px,6vw,80px)">
+      <div><span class="eyebrow">SERVICE SITES</span><h2>서비스는 각 사이트에서<br>바로 이용하실 수 있습니다</h2></div>
+      <a class="link-more" href="/sites/">관련 사이트 전체 보기 __ARR__</a>
+    </div>
+    <div class="grid g4">
+      <a class="card rv" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="card-ic">🧡</div><h3 style="font-size:17px">오렌지 공유창고</h3><p>무인 보관 서비스 · 지점과 요금 안내</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card rv" href="https://hmkorangemarket.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>창고형 할인매장 · 공동구매</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card rv" href="https://orangelivehub.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브쇼핑</h3><p>라이브 방송 · 셀러 입점</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card rv" href="https://orangemembership.pages.dev" target="_blank" rel="noopener"><div class="card-ic">💳</div><h3 style="font-size:17px">오렌지 멤버십</h3><p>회원 혜택 · 가입 안내</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
   </div>
 </section>
 

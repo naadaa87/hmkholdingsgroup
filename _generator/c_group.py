@@ -26,6 +26,7 @@ MESSAGE = r'''
         <p>2년 내 150개 이상의 직영점 운영, 그리고 <strong>1조원 규모의 자산가치 창출</strong>. 이것은 단순한 목표가 아닌, 저희가 반드시 이루어낼 약속입니다. HMK홀딩스그룹은 앞으로도 위기를 기회로, 불가능을 가능으로 만들어가는 도전을 멈추지 않겠습니다.</p>
         <p>새로운 가치를 창조하는 이 여정에 여러분을 초대합니다. 감사합니다.</p>
         <p style="margin-top:30px;font-weight:800;color:var(--navy)">HMK홀딩스그룹 회장 &nbsp;김 재 동</p>
+        <div class="extlinks"><a class="btn btn-ghost" href="https://kimjaedong.pages.dev" target="_blank" rel="noopener">김재동 회장 홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
     </div>
   </div>
@@ -55,6 +56,7 @@ ABOUT = r'''
             <tr><th>주요 계열</th><td>HMK 대부 · HMK 스토리지 · HMK 오렌지마켓 · HMK 라이브커머스 · HMK E커머스</td></tr>
             <tr><th>본사</th><td>서울특별시 강남구 봉은사로 129-1, 751빌딩 3층</td></tr>
             <tr><th>대표 채널</th><td>1555-5335 · hmkholdings@hmkholdings.com</td></tr>
+            <tr><th>관련 사이트</th><td>계열사·사업부 홈페이지를 별도 운영합니다. <a href="/sites/" style="text-decoration:underline;font-weight:700;color:var(--orange-deep)">관련 사이트 안내</a></td></tr>
           </table>
         </div>
         <div class="note-box" style="margin-top:16px">그룹 소개서(PDF)가 필요하시면 <a href="/contact/?type=general" style="text-decoration:underline;font-weight:700">문의 페이지</a>에 "회사소개서 요청"으로 남겨 주세요. 담당 부서가 이메일로 보내드립니다.</div>
@@ -122,7 +124,7 @@ ORG = r'''
         <div class="org-node"><b>경영지원</b><span>재무 · 법무 · 커뮤니케이션</span></div>
       </div>
     </div>
-    <p class="note-plain rv" style="margin-top:22px">· 부문별 책임자 정보는 공개 범위 확정 후 게재합니다. 신설·개편 중인 조직은 확정 시점에 반영합니다.</p>
+    <p class="note-plain rv" style="margin-top:22px">· 부문별 책임자 정보는 공개 범위 확정 후 게재합니다. 신설·개편 중인 조직은 확정 시점에 반영합니다.<br>· 각 계열사와 사업부는 개별 홈페이지를 운영합니다. <a href="/sites/" style="text-decoration:underline;font-weight:700">관련 사이트 안내</a>에서 확인하실 수 있습니다.</p>
   </div>
 </section>
 
