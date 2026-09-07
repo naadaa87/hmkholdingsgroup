@@ -1,31 +1,34 @@
 # -*- coding: utf-8 -*-
 """뉴스 / 채용 / 문의 / 정책 / 404"""
 
-ARROW = '<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+ARROW = '<svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 NEWS = r'''
 <section class="sec" style="padding-top:clamp(46px,5vw,70px)">
   <div class="wrap">
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:34px" class="rv">
-      <span class="chip chip-goal">전체</span><span class="chip">그룹 뉴스</span><span class="chip">프로젝트</span><span class="chip">시장 인사이트</span>
+    <div class="news-filter rv" role="group" aria-label="소식 분류 필터">
+      <button type="button" class="chip on" data-cat="all" aria-pressed="true">전체</button>
+      <button type="button" class="chip" data-cat="그룹 뉴스" aria-pressed="false">그룹 뉴스</button>
+      <button type="button" class="chip" data-cat="프로젝트" aria-pressed="false">프로젝트</button>
+      <button type="button" class="chip" data-cat="시장 인사이트" aria-pressed="false">시장 인사이트</button>
     </div>
-    <div class="grid g3">
-      <article class="post-card rv"><div class="post-meta"><span class="post-cat">그룹 뉴스</span><span class="post-date">2026.08.20</span></div>
+    <div class="grid g3" id="news-list">
+      <article class="post-card rv" data-cat="그룹 뉴스"><div class="post-meta"><span class="post-cat">그룹 뉴스</span><span class="post-date">2026.08.20</span></div>
         <h3>HMK홀딩스그룹, 그룹 공식 홈페이지 개편</h3>
         <p>사업 확장에 맞춰 그룹 소개 체계를 새로 정리했습니다. 밸류업 순환플랫폼과 공간수익화 구조, 보유 자산 정보를 공식 채널에서 확인하실 수 있습니다.</p></article>
-      <article class="post-card rv"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.08.12</span></div>
+      <article class="post-card rv" data-cat="프로젝트"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.08.12</span></div>
         <h3>일산 엠시티타워, 공유창고 전환 조성 착수</h3>
         <p>복합 상가 내 장기 공실 구간을 무인 보관 시설로 전환하는 공사에 들어갔습니다. 조성 완료와 오픈 소식은 이 채널로 공개할 예정입니다.</p></article>
-      <article class="post-card rv"><div class="post-meta"><span class="post-cat">시장 인사이트</span><span class="post-date">2026.08.05</span></div>
+      <article class="post-card rv" data-cat="시장 인사이트"><div class="post-meta"><span class="post-cat">시장 인사이트</span><span class="post-date">2026.08.05</span></div>
         <h3>비어 있는 상가는 왜 계속 늘어나는가</h3>
         <p>수요의 이동, 공급의 관성, 가격의 경직성. 공실의 세 가지 원인을 짚고, 공실 상가를 검토할 때 확인해야 할 다섯 가지를 정리했습니다.</p></article>
-      <article class="post-card rv"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.07.28</span></div>
+      <article class="post-card rv" data-cat="프로젝트"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.07.28</span></div>
         <h3>강동 로데오팰리스 B103 확보</h3>
         <p>천호역 더블 역세권 생활상권의 지하 1층 단일 공간을 확보했습니다. 도심형 공간수익화 모델을 검증하는 자산이 될 예정입니다.</p></article>
-      <article class="post-card rv"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.07.15</span></div>
+      <article class="post-card rv" data-cat="프로젝트"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.07.15</span></div>
         <h3>화성 송산시티 L-Tower 301·302호 확보</h3>
         <p>송산그린시티 중심상권 3층 두 개 호실을 확보했습니다. 8,700세대 배후 수요를 겨냥한 신도시형 표준 모델을 적용합니다.</p></article>
-      <article class="post-card rv"><div class="post-meta"><span class="post-cat">시장 인사이트</span><span class="post-date">2026.07.02</span></div>
+      <article class="post-card rv" data-cat="시장 인사이트"><div class="post-meta"><span class="post-cat">시장 인사이트</span><span class="post-date">2026.07.02</span></div>
         <h3>상가 한 층이 공유창고가 되기까지</h3>
         <p>실측, 유닛 배치, 전기·보안 설비, 무인 운영 세팅. 전환 공사 현장에서 실제로 진행되는 일들을 순서대로 기록했습니다.</p></article>
     </div>
@@ -76,7 +79,7 @@ CAREERS = r'''
       <p>수시 채용으로 운영합니다. 이력서를 <a href="mailto:hmkholdings@hmkholdings.com" style="text-decoration:underline;font-weight:700">hmkholdings@hmkholdings.com</a>으로 보내주시면 검토 후 개별 연락드립니다. 지원 서류는 채용 목적 외에 사용하지 않으며, 전형 종료 후 관계 법령에 따라 파기합니다.</p>
       <div class="note-box" style="margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
         <div><b>사업 파트너 모집</b><br>사업총괄·분야별 파트너·투자 파트너 모집은 전용 사이트에서 진행합니다. 계열사별 채용 소식도 각 그룹사 홈페이지에서 안내됩니다.</div>
-        <a class="btn btn-primary btn-sm" href="https://hmkpartner.com" target="_blank" rel="noopener">HMK 파트너모집 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-primary btn-sm" href="https://hmkpartner.com" target="_blank" rel="noopener">HMK 파트너모집 사이트 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
   </div>

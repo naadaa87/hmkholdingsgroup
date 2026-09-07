@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """사업모델 — 순환플랫폼 / AI 초저가 매입 / 공간수익화 / 자산 유동화 / 보유 자산"""
 
-ARROW = '<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+ARROW = '<svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 CR = [("사업모델", "/model/")]
 
 STEPS = ["AI 초저가 매입", "공간 수익화", "자산 유동화", "재투자 순환"]
@@ -102,8 +102,8 @@ HUB = r'''
             <li>오프라인 집객이 건물 전체의 상권 가치를 끌어올림</li>
           </ul>
           <div class="extlinks" style="margin-top:auto;padding-top:18px">
-            <a class="btn btn-sm btn-ghost" href="/affiliates/market/">사업 소개 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="btn btn-sm btn-primary" href="https://orange1000.com" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-ghost" href="/affiliates/market/">사업 소개 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-primary" href="https://orange1000.com" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </article>
@@ -119,8 +119,8 @@ HUB = r'''
             <li>입점 셀러에게 스튜디오와 물류를 함께 제공</li>
           </ul>
           <div class="extlinks" style="margin-top:auto;padding-top:18px">
-            <a class="btn btn-sm btn-ghost" href="/affiliates/live/">사업 소개 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="btn btn-sm btn-primary" href="https://orangeliveon.com" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-ghost" href="/affiliates/live/">사업 소개 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-primary" href="https://orangeliveon.com" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </article>
@@ -136,8 +136,8 @@ HUB = r'''
             <li>개인·소상공인의 고정 보관 수요를 안정 수익으로</li>
           </ul>
           <div class="extlinks" style="margin-top:auto;padding-top:18px">
-            <a class="btn btn-sm btn-ghost" href="/affiliates/storage/">사업 소개 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="btn btn-sm btn-primary" href="https://storage-orange.co.kr" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-ghost" href="/affiliates/storage/">사업 소개 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-primary" href="https://storage-orange.co.kr" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </article>
@@ -153,8 +153,8 @@ HUB = r'''
             <li>한 명의 고객이 세 사업을 오가게 만드는 장치</li>
           </ul>
           <div class="extlinks" style="margin-top:auto;padding-top:18px">
-            <a class="btn btn-sm btn-ghost" href="/affiliates/membership/">사업 소개 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a class="btn btn-sm btn-primary" href="https://orangemembership.com" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-ghost" href="/affiliates/membership/">사업 소개 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-sm btn-primary" href="https://orangemembership.com" target="_blank" rel="noopener">홈페이지 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </article>
@@ -162,7 +162,7 @@ HUB = r'''
     </div>
     <div class="note-box rv" style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
       <div><b>네 사업이 어떻게 서로를 끌어올리는지</b><br>상품은 자체 통합물류로, 고객은 오렌지 멤버십으로 연결됩니다.</div>
-      <a class="btn btn-primary btn-sm" href="/model/synergy/">시너지 구조 보기 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn-primary btn-sm" href="/model/synergy/">시너지 구조 보기 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
 </section>
@@ -314,7 +314,7 @@ SPACE_BODY = r'''
     </div>
     <div class="note-box rv" style="margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
       <div><b>물류가 상품을 잇고, 멤버십이 고객을 잇습니다.</b><br>세 사업의 시너지가 만들어지는 원리를 별도 페이지에 정리했습니다.</div>
-      <a class="btn btn-primary btn-sm" href="/model/synergy/">통합물류·멤버십 시너지 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn-primary btn-sm" href="/model/synergy/">통합물류·멤버십 시너지 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
 </section>
@@ -328,9 +328,9 @@ SPACE_BODY = r'''
       <figcaption>단일 임차 구조에서 3 in 1 복합 수익 구조로 — 연간 수익·임대수익률·자산가치가 함께 상승합니다</figcaption>
     </figure>
     <div class="grid g3 rv" style="margin-top:26px">
-      <a class="card" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="card-ic">🧡</div><h3 style="font-size:17px">오렌지 공유창고</h3><p>B1 무인 보관 서비스 — 지점·요금·비대면 계약 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card" href="https://orange1000.com" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>1F 창고형 할인매장 — 취급 상품·매장·입점 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card" href="https://orangeliveon.com" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브커머스</h3><p>2F 라이브커머스 — 방송 일정·상품·셀러 입점</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="card-ic">🧡</div><h3 style="font-size:17px">오렌지 공유창고</h3><p>B1 무인 보관 서비스 — 지점·요금·비대면 계약 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://orange1000.com" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>1F 창고형 할인매장 — 취급 상품·매장·입점 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://orangeliveon.com" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브커머스</h3><p>2F 라이브커머스 — 방송 일정·상품·셀러 입점</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
     </div>
     <div class="loop rv" style="margin-top:22px">공간수익화 모델을 적용한 자산은 <strong>&nbsp;일반 상가 대비 450% 이상의 수익 창출&nbsp;</strong>을 목표로 설계됩니다.</div>
   </div>
@@ -390,14 +390,14 @@ LIQ_BODY = r'''
     </div>
     <div class="note-box rv" style="margin-top:8px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
       <div><b>사업 개요를 더 자세히 보고 싶으시다면</b><br>그룹의 사업 구조와 강점을 정리한 안내 채널을 별도로 운영하고 있습니다.</div>
-      <a class="btn btn-primary btn-sm" href="https://hmkinvestment.pages.dev" target="_blank" rel="noopener">HMK 투자안내 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn-primary btn-sm" href="https://hmkinvestment.pages.dev" target="_blank" rel="noopener">HMK 투자안내 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
 </section>
 '''.replace("__SPEC__", LIQ_SPEC) + CTA
 
 # ───────────────── 시너지 — 통합물류·유통 + 오렌지 멤버십 ─────────────────
-EXT = '<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+EXT = '<svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 SYNERGY_BODY = r"""
 <section class="sec" style="padding-top:clamp(56px,6vw,84px)">
@@ -419,7 +419,7 @@ SYNERGY_BODY = r"""
 <section class="sec sec-warm">
   <div class="wrap">
     <div class="sec-head rv"><div><span class="eyebrow">SYNERGY MAP</span><h2>상품은 물류로, 고객은 멤버십으로<br>연결됩니다</h2></div>
-    <p class="lead">왼쪽의 세 사업이 가운데 두 장치를 거쳐 오른쪽 결과로 이어집니다.</p></div>
+    <p class="lead">세 사업이 두 개의 장치를 거쳐 하나의 결과로 이어집니다.</p></div>
     <div class="syn rv">
       <div class="syn-col">
         <div class="syn-node"><b>🛒 오렌지 창고마켓</b><span>대량 매입 상품 · 오프라인 집객</span></div>

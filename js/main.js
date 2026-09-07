@@ -78,6 +78,26 @@
     el.textContent = new Date().getFullYear();
   });
 
+
+  /* 뉴스 분류 필터 */
+  var nf = d.querySelector(".news-filter");
+  if (nf) {
+    var cards = d.querySelectorAll("#news-list .post-card");
+    Array.prototype.forEach.call(nf.querySelectorAll(".chip"), function (btn) {
+      btn.addEventListener("click", function () {
+        var cat = btn.getAttribute("data-cat");
+        Array.prototype.forEach.call(nf.querySelectorAll(".chip"), function (b) {
+          var on = b === btn;
+          b.classList.toggle("on", on);
+          b.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        Array.prototype.forEach.call(cards, function (c) {
+          c.hidden = !(cat === "all" || c.getAttribute("data-cat") === cat);
+        });
+      });
+    });
+  }
+
   /* 문의 폼 */
   var form = d.getElementById("contact-form");
   if (form) {

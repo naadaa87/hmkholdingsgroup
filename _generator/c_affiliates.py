@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """그룹사소개 — 허브 + 5개 계열사"""
 
-ARROW = '<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+ARROW = '<svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 CR = [("HMK그룹사", "/affiliates/")]
 
 CTA = r'''
@@ -11,7 +11,14 @@ CTA = r'''
 </div></div></section>
 '''
 
-EXT = '<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+CTA_HUB = r'''
+<section class="cta-band"><div class="wrap"><div class="inner">
+  <div class="rv"><h2>함께할 파트너를 찾습니다</h2><p>공간·상품·기술·금융 각 분야의 제휴 제안을 기다립니다.</p></div>
+  <div class="acts rv"><a class="btn btn-white" href="/contact/?type=partner">제휴 제안하기</a><a class="btn btn-outline-w" href="https://hmkpartner.com" target="_blank" rel="noopener">사업파트너 모집 ↗</a></div>
+</div></div></section>
+'''
+
+EXT = '<svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 
 def gcard(no, icon, name, tag, desc, url=None, page=None, internal_only=False):
@@ -47,7 +54,7 @@ HUB = (r'''
 + gcard(3, "👤", "김재동 회장", "CHAIRMAN", "국내 AI부동산 초저가 매입시스템을 최초 구축한 HMK홀딩스그룹 회장. 사업 철학과 걸어온 길을 담은 개인 홈페이지입니다.", "kimjaedong.com", "/group/message/")
 + gcard(4, "🛒", "오렌지 창고마켓", "STEP 02 · 1F", "창고형 할인매장과 오렌지 1,000원마켓 온라인몰. 공동구매로 가격을 낮추고 집객으로 상권을 살립니다.", "orange1000.com", "/affiliates/market/")
 + gcard(5, "🎥", "오렌지 라이브커머스", "STEP 02 · 2F", "라이브 방송 제작·송출과 셀러 통합관리. 스튜디오와 물류를 함께 제공해 전국 판매로 확장합니다.", "orangeliveon.com", "/affiliates/live/")
-+ gcard(6, "🧡", "오렌지 공유창고", "SERVICE", "개인·소상공인을 위한 무인 보관 서비스. 지점 안내, 유닛 요금, 비대면 계약을 이용하실 수 있습니다.", "storage-orange.co.kr")
++ gcard(6, "🧡", "오렌지 공유창고", "SERVICE", "개인·소상공인을 위한 무인 보관 서비스. 지점 안내, 유닛 요금, 비대면 계약을 이용하실 수 있습니다.", "storage-orange.co.kr", "/affiliates/storage/")
 + gcard(7, "💳", "HMK 오렌지 멤버십", "SYNERGY", "창고마켓·라이브커머스·공유창고를 하나의 회원으로 잇는 통합 멤버십. 포인트 통합과 교차 혜택으로 매출을 활성화합니다.", "orangemembership.com", "/affiliates/membership/")
 + gcard(8, "🤝", "HMK 파트너모집", "PARTNER", "사업총괄·분야별 파트너·투자 파트너를 모집하는 전용 채널입니다. 함께 성장할 파트너를 기다립니다.", "hmkpartner.com", "/careers/")
 + gcard(9, "⚙️", "통합물류·유통시스템", "GROUP CORE", "그룹사 전체의 상품을 통합 관리합니다. 매입·재고·포장·출고·정산을 하나로 연결해 재고 하나로 세 채널에 판매하는 운영 코어입니다.", None, "/model/synergy/", internal_only=True)
@@ -56,7 +63,7 @@ HUB = (r'''
     <p class="note-plain rv" style="margin-top:22px">· 각 홈페이지는 별도 도메인에서 운영되며 사이트별 이용약관이 적용될 수 있습니다. 법인 등기 정보(법인명·대표·등록번호)는 페이지 하단 공통 표기를 따릅니다.</p>
   </div>
 </section>
-''' + CTA)
+''' + CTA_HUB)
 
 
 def aff(intro, table, points, extra="", visual="", gallery=""):
@@ -85,7 +92,7 @@ LOAN = aff(
     """<h2 style="margin-top:0">그룹의 자산 확보를<br>책임지는 법인</h2>
     <p>HMK 대부는 AI 프롭테크 소싱 시스템을 운용하며 그룹이 매입할 자산을 찾아내고 확보하는 법인입니다. 경·공매, 부실채권 매입, 급매 협상 등 물건에 맞는 경로를 설계하고, 권리관계가 복잡한 자산의 문제를 해결합니다.</p>
     <p>담보 기반 금융 업무는 관계 법령에 따라 등록된 범위 안에서 수행하며, 자산 확보·정상화 과정에 필요한 금융 구조를 지원합니다. 모든 거래는 법정 최고금리(연 20%) 이내로 이루어집니다.</p>
-    <div class="extlinks"><a class="btn btn-primary" href="https://hmknplauction.pages.dev" target="_blank" rel="noopener">HMK 대부 공식 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
+    <div class="extlinks"><a class="btn btn-primary" href="https://hmknplauction.pages.dev" target="_blank" rel="noopener">HMK 대부 공식 사이트 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
     """<tr><th>법인</th><td>에이치엠케이홀딩스대부 주식회사<br>대표이사 이영복 · 사업자등록 501-87-03194</td></tr>
     <tr><th>담당 단계</th><td>STEP 01 — AI 소싱 · 매입 · 권리 정상화</td></tr>
     <tr><th>주요 업무</th><td>AI 프롭테크 소싱 · 부동산 매입 · 채권 매입 · 경·공매</td></tr>
@@ -114,7 +121,7 @@ STORAGE = aff(
     """<h2 style="margin-top:0">공간을 수익으로<br>바꾸는 법인</h2>
     <p>HMK 스토리지는 그룹이 확보한 자산의 지하층을 무인 공유창고 <strong>오렌지</strong>로 전환하고 운영하는 법인입니다. 전환 설계와 시공 관리, 오픈 이후의 무인 운영과 고객 서비스, IoT 유닛 관리까지 책임집니다.</p>
     <p>비대면 계약·결제, 스마트 출입 통제, 24시간 CCTV 관제가 하나의 시스템으로 연동되어 상주 인력 없이 운영됩니다. 개인의 계절용품부터 소상공인의 재고까지, 집 가까운 곳에 안전하게 보관하는 생활 인프라를 지향합니다.</p>
-    <div class="extlinks"><a class="btn btn-primary" href="https://hmkstorage.com" target="_blank" rel="noopener">HMK 스토리지 공식 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고 서비스 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
+    <div class="extlinks"><a class="btn btn-primary" href="https://hmkstorage.com" target="_blank" rel="noopener">HMK 스토리지 공식 사이트 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고 서비스 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
     """<tr><th>법인</th><td>에이치엠케이스토리지 주식회사<br>대표이사 이영복 · 사업자등록 229-87-03308</td></tr>
     <tr><th>담당 단계</th><td>STEP 02 — 공간수익화 (B1 공유창고)</td></tr>
     <tr><th>주요 업무</th><td>공유창고 오렌지 조성·운영 · 유닛 설계 · IoT 관제</td></tr>
@@ -132,7 +139,7 @@ MARKET = aff(
     """<h2 style="margin-top:0">오프라인 고객 접점을<br>만드는 법인</h2>
     <p>HMK 오렌지마켓은 확보한 자산의 1층에 창고형 할인매장을 조성하고 운영하는 법인입니다. 그룹이 직접 매입한 상품을 창고형으로 진열해 판매하며, 공동구매로 매입 단가를 낮춰 가격 경쟁력을 확보합니다.</p>
     <p>오프라인 매장은 단순한 판매 공간이 아닙니다. 집객이 만드는 유동 인구가 건물 전체의 상권 가치를 끌어올리고, 이곳에서 확인된 인기 상품이 2층 라이브커머스와 <strong>오렌지 1,000원마켓</strong> 온라인몰의 판매 품목이 됩니다. 온라인 주문은 같은 건물의 통합 물류 코어에서 바로 출고됩니다.</p>
-    <div class="extlinks"><a class="btn btn-primary" href="https://orange1000.com" target="_blank" rel="noopener">오렌지 창고마켓 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
+    <div class="extlinks"><a class="btn btn-primary" href="https://orange1000.com" target="_blank" rel="noopener">오렌지 창고마켓 사이트 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
     """<tr><th>부문</th><td>오렌지 창고마켓 (HMK 오렌지마켓)</td></tr>
     <tr><th>담당 단계</th><td>STEP 02 — 공간수익화 (1F 창고형 할인매장)</td></tr>
     <tr><th>주요 업무</th><td>창고형 할인매장 운영 · 오렌지 1,000원마켓 온라인몰 · 공동구매 · 상품 매입</td></tr>
@@ -150,7 +157,7 @@ LIVE = aff(
     """<h2 style="margin-top:0">상품을 전국으로<br>확장하는 법인</h2>
     <p>HMK 라이브커머스는 자산 2층에 스튜디오를 조성하고 라이브 방송 제작·송출을 담당하는 법인입니다. 아래층 매장의 상품을 그대로 방송하고, 주문은 같은 건물의 물류 코어에서 바로 출고됩니다.</p>
     <p>입점 셀러에게는 스튜디오와 물류, 정산 시스템을 함께 제공합니다. 방송 장비와 창고를 따로 마련하기 어려운 소상공인이 판매에만 집중할 수 있는 환경을 만드는 것이 이 법인의 역할입니다.</p>
-    <div class="extlinks"><a class="btn btn-primary" href="https://orangeliveon.com" target="_blank" rel="noopener">오렌지 라이브커머스 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
+    <div class="extlinks"><a class="btn btn-primary" href="https://orangeliveon.com" target="_blank" rel="noopener">오렌지 라이브커머스 사이트 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
     """<tr><th>부문</th><td>오렌지 라이브커머스 (HMK 라이브커머스)</td></tr>
     <tr><th>담당 단계</th><td>STEP 02 — 공간수익화 (2F 라이브커머스 스튜디오)</td></tr>
     <tr><th>주요 업무</th><td>라이브 방송 제작·송출 · 셀러 통합관리 · 정산</td></tr>
@@ -174,7 +181,7 @@ MEMBERSHIP = aff(
     """<h2 style="margin-top:0">하나의 회원으로<br>세 사업의 혜택을</h2>
     <p>HMK 오렌지 멤버십은 창고마켓·라이브커머스·공유창고의 고객을 <strong>하나의 회원 계정</strong>으로 묶는 통합 멤버십입니다. 어디서 가입하든 세 곳에서 포인트가 쌓이고 혜택이 교차됩니다.</p>
     <p>창고 이용자에게는 마켓 할인 쿠폰이, 마켓 고객에게는 라이브 방송 특가가, 방송 시청자에게는 창고 첫 달 혜택이 이어집니다. 한 명의 고객이 세 사업을 모두 경험하게 만드는 것 — 이것이 멤버십이 그룹 매출을 활성화하는 방식입니다.</p>
-    <div class="extlinks"><a class="btn btn-primary" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="/model/synergy/">시너지 구조 보기 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
+    <div class="extlinks"><a class="btn btn-primary" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 사이트 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="/model/synergy/">시너지 구조 보기 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
     """<tr><th>부문</th><td>HMK 오렌지 멤버십</td></tr>
     <tr><th>담당 단계</th><td>STEP 02+ — 세 사업 시너지 · 매출 활성화</td></tr>
     <tr><th>주요 업무</th><td>통합 회원 관리 · 포인트 · 교차 혜택 · 앱 운영</td></tr>
@@ -197,7 +204,7 @@ MEMBERSHIP = aff(
 ''')
 
 # ───────────────── 관련 사이트 안내 ─────────────────
-EXT = '<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+EXT = '<svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 
 def site(icon, name, url, desc, label=None, soon=False):

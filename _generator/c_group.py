@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """그룹소개 — 회장 인사말 / 그룹 개요·비전 / 조직·거버넌스 / 오시는길"""
 
-ARROW = '<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+ARROW = '<svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 CR = [("그룹소개", "/group/message/")]
 
 MESSAGE = r'''
@@ -26,7 +26,7 @@ MESSAGE = r'''
         <p>2년 내 150개 이상의 직영점 운영, 그리고 <strong>1조원 규모의 자산가치 창출</strong>. 이것은 단순한 목표가 아닌, 저희가 반드시 이루어낼 약속입니다. HMK홀딩스그룹은 앞으로도 위기를 기회로, 불가능을 가능으로 만들어가는 도전을 멈추지 않겠습니다.</p>
         <p>새로운 가치를 창조하는 이 여정에 여러분을 초대합니다. 감사합니다.</p>
         <p style="margin-top:30px;font-weight:800;color:var(--navy)">HMK홀딩스그룹 회장 &nbsp;김 재 동</p>
-        <div class="extlinks"><a class="btn btn-ghost" href="https://kimjaedong.com" target="_blank" rel="noopener">김재동 회장 홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        <div class="extlinks"><a class="btn btn-ghost" href="https://kimjaedong.com" target="_blank" rel="noopener">김재동 회장 홈페이지 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
     </div>
   </div>
@@ -110,6 +110,7 @@ ORG = r'''
     <div class="org rv">
       <div class="org-node org-lead"><b>HMK홀딩스그룹</b><span>그룹 전략 · 최종 의사결정</span></div>
       <div class="org-line"></div>
+      <span class="org-tier">계열사</span>
       <div class="org-row" style="grid-template-columns:repeat(4,1fr)">
         <div class="org-node"><b>HMK 대부</b><span>AI 소싱 · 매입<br>1단계</span></div>
         <div class="org-node"><b>HMK 스토리지</b><span>공유창고 운영<br>2단계</span></div>
@@ -117,6 +118,7 @@ ORG = r'''
         <div class="org-node"><b>오렌지 라이브커머스</b><span>방송·셀러 관리<br>2단계</span></div>
       </div>
       <div class="org-line"></div>
+      <span class="org-tier">그룹 부문</span>
       <div class="org-row" style="grid-template-columns:repeat(4,1fr)">
         <div class="org-node"><b>총괄기획본부</b><span>전략 기획 · 자산 유동화<br>3~4단계</span></div>
         <div class="org-node"><b>AI 플랫폼 개발연구소</b><span>소싱 자동화 · IoT 관제</span></div>

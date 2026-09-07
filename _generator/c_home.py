@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """메인 — 8블록 원페이지 서사"""
 
-ARROW = '<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+ARROW = '<svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 BODY = r'''
 <!-- 01 히어로 -->
@@ -14,7 +14,7 @@ BODY = r'''
       <div class="hero-cta">
         <a class="btn btn-primary" href="/model/">HMK밸류업모델 __ARR__</a>
         <a class="btn btn-ghost" href="/affiliates/">그룹사 전체보기</a>
-        <a class="btn btn-ghost" href="https://hmkpartner.com" target="_blank" rel="noopener">사업파트너 모집 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="https://hmkpartner.com" target="_blank" rel="noopener">사업파트너 모집 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
       <p class="hero-note">보유 자산의 매각·활용을 검토 중이시거나 사업 파트너를 찾고 계신가요? <a href="/contact/" style="text-decoration:underline;font-weight:700;color:var(--orange-deep)">문의하기</a>로 남겨주시면 담당 부서가 회신드립니다.</p>
     </div>
@@ -147,7 +147,7 @@ BODY = r'''
           <div class="floor"><div class="lv" style="width:64px">멤버십</div><div><b>HMK 오렌지 멤버십</b><span>세 사업장의 고객을 하나의 회원으로 묶습니다. 창고 이용자에게 마켓 쿠폰, 마켓 고객에게 방송 특가, 시청자에게 창고 혜택 — 한 명이 세 번 방문합니다.</span></div></div>
           <div class="floor core"><div class="lv" style="width:64px">결과</div><div><b>매출 활성화 → 임대수익 상승 → 자산가치 밸류업</b><span>교차 방문과 재방문이 늘면 건물의 순영업이익이 커지고, 그 수익이 자산의 평가가치를 끌어올립니다.</span></div></div>
         </div>
-        <div class="extlinks" style="margin-top:22px"><a class="btn btn-ghost" href="/model/synergy/">시너지 구조 자세히 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        <div class="extlinks" style="margin-top:22px"><a class="btn btn-ghost" href="/model/synergy/">시너지 구조 자세히 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
       <div class="gallery g2 tall rv">
         <figure><img src="/assets/live/logistics.jpg" alt="주문부터 배송까지 오렌지 통합 물류 프로세스" loading="lazy"><figcaption>통합물류 — 주문·피킹·포장·출고·배송</figcaption></figure>
@@ -179,10 +179,10 @@ BODY = r'''
       <a class="link-more" style="margin-top:10px" href="/sites/">관련 사이트 전체 보기 __ARR__</a></div>
     </div>
     <div class="grid g4">
-      <a class="card pf-card rv" href="https://orange1000.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/market/exterior.jpg" alt="오렌지 창고마켓 매장 외관" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 창고마켓</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">사고 — 창고형 할인매장 · 온라인몰</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
-      <a class="card pf-card rv" href="https://orangeliveon.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/live/seller.jpg" alt="오렌지 라이브쇼핑 셀러 방송" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 라이브커머스</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">보고 — 라이브 방송 · 셀러 입점</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
-      <a class="card pf-card rv" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="ph"><img src="/assets/storage/entrance.jpg" alt="오렌지 공유창고 매장 입구" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 공유창고</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">맡기고 — 무인 보관 · 24시간</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
-      <a class="card pf-card rv" href="https://orangemembership.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/membership/app.jpg" alt="HMK 오렌지 멤버십 앱과 카드" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 멤버십</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">잇고 — 통합 포인트 · 교차 혜택</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      <a class="card pf-card rv" href="https://orange1000.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/market/exterior.jpg" alt="오렌지 창고마켓 매장 외관" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 창고마켓</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">사고 — 창고형 할인매장 · 온라인몰</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      <a class="card pf-card rv" href="https://orangeliveon.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/live/seller.jpg" alt="오렌지 라이브쇼핑 셀러 방송" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 라이브커머스</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">보고 — 라이브 방송 · 셀러 입점</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      <a class="card pf-card rv" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="ph"><img src="/assets/storage/entrance.jpg" alt="오렌지 공유창고 매장 입구" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 공유창고</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">맡기고 — 무인 보관 · 24시간</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      <a class="card pf-card rv" href="https://orangemembership.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/membership/app.jpg" alt="HMK 오렌지 멤버십 앱과 카드" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 멤버십</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">잇고 — 통합 포인트 · 교차 혜택</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
     </div>
   </div>
 </section>

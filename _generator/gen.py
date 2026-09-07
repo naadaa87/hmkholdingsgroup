@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
 """HMK 홀딩스그룹 공식 홈페이지 생성기"""
-import os, base64, io, shutil, json
+import os, base64, io, shutil, json, datetime
 from seo import meta_for, SITE_NAME
+
+BUILD = datetime.date.today().strftime("%Y%m%d")
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.environ.get("HMK_OUT") or os.path.join(BASE, "..")
 DOMAIN = "https://www.hmkholdings.com"
+
+import datetime as _dt
+BUILD = _dt.datetime.now().strftime("%Y%m%d%H%M")  # 캐시 무효화용 빌드 버전
 
 NAV = [
     ("그룹소개", "/group/message/", "GROUP", [
@@ -35,7 +40,7 @@ NAV = [
     ("채용", "/careers/", "CAREERS", []),
 ]
 
-CV = '<svg class="cv" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+CV = '<svg class="cv" viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 
 def _b64(path, h, colors=48):
@@ -64,6 +69,7 @@ def head(path, m):
     preload = m.get("preload", "")
     preload_tag = f'<link rel="preload" as="image" href="{preload}" fetchpriority="high">\n' if preload else ""
     return f"""<!DOCTYPE html>
+<!-- HMK build {BUILD} -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -90,7 +96,7 @@ def head(path, m):
 <link rel="icon" type="image/png" href="data:image/png;base64,{FAV_B64}">
 {preload_tag}<link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v={BUILD}">
 {m.get('extra_head','')}
 {breadcrumb_ld(m.get('crumbs'))}
 </head>
@@ -135,7 +141,7 @@ def header_html(active):
   <div class="utility"><div class="uwrap">
     <span class="u-tag">REAL ESTATE VALUE-UP GROUP</span>
     <a href="/sites/">관련 사이트</a>
-    <a href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고<svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     <a href="/careers/">채용</a>
     <a class="u-tel" href="tel:1555-5335">1555-5335</a>
   </div></div>
@@ -203,7 +209,7 @@ FOOTER = f"""<footer class="footer"><div class="wrap">
     <div class="fpolicy"><a href="/policy/privacy/">개인정보처리방침</a><a href="/policy/terms/">이용약관</a></div>
   </div>
 </div></footer>
-<script src="/js/main.js" defer></script>
+<script src="/js/main.js?v={BUILD}" defer></script>
 </body></html>"""
 
 
@@ -239,7 +245,7 @@ def build(pages):
             if m.get("crumbs"):
                 html += crumbs(m["crumbs"])
             html += page_hero(m)
-        html += m["body"] + "</main>" + FOOTER
+        html += m["body"] + "</main>" + FOOTER.replace("BUILD_VER", BUILD)
         if path.endswith(".html"):
             fp = os.path.join(OUT, path.lstrip("/"))
         else:
@@ -289,8 +295,8 @@ def aux(pages):
         ]) + "\n")
     open(os.path.join(OUT, "_headers"), "w", encoding="utf-8").write(
         "/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n"
-        "/css/*\n  Cache-Control: public, max-age=604800\n"
-        "/js/*\n  Cache-Control: public, max-age=604800\n"
+        "/css/*\n  Cache-Control: public, max-age=600, must-revalidate\n"
+        "/js/*\n  Cache-Control: public, max-age=600, must-revalidate\n"
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
         "  X-Frame-Options: SAMEORIGIN\n")
 
