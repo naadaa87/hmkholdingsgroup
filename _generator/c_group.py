@@ -33,7 +33,7 @@ MESSAGE = r'''
 </section>
 
 <section class="cta-band"><div class="wrap"><div class="inner">
-  <div class="rv"><h2>말보다 구조로 보여드리겠습니다</h2><p>네 단계 순환모델이 어떻게 작동하는지 확인해 보세요.</p></div>
+  <div class="rv"><h2>말보다 구조로 보여드리겠습니다</h2><p>네 단계 순환플랫폼이 어떻게 작동하는지 확인해 보세요.</p></div>
   <div class="acts rv"><a class="btn btn-white" href="/model/">사업모델 보기</a><a class="btn btn-outline-w" href="/group/about/">그룹 개요 보기</a></div>
 </div></div></section>
 '''

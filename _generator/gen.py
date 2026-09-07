@@ -15,7 +15,7 @@ NAV = [
         ("오시는길", "/group/location/"),
     ]),
     ("사업모델", "/model/", "BUSINESS MODEL", [
-        ("밸류업 순환모델", "/model/"),
+        ("밸류업 순환플랫폼", "/model/"),
         ("AI 초저가 매입", "/model/ai-sourcing/"),
         ("공간수익화 모델", "/model/space/"),
         ("통합물류·멤버십 시너지", "/model/synergy/"),
@@ -167,7 +167,7 @@ FOOTER = f"""<footer class="footer"><div class="wrap">
       <li><a href="/group/organization/">조직·거버넌스</a></li>
       <li><a href="/group/location/">오시는길</a></li></ul></div>
     <div><h4>사업모델</h4><ul>
-      <li><a href="/model/">밸류업 순환모델</a></li>
+      <li><a href="/model/">밸류업 순환플랫폼</a></li>
       <li><a href="/model/ai-sourcing/">AI 초저가 매입</a></li>
       <li><a href="/model/space/">공간수익화 모델</a></li>
       <li><a href="/model/synergy/">통합물류·멤버십 시너지</a></li>

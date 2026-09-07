@@ -85,6 +85,28 @@
 
 이 링크들은 그룹사 허브 외에 **전 페이지 푸터 FAMILY SITES 바**, `/sites/` 관련 사이트 안내, 각 상세 페이지 버튼·정보표, 메인 서비스 섹션에도 동일하게 반영되어 있습니다.
 
+## 2-1. 최신 변경
+
+**메인 히어로 버튼 3개로 교체**
+- HMK밸류업모델 → `/model/`
+- 그룹사 전체보기 → `/affiliates/`
+- 사업파트너 모집 → hmkpartner.com (새 창)
+- "보유 자산 보기" 삭제. 하단 CTA 버튼도 "HMK밸류업모델"로 통일
+
+**"밸류업 순환모델" → "밸류업 순환플랫폼"** 으로 전 사이트 명칭 변경 (메뉴·제목·본문·검색 메타 84곳)
+
+**순환플랫폼 페이지 대폭 보강**
+- 상단 대표 이미지(주간 전경) 추가 + LCP 프리로드
+- **한 자산 안에서 사업이 층으로 나뉩니다** 섹션 신설 — 층별 단면도 + 면적 배분 조감도(창고 마켓 65% · 공유창고 20% · 라이브 쇼핑 15%)
+- **플랫폼을 채우는 네 개의 사업** 섹션 신설 — 사진 카드 4장, 각 카드마다 `사업 소개`(사이트 내부) + `홈페이지`(외부) 두 개 링크
+
+| 사업 | 사진 | 사업 소개 | 홈페이지 |
+|---|---|---|---|
+| 오렌지 창고 마켓 | market/store-front.jpg | `/affiliates/market/` | orange1000.com |
+| 오렌지 라이브커머스 | live/studio-fashion.jpg | `/affiliates/live/` | orangeliveon.com |
+| 오렌지 공유창고 | storage/branch-front.jpg | `/affiliates/storage/` | storage-orange.co.kr |
+| HMK 오렌지 멤버십 | membership/app-card.jpg | `/affiliates/membership/` | orangemembership.com |
+
 ## 3. SEO 구성 내역 (2026-09-07 재정비)
 
 **이번 재정비**

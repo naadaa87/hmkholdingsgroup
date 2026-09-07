@@ -12,10 +12,11 @@ BODY = r'''
       <h1>싸게 사고,<br>자산가치 극대화,<br><span class="accent">자산을 유동화</span>합니다.</h1>
       <p class="lead">500억 이상 대형 상업용 부동산을 AI 프롭테크와 20년 노하우로 초저가에 매입하고, 창고형마켓·라이브커머스·공유창고 세 가지 사업의 시너지로 임대수익과 자산가치를 끌어올립니다. 그리고 그 자산을 유동화해 다음 자산으로 순환시킵니다.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="/model/">사업모델 보기 __ARR__</a>
-        <a class="btn btn-ghost" href="/model/assets/">보유 자산 보기</a>
+        <a class="btn btn-primary" href="/model/">HMK밸류업모델 __ARR__</a>
+        <a class="btn btn-ghost" href="/affiliates/">그룹사 전체보기</a>
+        <a class="btn btn-ghost" href="https://hmkpartner.com" target="_blank" rel="noopener">사업파트너 모집 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
-      <p class="hero-note">보유 자산의 매각·활용을 검토 중이신가요? 권리관계가 복잡한 물건도 검토 대상입니다.</p>
+      <p class="hero-note">보유 자산의 매각·활용을 검토 중이시거나 사업 파트너를 찾고 계신가요? <a href="/contact/" style="text-decoration:underline;font-weight:700;color:var(--orange-deep)">문의하기</a>로 남겨주시면 담당 부서가 회신드립니다.</p>
     </div>
     <div class="hero-visual">
       <img src="/assets/platform/cutaway-night.jpg" alt="HMK홀딩스그룹 밸류업 자산 — 2F 오렌지 라이브쇼핑, 1F 오렌지 창고마켓, B1 오렌지 공유창고" width="1491" height="1055" fetchpriority="high">
@@ -72,7 +73,7 @@ BODY = r'''
   </div>
 </section>
 
-<!-- 04 순환모델 -->
+<!-- 04 순환플랫폼 -->
 <section class="sec sec-warm">
   <div class="wrap">
     <div class="sec-head rv">
@@ -206,7 +207,7 @@ BODY = r'''
 
 <section class="cta-band"><div class="wrap"><div class="inner">
   <div class="rv"><h2>검토할 자산이 있으신가요</h2><p>물건 개요만 보내주셔도 됩니다. 검토 가능 여부와 다음 절차를 회신드립니다.</p></div>
-  <div class="acts rv"><a class="btn btn-white" href="/contact/">물건 제안하기</a><a class="btn btn-outline-w" href="/model/">사업모델 보기</a></div>
+  <div class="acts rv"><a class="btn btn-white" href="/contact/">물건 제안하기</a><a class="btn btn-outline-w" href="/model/">HMK밸류업모델</a></div>
 </div></div></section>
 '''.replace("__ARR__", ARROW)
 

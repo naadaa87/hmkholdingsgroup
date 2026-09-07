@@ -12,7 +12,7 @@ NEWS = r'''
     <div class="grid g3">
       <article class="post-card rv"><div class="post-meta"><span class="post-cat">그룹 뉴스</span><span class="post-date">2026.08.20</span></div>
         <h3>HMK홀딩스그룹, 그룹 공식 홈페이지 개편</h3>
-        <p>사업 확장에 맞춰 그룹 소개 체계를 새로 정리했습니다. 밸류업 순환모델과 공간수익화 구조, 보유 자산 정보를 공식 채널에서 확인하실 수 있습니다.</p></article>
+        <p>사업 확장에 맞춰 그룹 소개 체계를 새로 정리했습니다. 밸류업 순환플랫폼과 공간수익화 구조, 보유 자산 정보를 공식 채널에서 확인하실 수 있습니다.</p></article>
       <article class="post-card rv"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.08.12</span></div>
         <h3>일산 엠시티타워, 공유창고 전환 조성 착수</h3>
         <p>복합 상가 내 장기 공실 구간을 무인 보관 시설로 전환하는 공사에 들어갔습니다. 조성 완료와 오픈 소식은 이 채널로 공개할 예정입니다.</p></article>
