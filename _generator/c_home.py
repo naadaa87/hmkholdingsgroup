@@ -18,7 +18,7 @@ BODY = r'''
       <p class="hero-note">보유 자산의 매각·활용을 검토 중이신가요? 권리관계가 복잡한 물건도 검토 대상입니다.</p>
     </div>
     <div class="hero-visual">
-      <img src="/assets/platform/cutaway-night.jpg" alt="HMK 밸류업 자산 — 2F 오렌지 라이브쇼핑, 1F 오렌지 창고마켓, B1 오렌지 공유창고" width="1491" height="1055">
+      <img src="/assets/platform/cutaway-night.jpg" alt="HMK홀딩스그룹 밸류업 자산 — 2F 오렌지 라이브쇼핑, 1F 오렌지 창고마켓, B1 오렌지 공유창고" width="1491" height="1055" fetchpriority="high">
       <div class="cap"><b>HMK 밸류업 자산</b><span>2F 라이브쇼핑 · 1F 창고마켓 · B1 공유창고</span></div>
     </div>
   </div>
@@ -96,7 +96,7 @@ BODY = r'''
       <p class="lead">사고 · 보고 · 맡기고. 초저가로 매입한 부동산에 세 가지 사업을 넣어 매출과 임대수익을 극대화합니다.</p>
     </div>
     <div class="trio rv">
-      <a href="https://orange1000.com" target="_blank" rel="noopener"><span class="verb">사고</span><div><b>창고형마켓</b><span class="brand">오렌지 마켓</span></div></a>
+      <a href="https://orange1000.com" target="_blank" rel="noopener"><span class="verb">사고</span><div><b>창고형마켓</b><span class="brand">오렌지 창고마켓</span></div></a>
       <a href="https://orangeliveon.com" target="_blank" rel="noopener"><span class="verb">보고</span><div><b>라이브커머스</b><span class="brand">오렌지 라이브커머스</span></div></a>
       <a href="https://storage-orange.co.kr" target="_blank" rel="noopener"><span class="verb">맡기고</span><div><b>공유창고</b><span class="brand">오렌지 공유창고</span></div></a>
     </div>
@@ -168,7 +168,7 @@ BODY = r'''
     <div class="grid g4">
       <a class="card rv" href="/affiliates/loan/"><div class="card-ic">🏢</div><h3 style="font-size:17px">HMK 대부</h3><p>AI 프롭테크 소싱 · 채권매입 · 경공매</p></a>
       <a class="card rv" href="/affiliates/storage/"><div class="card-ic">📦</div><h3 style="font-size:17px">HMK 스토리지</h3><p>공유창고 오렌지 조성·운영 · IoT 관리</p></a>
-      <a class="card rv" href="/affiliates/market/"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 마켓</h3><p>창고형 할인매장 · 온라인몰 · 공동구매</p></a>
+      <a class="card rv" href="/affiliates/market/"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>창고형 할인매장 · 온라인몰 · 공동구매</p></a>
       <a class="card rv" href="/affiliates/live/"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브커머스</h3><p>방송 제작·송출 · 셀러 통합관리</p></a>
     </div>
 
@@ -195,7 +195,7 @@ BODY = r'''
     </div>
     <div class="grid g3">
       <a class="post-card rv" href="/news/"><div class="post-meta"><span class="post-cat">그룹 뉴스</span><span class="post-date">2026.08.20</span></div>
-        <h3>HMK 홀딩스그룹, 그룹 공식 홈페이지 개편</h3><p>사업 확장에 맞춰 그룹 소개 체계를 새로 정리했습니다.</p></a>
+        <h3>HMK홀딩스그룹, 그룹 공식 홈페이지 개편</h3><p>사업 확장에 맞춰 그룹 소개 체계를 새로 정리했습니다.</p></a>
       <a class="post-card rv" href="/news/"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.08.12</span></div>
         <h3>일산 엠시티타워, 공유창고 오렌지 전환 조성 착수</h3><p>복합 상가 공실 구간을 무인 보관 시설로 전환합니다.</p></a>
       <a class="post-card rv" href="/news/"><div class="post-meta"><span class="post-cat">시장 인사이트</span><span class="post-date">2026.08.05</span></div>
@@ -212,12 +212,13 @@ BODY = r'''
 
 PAGES = {
     "/": {
-        "title": "HMK 홀딩스그룹 — 부동산 밸류업 그룹",
+        "title": "HMK홀딩스그룹 — 부동산 밸류업 그룹",
         "desc": "AI 프롭테크로 저평가 부동산을 초저가 매입하고, 공간수익화 모델로 임대수익을 극대화하며, 자산 유동화로 순환시키는 부동산 밸류업 그룹.",
         "active": "", "no_hero": True, "body_class": "page home", "body": BODY,
+        "preload": "/assets/platform/cutaway-night.jpg",
         "extra_head": """<script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"https://www.hmkholdings.com/#org","name":"HMK홀딩스그룹","alternateName":["HMK Holdings Group","HMK홀딩스","에이치엠케이홀딩스"],"url":"https://www.hmkholdings.com","logo":"https://www.hmkholdings.com/assets/logo.png","image":"https://www.hmkholdings.com/assets/og.jpg","description":"상업용 부동산을 초저가 매입해 창고형마켓·라이브커머스·공유창고 3가지 사업으로 임대수익과 자산가치를 높이는 부동산 밸류업 플랫폼","slogan":"HMK와 한번에 가치하세요","founder":{"@type":"Person","name":"김재동","jobTitle":"회장","url":"https://kimjaedong.com"},"address":{"@type":"PostalAddress","streetAddress":"봉은사로 129-1, 751빌딩 3층","addressLocality":"강남구","addressRegion":"서울특별시","postalCode":"06120","addressCountry":"KR"},"telephone":"+82-1555-5335","email":"hmkholdings@hmkholdings.com","areaServed":"KR","contactPoint":{"@type":"ContactPoint","telephone":"+82-1555-5335","contactType":"customer service","availableLanguage":"Korean"},"sameAs":["https://hmknplauction.pages.dev","https://hmkstorage.com","https://kimjaedong.com","https://orange1000.com","https://orangeliveon.com","https://storage-orange.co.kr","https://orangemembership.com","https://hmkpartner.com","https://hmkinvestment.pages.dev"],"brand":[{"@type":"Brand","name":"오렌지 공유창고"},{"@type":"Brand","name":"오렌지 마켓"},{"@type":"Brand","name":"오렌지 라이브커머스"},{"@type":"Brand","name":"오렌지 멤버십"}],"knowsAbout":["상업용 부동산 매입","부동산 밸류업","무인 공유창고","창고형 할인매장","라이브커머스","AI 프롭테크","부동산 자산 유동화"]},
+{"@type":"Organization","@id":"https://www.hmkholdings.com/#org","name":"HMK홀딩스그룹","alternateName":["HMK Holdings Group","HMK홀딩스","에이치엠케이홀딩스"],"url":"https://www.hmkholdings.com","logo":"https://www.hmkholdings.com/assets/logo.png","image":"https://www.hmkholdings.com/assets/og.jpg","description":"상업용 부동산을 초저가 매입해 창고형마켓·라이브커머스·공유창고 3가지 사업으로 임대수익과 자산가치를 높이는 부동산 밸류업 플랫폼","slogan":"HMK와 한번에 가치하세요","founder":{"@type":"Person","name":"김재동","jobTitle":"회장","url":"https://kimjaedong.com"},"address":{"@type":"PostalAddress","streetAddress":"봉은사로 129-1, 751빌딩 3층","addressLocality":"강남구","addressRegion":"서울특별시","postalCode":"06120","addressCountry":"KR"},"telephone":"+82-1555-5335","email":"hmkholdings@hmkholdings.com","areaServed":"KR","contactPoint":{"@type":"ContactPoint","telephone":"+82-1555-5335","contactType":"customer service","availableLanguage":"Korean"},"sameAs":["https://hmknplauction.pages.dev","https://hmkstorage.com","https://kimjaedong.com","https://orange1000.com","https://orangeliveon.com","https://storage-orange.co.kr","https://orangemembership.com","https://hmkpartner.com","https://hmkinvestment.pages.dev"],"brand":[{"@type":"Brand","name":"오렌지 공유창고"},{"@type":"Brand","name":"오렌지 창고마켓"},{"@type":"Brand","name":"오렌지 라이브커머스"},{"@type":"Brand","name":"오렌지 멤버십"}],"knowsAbout":["상업용 부동산 매입","부동산 밸류업","무인 공유창고","창고형 할인매장","라이브커머스","AI 프롭테크","부동산 자산 유동화"]},
 {"@type":"WebSite","@id":"https://www.hmkholdings.com/#website","url":"https://www.hmkholdings.com","name":"HMK홀딩스그룹","publisher":{"@id":"https://www.hmkholdings.com/#org"},"inLanguage":"ko-KR"}
 ]}
 </script>""",

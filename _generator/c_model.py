@@ -228,12 +228,19 @@ SPACE_BODY = r'''
     </figure>
     <div class="grid g3 rv" style="margin-top:26px">
       <a class="card" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="card-ic">🧡</div><h3 style="font-size:17px">오렌지 공유창고</h3><p>B1 무인 보관 서비스 — 지점·요금·비대면 계약 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card" href="https://orange1000.com" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 마켓</h3><p>1F 창고형 할인매장 — 취급 상품·매장·입점 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://orange1000.com" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>1F 창고형 할인매장 — 취급 상품·매장·입점 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
       <a class="card" href="https://orangeliveon.com" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브커머스</h3><p>2F 라이브커머스 — 방송 일정·상품·셀러 입점</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
     </div>
     <div class="loop rv" style="margin-top:22px">공간수익화 모델을 적용한 자산은 <strong>&nbsp;일반 상가 대비 450% 이상의 수익 창출&nbsp;</strong>을 목표로 설계됩니다.</div>
   </div>
 </section>
+<section class="sec sec-warm">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">FAQ</span><h2>공간수익화 모델,<br>자주 묻는 질문</h2></div></div>
+    <div class="faq-list"><details class="faq rv"><summary>공간수익화 모델이 일반 상가 임대와 다른 점은 무엇인가요?</summary><div class="faq-a">일반 상가는 층마다 임차인 한 명, 임대료 하나입니다. HMK 공간수익화 모델은 같은 건물에 오렌지 창고마켓(1F)·오렌지 라이브커머스(2F)·오렌지 공유창고(B1) 세 사업을 직접 운영해 보관료·판매 매출·방송 매출이 겹치게 만듭니다. 세 사업이 통합물류를 공유해 운영비는 나뉘고 임대수익은 올라갑니다.</div></details><details class="faq rv"><summary>창고형마켓, 라이브커머스, 공유창고를 왜 한 건물에 넣나요?</summary><div class="faq-a">상품과 고객이 세 사업 사이를 오가게 하기 위해서입니다. 창고마켓이 대량 매입한 상품을 같은 건물에서 방송하고 온라인 주문까지 출고하니 재고 하나로 세 채널에 팔 수 있고, 공유창고 이용자는 마켓 고객이 됩니다. 이 연결이 시너지의 원천입니다.</div></details><details class="faq rv"><summary>어떤 상가가 공간수익화 대상이 되나요?</summary><div class="faq-a">배후 세대가 충분한 상권에 있으면서 공실이나 권리 문제로 가격이 눌려 있는 상업용 부동산입니다. 층고, 전기 용량, 진입 동선 같은 물리적 조건을 현장에서 확인하고, 전환 후 수익 시나리오가 매입가와 공사비를 정당화할 때 확보합니다.</div></details><details class="faq rv"><summary>공유창고는 어떻게 무인으로 운영되나요?</summary><div class="faq-a">비대면 계약·결제, 스마트 도어락 출입, 24시간 CCTV와 온·습도 센서 관제가 하나의 시스템으로 연동됩니다. 이용자는 앱으로 계약하고 문을 열며, 이상상황은 관제센터가 실시간으로 대응합니다. 상주 인력 없이 운영되므로 지하층 공간이 수익 공간이 됩니다.</div></details></div>
+  </div>
+</section>
+
 ''' + CTA
 
 # ───────────────── 자산 유동화 ─────────────────
@@ -477,16 +484,16 @@ ASSETS_BODY = (r'''
 
 PAGES = {
     "/model/": {
-        "title": "밸류업 순환모델 | HMK 홀딩스그룹", "active": "사업모델",
+        "title": "밸류업 순환모델 | HMK홀딩스그룹", "active": "사업모델",
         "extra_head": '''<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "부동산 밸류업이란 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "저평가된 부동산을 확보한 뒤 용도 전환·운영 개선으로 임대수익을 높이고, 그 수익을 근거로 자산가치를 다시 평가받는 과정입니다. HMK홀딩스그룹은 매입부터 유동화까지 네 단계를 직접 수행합니다."}}, {"@type": "Question", "name": "어떤 부동산을 매입하나요?", "acceptedAnswer": {"@type": "Answer", "text": "배후 수요가 검증된 상권에 있으면서 공실·권리 문제로 가격이 눌려 있는 상업용 부동산입니다. AI 프롭테크로 월 23만 건 이상의 물건을 분석해 후보를 고르고, 현장 검증을 거쳐 감정가 대비 20% 이하로 확보합니다."}}, {"@type": "Question", "name": "3 in 1 공간수익화 모델은 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "한 건물에 창고형마켓(사고), 라이브커머스(보고), 공유창고(맡기고) 세 가지 사업을 결합하는 방식입니다. 세 사업이 통합 물류 코어를 공유해 운영비는 낮추고 임대수익은 높입니다."}}, {"@type": "Question", "name": "토큰증권(STO) 발행은 언제 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "개정 전자증권법·자본시장법에 따른 제도가 2027년 2월 4일 시행됩니다. HMK홀딩스그룹은 그 시행일에 맞춰 토큰증권 발행과 상장을 준비하고 있습니다."}}, {"@type": "Question", "name": "보유 부동산을 매각하거나 활용을 검토하고 싶습니다.", "acceptedAnswer": {"@type": "Answer", "text": "문의 페이지에서 물건 개요(소재지, 규모, 현황)만 보내주시면 검토를 시작합니다. 권리관계가 복잡한 물건도 검토 대상이며, 영업일 기준 2일 안에 회신드립니다."}}]}</script>''',
         "desc": "AI 초저가 매입 → 공간수익화 → 자산 유동화 → 재투자. 네 단계를 그룹이 직접 수행하는 HMK 밸류업 순환모델을 소개합니다.",
         "crumbs": [("사업모델", "/model/")],
-        "eyebrow": "BUSINESS MODEL", "h1": "밸류업 순환모델",
+        "eyebrow": "BUSINESS MODEL", "h1": "부동산 밸류업 순환모델",
         "lead": "저평가된 자산 하나가 수익 자산으로 다시 태어나고, 그 성과가 다음 자산으로 이어지는 네 단계.",
         "hero_extra": minirail({1, 2, 3, 4}), "body": HUB,
     },
     "/model/ai-sourcing/": {
-        "title": "AI 초저가 매입 | HMK 홀딩스그룹", "active": "사업모델",
+        "title": "AI 초저가 매입 | HMK홀딩스그룹", "active": "사업모델",
         "desc": "월 23만 건 이상의 물건을 분석해 저평가 자산을 선별하고, 권리 문제를 해결해 감정가 대비 20% 이하로 확보합니다.",
         "crumbs": CR + [("AI 초저가 매입", "/model/ai-sourcing/")],
         "eyebrow": "STEP 01 / AI SOURCING", "h1": "AI 프롭테크<br>초저가 매입",
@@ -494,15 +501,16 @@ PAGES = {
         "hero_extra": minirail({1}), "body": AI_BODY,
     },
     "/model/space/": {
-        "title": "공간수익화 모델 | HMK 홀딩스그룹", "active": "사업모델",
+        "title": "공간수익화 모델 | HMK홀딩스그룹", "active": "사업모델",
+        "extra_head": '''<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "공간수익화 모델이 일반 상가 임대와 다른 점은 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "일반 상가는 층마다 임차인 한 명, 임대료 하나입니다. HMK 공간수익화 모델은 같은 건물에 오렌지 창고마켓(1F)·오렌지 라이브커머스(2F)·오렌지 공유창고(B1) 세 사업을 직접 운영해 보관료·판매 매출·방송 매출이 겹치게 만듭니다. 세 사업이 통합물류를 공유해 운영비는 나뉘고 임대수익은 올라갑니다."}}, {"@type": "Question", "name": "창고형마켓, 라이브커머스, 공유창고를 왜 한 건물에 넣나요?", "acceptedAnswer": {"@type": "Answer", "text": "상품과 고객이 세 사업 사이를 오가게 하기 위해서입니다. 창고마켓이 대량 매입한 상품을 같은 건물에서 방송하고 온라인 주문까지 출고하니 재고 하나로 세 채널에 팔 수 있고, 공유창고 이용자는 마켓 고객이 됩니다. 이 연결이 시너지의 원천입니다."}}, {"@type": "Question", "name": "어떤 상가가 공간수익화 대상이 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "배후 세대가 충분한 상권에 있으면서 공실이나 권리 문제로 가격이 눌려 있는 상업용 부동산입니다. 층고, 전기 용량, 진입 동선 같은 물리적 조건을 현장에서 확인하고, 전환 후 수익 시나리오가 매입가와 공사비를 정당화할 때 확보합니다."}}, {"@type": "Question", "name": "공유창고는 어떻게 무인으로 운영되나요?", "acceptedAnswer": {"@type": "Answer", "text": "비대면 계약·결제, 스마트 도어락 출입, 24시간 CCTV와 온·습도 센서 관제가 하나의 시스템으로 연동됩니다. 이용자는 앱으로 계약하고 문을 열며, 이상상황은 관제센터가 실시간으로 대응합니다. 상주 인력 없이 운영되므로 지하층 공간이 수익 공간이 됩니다."}}]}</script>''',
         "desc": "공유창고 · 창고형 할인매장 · 라이브커머스를 한 건물에 결합하고 통합 물류 코어로 연결하는 HMK 공간수익화 모델.",
         "crumbs": CR + [("공간수익화 모델", "/model/space/")],
-        "eyebrow": "STEP 02 / SPACE MONETIZING", "h1": "HMK<br>공간수익화 모델",
+        "eyebrow": "STEP 02 / SPACE MONETIZING", "h1": "3 in 1<br>공간수익화 모델",
         "lead": "한 건물에 보관·판매·방송 세 개의 수익을 겹쳐 넣습니다. 단일 임차 구조로는 나올 수 없는 수익 구조입니다.",
         "hero_extra": minirail({2}), "body": SPACE_BODY,
     },
     "/model/synergy/": {
-        "title": "통합물류·멤버십 시너지 | HMK 홀딩스그룹", "active": "사업모델",
+        "title": "통합물류·멤버십 시너지 | HMK홀딩스그룹", "active": "사업모델",
         "desc": "자체 통합물류·유통시스템으로 상품을, HMK 오렌지 멤버십으로 고객을 연결합니다.",
         "crumbs": CR + [("통합물류·멤버십 시너지", "/model/synergy/")],
         "eyebrow": "STEP 02+ / SYNERGY", "h1": "통합물류 · 멤버십<br>시너지",
@@ -510,18 +518,18 @@ PAGES = {
         "hero_extra": minirail({2}), "body": SYNERGY_BODY,
     },
     "/model/liquidity/": {
-        "title": "자산 유동화 | HMK 홀딩스그룹", "active": "사업모델",
+        "title": "자산 유동화 | HMK홀딩스그룹", "active": "사업모델",
         "desc": "운영 수익을 근거로 자산가치를 재평가받고, 2027년 2월 4일 시행되는 제도에 맞춰 토큰증권 발행·상장을 준비하고 있습니다.",
         "crumbs": CR + [("자산 유동화", "/model/liquidity/")],
-        "eyebrow": "STEP 03 / LIQUIDITY", "h1": "자산 유동화",
+        "eyebrow": "STEP 03 / LIQUIDITY", "h1": "자산 유동화 · 토큰증권",
         "lead": "가치 상승은 주장이 아니라 증명의 문제입니다. 운영 실적이 그 증거가 되고, 유동화가 순환의 속도를 만듭니다.",
         "hero_extra": minirail({3, 4}), "body": LIQ_BODY,
     },
     "/model/assets/": {
-        "title": "보유 자산 | HMK 홀딩스그룹", "active": "사업모델",
+        "title": "보유 자산 | HMK홀딩스그룹", "active": "사업모델",
         "desc": "일산 엠시티타워, 화성 송산시티 L-Tower, 강동 로데오팰리스 — HMK가 보유한 부동산의 상권·입지 강점과 미래가치를 소개합니다.",
         "crumbs": CR + [("보유 자산", "/model/assets/")],
-        "eyebrow": "PORTFOLIO", "h1": "보유 자산",
+        "eyebrow": "PORTFOLIO", "h1": "보유 부동산 포트폴리오",
         "lead": "좋은 입지의 기준을 통과한 자산들입니다. 어떤 상권 위에 있고, 어떤 미래를 앞두고 있는지 보여드립니다.",
         "body": ASSETS_BODY,
     },

@@ -55,11 +55,20 @@
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
       });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+    }, { rootMargin: "0px 0px 12% 0px", threshold: 0.01 });
     Array.prototype.forEach.call(rv, function (el, i) {
       el.style.transitionDelay = (Math.min(i % 4, 3) * 70) + "ms";
       io.observe(el);
     });
+    /* 안전장치 — 빠른 스크롤로 지나친 요소도 반드시 표시 */
+    var sweep = function () {
+      var vh = window.innerHeight;
+      Array.prototype.forEach.call(rv, function (el) {
+        if (!el.classList.contains("in") && el.getBoundingClientRect().top < vh) el.classList.add("in");
+      });
+    };
+    window.addEventListener("scroll", sweep, { passive: true });
+    window.addEventListener("load", sweep);
   } else {
     Array.prototype.forEach.call(rv, function (el) { el.classList.add("in"); });
   }

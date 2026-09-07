@@ -45,7 +45,7 @@ HUB = (r'''
 + gcard(1, "🏢", "HMK 대부", "STEP 01 · 매입", "AI 프롭테크 소싱, 경·공매, 채권 매입. 상업용 부동산 확보와 금융 구조를 담당하는 계열사입니다.", "hmknplauction.pages.dev", "/affiliates/loan/")
 + gcard(2, "📦", "HMK 스토리지", "STEP 02 · B1", "무인 공유창고 오렌지를 조성·운영합니다. 유닛 설계, 전환 시공, IoT 관제를 책임집니다.", "hmkstorage.com", "/affiliates/storage/")
 + gcard(3, "👤", "김재동 회장", "CHAIRMAN", "국내 AI부동산 초저가 매입시스템을 최초 구축한 HMK홀딩스그룹 회장. 사업 철학과 걸어온 길을 담은 개인 홈페이지입니다.", "kimjaedong.com", "/group/message/")
-+ gcard(4, "🛒", "오렌지 마켓", "STEP 02 · 1F", "창고형 할인매장과 오렌지 1,000원마켓 온라인몰. 공동구매로 가격을 낮추고 집객으로 상권을 살립니다.", "orange1000.com", "/affiliates/market/")
++ gcard(4, "🛒", "오렌지 창고마켓", "STEP 02 · 1F", "창고형 할인매장과 오렌지 1,000원마켓 온라인몰. 공동구매로 가격을 낮추고 집객으로 상권을 살립니다.", "orange1000.com", "/affiliates/market/")
 + gcard(5, "🎥", "오렌지 라이브커머스", "STEP 02 · 2F", "라이브 방송 제작·송출과 셀러 통합관리. 스튜디오와 물류를 함께 제공해 전국 판매로 확장합니다.", "orangeliveon.com", "/affiliates/live/")
 + gcard(6, "🧡", "오렌지 공유창고", "SERVICE", "개인·소상공인을 위한 무인 보관 서비스. 지점 안내, 유닛 요금, 비대면 계약을 이용하실 수 있습니다.", "storage-orange.co.kr")
 + gcard(7, "💳", "HMK 오렌지 멤버십", "SYNERGY", "창고마켓·라이브커머스·공유창고를 하나의 회원으로 잇는 통합 멤버십. 포인트 통합과 교차 혜택으로 매출을 활성화합니다.", "orangemembership.com", "/affiliates/membership/")
@@ -132,8 +132,8 @@ MARKET = aff(
     """<h2 style="margin-top:0">오프라인 고객 접점을<br>만드는 법인</h2>
     <p>HMK 오렌지마켓은 확보한 자산의 1층에 창고형 할인매장을 조성하고 운영하는 법인입니다. 그룹이 직접 매입한 상품을 창고형으로 진열해 판매하며, 공동구매로 매입 단가를 낮춰 가격 경쟁력을 확보합니다.</p>
     <p>오프라인 매장은 단순한 판매 공간이 아닙니다. 집객이 만드는 유동 인구가 건물 전체의 상권 가치를 끌어올리고, 이곳에서 확인된 인기 상품이 2층 라이브커머스와 <strong>오렌지 1,000원마켓</strong> 온라인몰의 판매 품목이 됩니다. 온라인 주문은 같은 건물의 통합 물류 코어에서 바로 출고됩니다.</p>
-    <div class="extlinks"><a class="btn btn-primary" href="https://orange1000.com" target="_blank" rel="noopener">오렌지 마켓 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
-    """<tr><th>부문</th><td>오렌지 마켓 (HMK 오렌지마켓)</td></tr>
+    <div class="extlinks"><a class="btn btn-primary" href="https://orange1000.com" target="_blank" rel="noopener">오렌지 창고마켓 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>""",
+    """<tr><th>부문</th><td>오렌지 창고마켓 (HMK 오렌지마켓)</td></tr>
     <tr><th>담당 단계</th><td>STEP 02 — 공간수익화 (1F 창고형 할인매장)</td></tr>
     <tr><th>주요 업무</th><td>창고형 할인매장 운영 · 오렌지 1,000원마켓 온라인몰 · 공동구매 · 상품 매입</td></tr>
     <tr><th>취급 카테고리</th><td>식품 · 생활용품 · 가전리빙 · 대량벌크</td></tr>
@@ -186,7 +186,15 @@ MEMBERSHIP = aff(
      ("멤버 등급", "이용 실적에 따라 등급이 올라가고, 등급별 할인율과 전용 서비스가 달라집니다."),
      ("앱 · 카드", "모바일 앱과 실물 카드로 포인트 조회, 쿠폰 사용, 예약을 한 번에 처리합니다.")],
     visual='<img src="/assets/membership/card-hero.jpg" alt="HMK 오렌지 멤버십 카드와 오렌지 캐릭터 — 멤버십 전용 혜택, 포인트 적립, VIP 서비스, 이벤트 초대" width="1448" height="1086">',
-    gallery='<div class="gallery g3 rv" style="margin-top:34px"><figure><img src="/assets/membership/app.jpg" alt="HMK 오렌지 멤버십 앱 화면 — 포인트·등급·쿠폰" loading="lazy"><figcaption>앱에서 포인트와 쿠폰을 한눈에</figcaption></figure><figure><img src="/assets/membership/use-market.jpg" alt="오렌지 창고마켓에서 멤버십 카드로 결제" loading="lazy"><figcaption>창고마켓 — 결제와 동시에 적립</figcaption></figure><figure><img src="/assets/membership/use-storage.jpg" alt="HMK 스토리지에서 멤버십 카드 확인" loading="lazy"><figcaption>공유창고 — 보관료 할인 적용</figcaption></figure></div>')
+    gallery='<div class="gallery g3 rv" style="margin-top:34px"><figure><img src="/assets/membership/app.jpg" alt="HMK 오렌지 멤버십 앱 화면 — 포인트·등급·쿠폰" loading="lazy"><figcaption>앱에서 포인트와 쿠폰을 한눈에</figcaption></figure><figure><img src="/assets/membership/use-market.jpg" alt="오렌지 창고마켓에서 멤버십 카드로 결제" loading="lazy"><figcaption>창고마켓 — 결제와 동시에 적립</figcaption></figure><figure><img src="/assets/membership/use-storage.jpg" alt="HMK 스토리지에서 멤버십 카드 확인" loading="lazy"><figcaption>공유창고 — 보관료 할인 적용</figcaption></figure></div>',
+    extra=r'''
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">FAQ</span><h2>멤버십 자주 묻는 질문</h2></div></div>
+    <div class="faq-list"><details class="faq rv"><summary>오렌지 멤버십은 어디에서 쓸 수 있나요?</summary><div class="faq-a">오렌지 창고마켓, 오렌지 라이브커머스, 오렌지 공유창고 세 곳에서 하나의 회원으로 씁니다. 어디서 가입하든 세 사업장의 포인트가 통합되고 혜택이 교차 적용됩니다.</div></details><details class="faq rv"><summary>포인트는 어떻게 쌓이고 어디에 쓰나요?</summary><div class="faq-a">창고마켓 결제, 라이브 방송 구매, 공유창고 이용료 결제 시 포인트가 쌓입니다. 쌓인 포인트는 세 곳 어디에서든 결제에 사용할 수 있습니다.</div></details><details class="faq rv"><summary>가입은 어떻게 하나요?</summary><div class="faq-a">오렌지 멤버십 앱 또는 각 사업장 현장에서 가입할 수 있습니다. 실물 카드와 모바일 앱 모두 제공되며, 앱에서 포인트 조회·쿠폰 사용·예약을 한 번에 처리합니다.</div></details></div>
+  </div>
+</section>
+''')
 
 # ───────────────── 관련 사이트 안내 ─────────────────
 EXT = '<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -224,7 +232,7 @@ SITES = (r"""
     <div class="sec-head rv"><div><span class="eyebrow">SERVICE SITES</span><h2>사업부 서비스 사이트</h2></div>
     <p class="lead">3 in 1 공간수익화 모델을 구성하는 각 서비스의 이용 안내와 신청은 아래에서 진행하실 수 있습니다.</p></div>
     <div class="grid g2">
-""" + site("🛒", "오렌지 마켓", "orange1000.com",
+""" + site("🛒", "오렌지 창고마켓", "orange1000.com",
            "창고형 할인매장과 오렌지 1,000원마켓 온라인몰입니다. 취급 상품과 매장 안내, 입점·공급 문의를 확인하실 수 있습니다.")
    + site("🎥", "오렌지 라이브커머스", "orangeliveon.com",
            "라이브커머스 방송과 판매 채널입니다. 방송 일정, 판매 상품, 셀러 입점 절차를 안내합니다.")
@@ -259,15 +267,16 @@ SITES = (r"""
 
 PAGES = {
     "/affiliates/": {
-        "title": "HMK그룹사 전체보기 | HMK 홀딩스그룹", "active": "그룹사소개",
+        "title": "HMK그룹사 전체보기 | HMK홀딩스그룹", "active": "그룹사소개",
         "desc": "HMK 대부, 스토리지, 오렌지마켓, 라이브커머스, E커머스 — 다섯 계열사가 밸류업 순환의 어느 구간을 맡는지 안내합니다.",
         "crumbs": [("그룹사소개", "/affiliates/")],
         "eyebrow": "HMK GROUP", "h1": "HMK그룹사 전체보기",
+        "extra_head": '''<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "HMK홀딩스그룹 그룹사·사업부", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "HMK 대부", "url": "https://hmknplauction.pages.dev"}, {"@type": "ListItem", "position": 2, "name": "HMK 스토리지", "url": "https://hmkstorage.com"}, {"@type": "ListItem", "position": 3, "name": "김재동 회장", "url": "https://kimjaedong.com"}, {"@type": "ListItem", "position": 4, "name": "오렌지 창고마켓", "url": "https://orange1000.com"}, {"@type": "ListItem", "position": 5, "name": "오렌지 라이브커머스", "url": "https://orangeliveon.com"}, {"@type": "ListItem", "position": 6, "name": "오렌지 공유창고", "url": "https://storage-orange.co.kr"}, {"@type": "ListItem", "position": 7, "name": "HMK 오렌지 멤버십", "url": "https://orangemembership.com"}, {"@type": "ListItem", "position": 8, "name": "HMK 파트너모집", "url": "https://hmkpartner.com"}]}</script>''',
         "lead": "매입부터 밸류업까지, 그룹사와 사업부가 하나의 흐름으로 움직입니다. 각 홈페이지로 바로 이동하실 수 있습니다.",
         "body": HUB,
     },
     "/affiliates/loan/": {
-        "title": "HMK 대부 | HMK 홀딩스그룹", "active": "그룹사소개",
+        "title": "HMK 대부 | HMK홀딩스그룹", "active": "그룹사소개",
         "desc": "AI 프롭테크 소싱, 부동산·채권 매입, 경·공매를 담당하는 HMK 대부. 그룹의 자산 확보를 책임집니다.",
         "crumbs": CR + [("HMK 대부", "/affiliates/loan/")],
         "eyebrow": "AFFILIATES / HMK LOAN", "h1": "HMK 대부",
@@ -275,23 +284,24 @@ PAGES = {
         "body": LOAN,
     },
     "/affiliates/storage/": {
-        "title": "HMK 스토리지 | HMK 홀딩스그룹", "active": "그룹사소개",
+        "title": "HMK 스토리지 | HMK홀딩스그룹", "active": "그룹사소개",
         "desc": "무인 공유창고 오렌지의 조성·운영 법인 HMK 스토리지 — 유닛 설계, 전환 시공, IoT 관제를 책임집니다.",
         "crumbs": CR + [("HMK 스토리지", "/affiliates/storage/")],
         "eyebrow": "AFFILIATES / HMK STORAGE", "h1": "HMK 스토리지",
+        "lead_pre": "오렌지 공유창고 조성·운영",
         "lead": "비어 있던 지하층을 24시간 무인 보관 시설로 바꿉니다. 공간수익화의 기반 층을 맡습니다.",
         "body": STORAGE,
     },
     "/affiliates/market/": {
-        "title": "HMK 오렌지마켓 | HMK 홀딩스그룹", "active": "그룹사소개",
+        "title": "HMK 오렌지마켓 | HMK홀딩스그룹", "active": "그룹사소개",
         "desc": "창고형 할인매장과 공동구매를 운영하는 HMK 오렌지마켓 — 오프라인 고객 접점을 만들고 상권을 회복시킵니다.",
-        "crumbs": CR + [("오렌지 마켓", "/affiliates/market/")],
-        "eyebrow": "AFFILIATES / ORANGE MARKET", "h1": "오렌지 마켓",
+        "crumbs": CR + [("오렌지 창고마켓", "/affiliates/market/")],
+        "eyebrow": "AFFILIATES / ORANGE MARKET", "h1": "오렌지 창고마켓",
         "lead": "1층에 사람이 모이면 건물 전체가 살아납니다. 창고형 할인매장으로 집객과 매출을 동시에 만듭니다.",
         "body": MARKET,
     },
     "/affiliates/live/": {
-        "title": "HMK 라이브커머스 | HMK 홀딩스그룹", "active": "그룹사소개",
+        "title": "HMK 라이브커머스 | HMK홀딩스그룹", "active": "그룹사소개",
         "desc": "라이브 방송 제작·송출과 셀러 통합관리를 담당하는 HMK 라이브커머스 — 오프라인 상품을 전국 판매로 확장합니다.",
         "crumbs": CR + [("오렌지 라이브커머스", "/affiliates/live/")],
         "eyebrow": "AFFILIATES / LIVE COMMERCE", "h1": "오렌지 라이브커머스",
@@ -299,7 +309,8 @@ PAGES = {
         "body": LIVE,
     },
     "/affiliates/membership/": {
-        "title": "오렌지 멤버십 | HMK 홀딩스그룹", "active": "그룹사소개",
+        "title": "오렌지 멤버십 | HMK홀딩스그룹", "active": "그룹사소개",
+        "extra_head": '''<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "오렌지 멤버십은 어디에서 쓸 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "오렌지 창고마켓, 오렌지 라이브커머스, 오렌지 공유창고 세 곳에서 하나의 회원으로 씁니다. 어디서 가입하든 세 사업장의 포인트가 통합되고 혜택이 교차 적용됩니다."}}, {"@type": "Question", "name": "포인트는 어떻게 쌓이고 어디에 쓰나요?", "acceptedAnswer": {"@type": "Answer", "text": "창고마켓 결제, 라이브 방송 구매, 공유창고 이용료 결제 시 포인트가 쌓입니다. 쌓인 포인트는 세 곳 어디에서든 결제에 사용할 수 있습니다."}}, {"@type": "Question", "name": "가입은 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "오렌지 멤버십 앱 또는 각 사업장 현장에서 가입할 수 있습니다. 실물 카드와 모바일 앱 모두 제공되며, 앱에서 포인트 조회·쿠폰 사용·예약을 한 번에 처리합니다."}}]}</script>''',
         "desc": "창고마켓·라이브커머스·공유창고를 하나의 회원으로 잇는 HMK 오렌지 멤버십.",
         "crumbs": CR + [("오렌지 멤버십", "/affiliates/membership/")],
         "eyebrow": "AFFILIATES / ORANGE MEMBERSHIP", "h1": "HMK 오렌지 멤버십",
@@ -307,7 +318,7 @@ PAGES = {
         "body": MEMBERSHIP,
     },
     "/sites/": {
-        "title": "관련 사이트 안내 | HMK 홀딩스그룹", "active": "그룹사소개",
+        "title": "관련 사이트 안내 | HMK홀딩스그룹", "active": "그룹사소개",
         "desc": "HMK 대부·HMK 스토리지·김재동 회장 홈페이지와 오렌지 마켓·라이브커머스·공유창고·멤버십, HMK 파트너모집·투자안내 채널을 한곳에 안내합니다.",
         "crumbs": CR + [("관련 사이트 안내", "/sites/")],
         "eyebrow": "RELATED SITES", "h1": "관련 사이트 안내",

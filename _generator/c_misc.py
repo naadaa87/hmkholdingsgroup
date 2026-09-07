@@ -11,7 +11,7 @@ NEWS = r'''
     </div>
     <div class="grid g3">
       <article class="post-card rv"><div class="post-meta"><span class="post-cat">그룹 뉴스</span><span class="post-date">2026.08.20</span></div>
-        <h3>HMK 홀딩스그룹, 그룹 공식 홈페이지 개편</h3>
+        <h3>HMK홀딩스그룹, 그룹 공식 홈페이지 개편</h3>
         <p>사업 확장에 맞춰 그룹 소개 체계를 새로 정리했습니다. 밸류업 순환모델과 공간수익화 구조, 보유 자산 정보를 공식 채널에서 확인하실 수 있습니다.</p></article>
       <article class="post-card rv"><div class="post-meta"><span class="post-cat">프로젝트</span><span class="post-date">2026.08.12</span></div>
         <h3>일산 엠시티타워, 공유창고 전환 조성 착수</h3>
@@ -159,7 +159,7 @@ CONTACT = r'''
 PRIVACY = r'''
 <section class="sec" style="padding-top:clamp(46px,5vw,70px)">
   <div class="wrap"><div class="prose rv" style="max-width:52em">
-    <p class="lead">HMK 홀딩스그룹(이하 "그룹")은 개인정보 보호법 등 관계 법령을 준수하며, 이용자의 개인정보를 아래와 같이 처리합니다. 본 방침은 그룹 홈페이지의 문의·상담 과정에 적용됩니다.</p>
+    <p class="lead">HMK홀딩스그룹(이하 "그룹")은 개인정보 보호법 등 관계 법령을 준수하며, 이용자의 개인정보를 아래와 같이 처리합니다. 본 방침은 그룹 홈페이지의 문의·상담 과정에 적용됩니다.</p>
     <h2>1. 수집하는 개인정보 항목과 방법</h2>
     <p>홈페이지 문의(문의하기, 이메일, 전화) 과정에서 이름, 연락처, 이메일 주소, 문의 내용을 수집합니다. 채용 지원 시에는 이력서에 기재된 정보를 수집합니다.</p>
     <h2>2. 수집·이용 목적</h2>
@@ -184,7 +184,7 @@ PRIVACY = r'''
 TERMS = r'''
 <section class="sec" style="padding-top:clamp(46px,5vw,70px)">
   <div class="wrap"><div class="prose rv" style="max-width:52em">
-    <p class="lead">본 약관은 HMK 홀딩스그룹 홈페이지 이용에 관한 기본 사항을 정합니다.</p>
+    <p class="lead">본 약관은 HMK홀딩스그룹 홈페이지 이용에 관한 기본 사항을 정합니다.</p>
     <h2>1. 목적과 적용</h2>
     <p>본 홈페이지는 그룹과 소속 법인의 사업을 소개하기 위한 정보 제공 채널입니다.</p>
     <h2>2. 정보의 정확성</h2>
@@ -215,15 +215,15 @@ NOTFOUND = r'''
 
 PAGES = {
     "/news/": {
-        "title": "뉴스 | HMK 홀딩스그룹", "active": "뉴스",
-        "desc": "그룹 뉴스, 프로젝트 소식, 시장 인사이트 — HMK 홀딩스그룹의 공식 소식을 전합니다.",
+        "title": "뉴스 | HMK홀딩스그룹", "active": "뉴스",
+        "desc": "그룹 뉴스, 프로젝트 소식, 시장 인사이트 — HMK홀딩스그룹의 공식 소식을 전합니다.",
         "crumbs": [("뉴스", "/news/")],
         "eyebrow": "NEWS", "h1": "뉴스",
         "lead": "확인된 사실만, 기준일과 함께 공개합니다. 그룹의 공식 발표는 이 채널을 기준으로 합니다.",
         "body": NEWS,
     },
     "/careers/": {
-        "title": "채용 | HMK 홀딩스그룹", "active": "채용",
+        "title": "채용 | HMK홀딩스그룹", "active": "채용",
         "desc": "투자·자산, 공간·운영, 유통·커머스, 기술·데이터 — 문제를 즐기는 동료를 수시 채용으로 찾습니다.",
         "crumbs": [("채용", "/careers/")],
         "eyebrow": "CAREERS", "h1": "채용",
@@ -231,7 +231,7 @@ PAGES = {
         "body": CAREERS,
     },
     "/contact/": {
-        "title": "문의하기 | HMK 홀딩스그룹", "active": "",
+        "title": "문의하기 | HMK홀딩스그룹", "active": "",
         "desc": "물건 제안, 사업 제휴, 전문가 협업, 언론·기관, 일반 문의 — 담당 부서가 영업일 기준 2일 안에 회신드립니다.",
         "crumbs": [("문의하기", "/contact/")],
         "eyebrow": "CONTACT", "h1": "문의하기",
@@ -239,19 +239,19 @@ PAGES = {
         "body": CONTACT,
     },
     "/policy/privacy/": {
-        "title": "개인정보처리방침 | HMK 홀딩스그룹", "active": "",
-        "desc": "HMK 홀딩스그룹 홈페이지의 개인정보 수집 항목, 이용 목적, 보유 기간, 파기 절차와 정보주체의 권리를 안내합니다.",
+        "title": "개인정보처리방침 | HMK홀딩스그룹", "active": "",
+        "desc": "HMK홀딩스그룹 홈페이지의 개인정보 수집 항목, 이용 목적, 보유 기간, 파기 절차와 정보주체의 권리를 안내합니다.",
         "crumbs": [("개인정보처리방침", "/policy/privacy/")],
         "eyebrow": "POLICY", "h1": "개인정보처리방침", "body": PRIVACY,
     },
     "/policy/terms/": {
-        "title": "이용약관 | HMK 홀딩스그룹", "active": "",
-        "desc": "HMK 홀딩스그룹 홈페이지 이용에 관한 기본 사항 — 정보의 성격, 법적 행위의 주체, 금융투자상품 관련 고지, 책임의 한계.",
+        "title": "이용약관 | HMK홀딩스그룹", "active": "",
+        "desc": "HMK홀딩스그룹 홈페이지 이용에 관한 기본 사항 — 정보의 성격, 법적 행위의 주체, 금융투자상품 관련 고지, 책임의 한계.",
         "crumbs": [("이용약관", "/policy/terms/")],
         "eyebrow": "POLICY", "h1": "이용약관", "body": TERMS,
     },
     "/404.html": {
-        "title": "페이지를 찾을 수 없습니다 | HMK 홀딩스그룹", "active": "",
+        "title": "페이지를 찾을 수 없습니다 | HMK홀딩스그룹", "active": "",
         "desc": "요청하신 페이지가 없습니다. 홈 또는 주요 페이지로 이동해 주세요.",
         "no_hero": True, "body": NOTFOUND,
     },

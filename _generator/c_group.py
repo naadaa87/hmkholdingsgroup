@@ -9,7 +9,7 @@ MESSAGE = r'''
   <div class="wrap">
     <div class="msg-grid">
       <div class="msg-photo rv">
-        <div class="frame"><img src="/assets/chairman.jpg" alt="HMK 홀딩스그룹 김재동 회장" width="379" height="493"></div>
+        <div class="frame"><img src="/assets/chairman.jpg" alt="HMK홀딩스그룹 김재동 회장" width="379" height="493"></div>
         <div class="who"><b>김재동</b><span>CHAIRMAN · HMK HOLDINGS GROUP</span></div>
       </div>
       <div class="prose rv">
@@ -54,7 +54,7 @@ ABOUT = r'''
             <tr><th>그룹명</th><td>HMK홀딩스그룹 (HMK Holdings Group)</td></tr>
             <tr><th>사업 정의</th><td>상업용 부동산 자산가치 밸류업 플랫폼</td></tr>
             <tr><th>핵심 사업</th><td>AI 프롭테크 소싱·매입 / 오렌지 창고마켓 / 오렌지 라이브커머스 / 오렌지 공유창고 / 통합물류·유통 / 오렌지 멤버십 / 자산 유동화</td></tr>
-            <tr><th>주요 계열</th><td>HMK 대부 · HMK 스토리지 · 오렌지 마켓 · 오렌지 라이브커머스 · 오렌지 공유창고 · 오렌지 멤버십 · 통합매입관리</td></tr>
+            <tr><th>주요 계열</th><td>HMK 대부 · HMK 스토리지 · 오렌지 창고마켓 · 오렌지 라이브커머스 · 오렌지 공유창고 · 오렌지 멤버십 · 통합매입관리</td></tr>
             <tr><th>본사</th><td>서울특별시 강남구 봉은사로 129-1, 751빌딩 3층</td></tr>
             <tr><th>대표 채널</th><td>1555-5335 · hmkholdings@hmkholdings.com</td></tr>
             <tr><th>관련 사이트</th><td>계열사·사업부 홈페이지를 별도 운영합니다. <a href="/sites/" style="text-decoration:underline;font-weight:700;color:var(--orange-deep)">관련 사이트 안내</a></td></tr>
@@ -108,12 +108,12 @@ ORG = r'''
     <div class="sec-head rv"><div><span class="eyebrow">STRUCTURE</span><h2>그룹 — 계열사 — 사업 부문</h2></div>
     <p class="lead">조직도는 이름의 나열이 아니라 책임의 지도입니다. 각 부문이 밸류업 흐름의 어느 구간을 맡는지 함께 표기했습니다.</p></div>
     <div class="org rv">
-      <div class="org-node org-lead"><b>HMK 홀딩스그룹</b><span>그룹 전략 · 최종 의사결정</span></div>
+      <div class="org-node org-lead"><b>HMK홀딩스그룹</b><span>그룹 전략 · 최종 의사결정</span></div>
       <div class="org-line"></div>
       <div class="org-row" style="grid-template-columns:repeat(4,1fr)">
         <div class="org-node"><b>HMK 대부</b><span>AI 소싱 · 매입<br>1단계</span></div>
         <div class="org-node"><b>HMK 스토리지</b><span>공유창고 운영<br>2단계</span></div>
-        <div class="org-node"><b>오렌지 마켓</b><span>창고형 할인매장·온라인몰<br>2단계</span></div>
+        <div class="org-node"><b>오렌지 창고마켓</b><span>창고형 할인매장·온라인몰<br>2단계</span></div>
         <div class="org-node"><b>오렌지 라이브커머스</b><span>방송·셀러 관리<br>2단계</span></div>
       </div>
       <div class="org-line"></div>
@@ -146,7 +146,7 @@ LOCATION = r'''
     <div class="split">
       <div class="rv">
         <div class="figure" style="border-radius:var(--radius);overflow:hidden">
-          <iframe title="HMK 홀딩스그룹 본사 위치" src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%B4%89%EC%9D%80%EC%82%AC%EB%A1%9C%20129-1&output=embed" width="100%" height="380" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="HMK홀딩스그룹 본사 위치" src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%B4%89%EC%9D%80%EC%82%AC%EB%A1%9C%20129-1&output=embed" width="100%" height="380" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div class="rv">
@@ -169,7 +169,7 @@ LOCATION = r'''
 
 PAGES = {
     "/group/message/": {
-        "title": "회장 인사말 | HMK 홀딩스그룹", "active": "그룹소개",
+        "title": "회장 인사말 | HMK홀딩스그룹", "active": "그룹소개",
         "extra_head": """<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"김재동","alternateName":"Kim Jae-dong","jobTitle":"회장","worksFor":{"@type":"Organization","name":"HMK홀딩스그룹","url":"https://www.hmkholdings.com"},"url":"https://kimjaedong.com","image":"https://www.hmkholdings.com/assets/chairman.jpg","description":"국내 AI부동산 초저가 매입시스템을 최초 구축한 HMK홀딩스그룹 회장. 20년간 부실채권·특수자산 분야에서 부동산 밸류업 노하우를 쌓았다.","knowsAbout":["상업용 부동산 매입","부동산 밸류업","AI 프롭테크","공유창고"],"sameAs":["https://kimjaedong.com"]}
 </script>""",
@@ -180,15 +180,15 @@ PAGES = {
         "body": MESSAGE,
     },
     "/group/about/": {
-        "title": "그룹 개요·비전 | HMK 홀딩스그룹", "active": "그룹소개",
-        "desc": "HMK 홀딩스그룹이 무엇을 하는 회사인지, 어떤 구조로 일하는지 한 페이지에 담았습니다. 사업 프로세스와 Value-Up 로드맵을 소개합니다.",
+        "title": "그룹 개요·비전 | HMK홀딩스그룹", "active": "그룹소개",
+        "desc": "HMK홀딩스그룹이 무엇을 하는 회사인지, 어떤 구조로 일하는지 한 페이지에 담았습니다. 사업 프로세스와 Value-Up 로드맵을 소개합니다.",
         "crumbs": CR + [("그룹 개요·비전", "/group/about/")],
         "eyebrow": "GROUP / OVERVIEW", "h1": "그룹 개요·비전",
         "lead": "처음 오신 분께 드리는 공식 소개입니다. 사업의 구조와 우리가 지키는 원칙을 함께 담았습니다.",
         "body": ABOUT,
     },
     "/group/organization/": {
-        "title": "조직·거버넌스 | HMK 홀딩스그룹", "active": "그룹소개",
+        "title": "조직·거버넌스 | HMK홀딩스그룹", "active": "그룹소개",
         "desc": "그룹–계열사–사업 부문의 3단 구조와 신뢰경영의 기준을 공개합니다.",
         "crumbs": CR + [("조직·거버넌스", "/group/organization/")],
         "eyebrow": "GROUP / ORGANIZATION", "h1": "조직·거버넌스",
@@ -196,8 +196,8 @@ PAGES = {
         "body": ORG,
     },
     "/group/location/": {
-        "title": "오시는길 | HMK 홀딩스그룹", "active": "그룹소개",
-        "desc": "HMK 홀딩스그룹 본사 위치와 연락처, 방문 상담 안내입니다.",
+        "title": "오시는길 | HMK홀딩스그룹", "active": "그룹소개",
+        "desc": "HMK홀딩스그룹 본사 위치와 연락처, 방문 상담 안내입니다.",
         "crumbs": CR + [("오시는길", "/group/location/")],
         "eyebrow": "GROUP / LOCATION", "h1": "오시는길",
         "lead": "서울 강남구 봉은사로 129-1, 751빌딩 3층. 방문 상담은 예약제로 운영합니다.",

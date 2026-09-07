@@ -26,7 +26,7 @@ NAV = [
         ("HMK그룹사 전체보기", "/affiliates/"),
         ("HMK 대부", "/affiliates/loan/"),
         ("HMK 스토리지", "/affiliates/storage/"),
-        ("오렌지 마켓", "/affiliates/market/"),
+        ("오렌지 창고마켓", "/affiliates/market/"),
         ("오렌지 라이브커머스", "/affiliates/live/"),
         ("오렌지 멤버십", "/affiliates/membership/"),
         ("관련 사이트 안내", "/sites/"),
@@ -60,6 +60,9 @@ def head(path, m):
     desc = seo["desc"] or m["desc"]
     robots = "noindex, nofollow" if seo["noindex"] else "index, follow, max-image-preview:large"
     kw = f'<meta name="keywords" content="{seo["keywords"]}">\n' if seo["keywords"] else ""
+    og = DOMAIN + seo["og"]
+    preload = m.get("preload", "")
+    preload_tag = f'<link rel="preload" as="image" href="{preload}" fetchpriority="high">\n' if preload else ""
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -78,16 +81,14 @@ def head(path, m):
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{DOMAIN}/assets/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="HMK홀딩스그룹 — 상업용 부동산 자산가치 밸류업 플랫폼">
+<meta property="og:image" content="{og}">
+<meta property="og:image:alt" content="{title}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="{DOMAIN}/assets/og.jpg">
+<meta name="twitter:image" content="{og}">
 <link rel="icon" type="image/png" href="data:image/png;base64,{FAV_B64}">
-<link rel="preconnect" href="https://cdn.jsdelivr.net">
+{preload_tag}<link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="/css/style.css">
 {m.get('extra_head','')}
@@ -139,14 +140,14 @@ def header_html(active):
     <a class="u-tel" href="tel:1555-5335">1555-5335</a>
   </div></div>
   <header class="header"><div class="hwrap">
-    <a class="logo" href="/" aria-label="HMK 홀딩스그룹 홈"><span class="logo-mark" role="img" aria-label="HMK 홀딩스그룹"></span></a>
+    <a class="logo" href="/" aria-label="HMK홀딩스그룹 홈"><span class="logo-mark" role="img" aria-label="HMK홀딩스그룹"></span></a>
     <nav aria-label="주 메뉴"><ul class="gnb">{''.join(items)}</ul></nav>
     <a class="header-cta" href="/contact/">문의하기</a>
     <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
   </div></header>
 </div>
 <div class="drawer" hidden>
-  <div class="dhead"><span class="logo-mark" role="img" aria-label="HMK 홀딩스그룹"></span>
+  <div class="dhead"><span class="logo-mark" role="img" aria-label="HMK홀딩스그룹"></span>
     <button class="dclose" aria-label="메뉴 닫기">&#10005;</button></div>
   <div class="dbody">{''.join(drawer)}</div>
   <div class="dcta"><a class="a" href="/contact/">문의하기</a><a class="b" href="tel:1555-5335">1555-5335</a></div>
@@ -157,7 +158,7 @@ def header_html(active):
 FOOTER = f"""<footer class="footer"><div class="wrap">
   <div class="ftop">
     <div class="fbrand">
-      <span class="logo-mark white" role="img" aria-label="HMK 홀딩스그룹"></span>
+      <span class="logo-mark white" role="img" aria-label="HMK홀딩스그룹"></span>
       <p><b style="color:#fff">상업용 부동산 자산가치 밸류업 플랫폼.</b> AI 프롭테크로 상업용 부동산을 초저가 매입하고, 창고형마켓·라이브커머스·공유창고 3가지 사업으로 임대수익과 자산가치를 높이며, 자산 유동화로 순환시킵니다.</p>
     </div>
     <div><h4>그룹소개</h4><ul>
@@ -184,7 +185,7 @@ FOOTER = f"""<footer class="footer"><div class="wrap">
       <a href="https://hmknplauction.pages.dev" target="_blank" rel="noopener">HMK 대부</a>
       <a href="https://hmkstorage.com" target="_blank" rel="noopener">HMK 스토리지</a>
       <a href="https://kimjaedong.com" target="_blank" rel="noopener">김재동 회장</a>
-      <a href="https://orange1000.com" target="_blank" rel="noopener">오렌지 마켓</a>
+      <a href="https://orange1000.com" target="_blank" rel="noopener">오렌지 창고마켓</a>
       <a href="https://orangeliveon.com" target="_blank" rel="noopener">오렌지 라이브커머스</a>
       <a href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고</a>
       <a href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십</a>
@@ -216,6 +217,8 @@ def crumbs(items):
 def page_hero(m):
     extra = m.get("hero_extra", "")
     lead = f'<p class="lead">{m["lead"]}</p>' if m.get("lead") else ""
+    if m.get("lead_pre"):
+        lead = f'<p style="margin-top:12px;font-size:16px;font-weight:700;color:var(--orange-deep)">{m["lead_pre"]}</p>' + lead
     return f"""<section class="phero"><div class="wrap">
   <span class="eyebrow">{m['eyebrow']}</span>
   <h1>{m['h1']}</h1>{lead}{extra}
