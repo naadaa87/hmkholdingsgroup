@@ -12,6 +12,20 @@ DOMAIN = "https://www.hmkholdings.com"
 import datetime as _dt
 BUILD = _dt.datetime.now().strftime("%Y%m%d%H%M")  # 캐시 무효화용 빌드 버전
 
+# ═══════════════════════════════════════════════════════════
+#  검색엔진 소유확인 태그
+#  네이버 서치어드바이저 / 구글 서치콘솔에서 발급받은 코드를 아래에 넣으세요.
+#  사이트 주소별로 코드가 다르므로 여러 개를 함께 넣어도 됩니다.
+# ═══════════════════════════════════════════════════════════
+SITE_VERIFY = [
+    # 네이버 — https://www.hmkholdings.com (대표 주소, 2026-09-07 발급)
+    '<meta name="naver-site-verification" content="fcb0b86a1678a6f2ca6c42120a2cd4d77d9db236" />',
+    # 네이버 — https://hmkholdings.com (www 없는 주소, 2026-09-07 발급)
+    '<meta name="naver-site-verification" content="134949796298c20ab73107f90d1660284aea3216" />',
+    # 구글 서치콘솔 — 발급받은 코드를 여기에 붙여넣으세요
+    # '<meta name="google-site-verification" content="여기에_코드" />',
+]
+
 NAV = [
     ("그룹소개", "/group/message/", "GROUP", [
         ("회장 인사말", "/group/message/"),
@@ -68,6 +82,7 @@ def head(path, m):
     og = DOMAIN + seo["og"]
     preload = m.get("preload", "")
     preload_tag = f'<link rel="preload" as="image" href="{preload}" fetchpriority="high">\n' if preload else ""
+    verify = "\n".join(SITE_VERIFY)
     return f"""<!DOCTYPE html>
 <!-- HMK build {BUILD} -->
 <html lang="ko">
@@ -79,8 +94,8 @@ def head(path, m):
 <meta name="description" content="{desc}">
 {kw}<meta name="robots" content="{robots}">
 <meta name="author" content="{SITE_NAME}">
+{verify}
 <link rel="canonical" href="{url}">
-<!-- 검색엔진 소유확인: 네이버 서치어드바이저·구글 서치콘솔에서 발급받은 태그를 아래 줄에 넣거나, HTML 파일 업로드 방식을 이용하세요 -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="{SITE_NAME}">
@@ -236,6 +251,8 @@ def build(pages):
         for n in os.listdir(OUT):
             p = os.path.join(OUT, n)
             if n in ("assets", "css", "js", "_generator", "README.md"):
+                continue
+            if (n.startswith("naver") or n.startswith("google")) and n.endswith(".html"):
                 continue
             shutil.rmtree(p) if os.path.isdir(p) else os.remove(p)
     for path, m in pages.items():

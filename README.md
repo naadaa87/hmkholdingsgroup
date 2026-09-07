@@ -85,7 +85,30 @@
 
 이 링크들은 그룹사 허브 외에 **전 페이지 푸터 FAMILY SITES 바**, `/sites/` 관련 사이트 안내, 각 상세 페이지 버튼·정보표, 메인 서비스 섹션에도 동일하게 반영되어 있습니다.
 
-## 2-0. 화면 깨짐 원인과 조치 (중요)
+## 2-0. 네이버·구글 소유확인 (2026-09-07)
+
+**전 페이지 `<head>`에 네이버 소유확인 메타태그 두 개가 들어가 있습니다.**
+
+```html
+<meta name="naver-site-verification" content="fcb0b86a1678a6f2ca6c42120a2cd4d77d9db236" />  <!-- www.hmkholdings.com (대표) -->
+<meta name="naver-site-verification" content="134949796298c20ab73107f90d1660284aea3216" />  <!-- hmkholdings.com -->
+```
+
+**소유확인 순서**
+1. 이 폴더 내용을 GitHub에 업로드 → Cloudflare 자동 배포 (1~2분)
+2. `https://www.hmkholdings.com/` 에서 Ctrl+U(소스 보기) → `naver-site-verification` 두 줄 확인
+3. 서치어드바이저 소유확인 화면에서 **HTML 태그** 선택 → **소유확인** 클릭
+4. 두 주소(www 있는 것/없는 것) 모두 같은 방법으로 확인 가능
+
+**코드 추가 방법** — `_generator/gen.py` 상단 `SITE_VERIFY` 목록에 한 줄 추가 후 `cd _generator && python3 gen.py` 실행. 구글 서치콘솔 코드도 같은 자리에 넣으면 됩니다.
+
+**소유확인 직후 할 일**
+- 요청 → 사이트맵 제출: `https://www.hmkholdings.com/sitemap.xml`
+- 요청 → 웹 페이지 수집: 메인 · `/model/` · `/affiliates/` 수동 요청
+
+**HTML 파일 방식을 쓸 경우** — 네이버에서 받은 `naver○○○.html`을 저장소 루트에 올리면 됩니다. 생성기를 다시 돌려도 `naver`·`google`로 시작하는 html 파일은 지워지지 않습니다.
+
+## 2-0-1. 화면 깨짐 원인과 조치 (중요)
 
 **증상** — `/affiliates/` 등에서 아이콘 화살표가 거대하게 표시되고 카드 레이아웃이 무너짐.
 
