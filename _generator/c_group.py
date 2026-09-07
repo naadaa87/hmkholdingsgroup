@@ -26,7 +26,7 @@ MESSAGE = r'''
         <p>2년 내 150개 이상의 직영점 운영, 그리고 <strong>1조원 규모의 자산가치 창출</strong>. 이것은 단순한 목표가 아닌, 저희가 반드시 이루어낼 약속입니다. HMK홀딩스그룹은 앞으로도 위기를 기회로, 불가능을 가능으로 만들어가는 도전을 멈추지 않겠습니다.</p>
         <p>새로운 가치를 창조하는 이 여정에 여러분을 초대합니다. 감사합니다.</p>
         <p style="margin-top:30px;font-weight:800;color:var(--navy)">HMK홀딩스그룹 회장 &nbsp;김 재 동</p>
-        <div class="extlinks"><a class="btn btn-ghost" href="https://kimjaedong.pages.dev" target="_blank" rel="noopener">김재동 회장 홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        <div class="extlinks"><a class="btn btn-ghost" href="https://kimjaedong.com" target="_blank" rel="noopener">김재동 회장 홈페이지 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
       </div>
     </div>
   </div>
@@ -44,16 +44,17 @@ ABOUT = r'''
     <div class="split">
       <div class="prose rv">
         <h2 style="margin-top:0">한 문장으로 말하면</h2>
-        <p style="font-size:19px;font-weight:700;color:var(--navy);line-height:1.65">HMK 홀딩스그룹은 저평가된 부동산을 초저가에 확보해, 수익이 나는 공간으로 바꾸고, 그 자산을 유동화해 다시 투자하는 <span class="accent">부동산 밸류업 그룹</span>입니다.</p>
-        <p>우리는 좋은 자산을 싸게 사는 데서 멈추지 않습니다. AI 프롭테크로 물건을 찾아내고, 권리 문제를 걷어내고, 비어 있던 공간에 세 개의 수익 콘텐츠를 넣습니다. 그렇게 만들어진 안정적인 운영 수익이 자산가치를 다시 평가받게 하고, 유동화의 근거가 됩니다.</p>
+        <p style="font-size:19px;font-weight:700;color:var(--navy);line-height:1.65">HMK홀딩스그룹은 500억 이상 대형 상업용 부동산을 초저가에 확보해, 창고형마켓·라이브커머스·공유창고 세 가지 사업으로 수익을 만들고, 그 자산을 유동화해 다시 투자하는 <span class="accent">상업용 부동산 자산가치 밸류업 플랫폼</span>입니다.</p>
+        <p>우리는 좋은 자산을 싸게 사는 데서 멈추지 않습니다. 김재동 회장의 20년 노하우와 AI 프롭테크로 물건을 찾아내고, 권리 문제를 걷어내고, 비어 있던 공간에 <strong>사고(창고형마켓)·보고(라이브커머스)·맡기고(공유창고)</strong> 세 개의 수익 콘텐츠를 넣습니다. 그렇게 만들어진 안정적인 운영 수익이 자산가치를 다시 평가받게 하고, 유동화의 근거가 됩니다.</p>
         <p>발굴부터 유동화까지 네 단계를 그룹이 직접 수행한다는 것 — 그것이 HMK가 일하는 방식입니다.</p>
       </div>
       <div class="rv">
         <div class="tbl-wrap">
           <table class="tbl">
-            <tr><th>그룹명</th><td>HMK 홀딩스그룹 (HMK Holdings Group)</td></tr>
-            <tr><th>핵심 사업</th><td>AI 프롭테크 소싱·매입 / 무인 공유창고 운영 / 창고형 할인매장 / 라이브커머스 / 자산 유동화</td></tr>
-            <tr><th>주요 계열</th><td>HMK 대부 · HMK 스토리지 · HMK 오렌지마켓 · HMK 라이브커머스 · HMK E커머스</td></tr>
+            <tr><th>그룹명</th><td>HMK홀딩스그룹 (HMK Holdings Group)</td></tr>
+            <tr><th>사업 정의</th><td>상업용 부동산 자산가치 밸류업 플랫폼</td></tr>
+            <tr><th>핵심 사업</th><td>AI 프롭테크 소싱·매입 / 오렌지 창고마켓 / 오렌지 라이브커머스 / 오렌지 공유창고 / 통합물류·유통 / 오렌지 멤버십 / 자산 유동화</td></tr>
+            <tr><th>주요 계열</th><td>HMK 대부 · HMK 스토리지 · 오렌지 마켓 · 오렌지 라이브커머스 · 오렌지 공유창고 · 오렌지 멤버십 · 통합매입관리</td></tr>
             <tr><th>본사</th><td>서울특별시 강남구 봉은사로 129-1, 751빌딩 3층</td></tr>
             <tr><th>대표 채널</th><td>1555-5335 · hmkholdings@hmkholdings.com</td></tr>
             <tr><th>관련 사이트</th><td>계열사·사업부 홈페이지를 별도 운영합니다. <a href="/sites/" style="text-decoration:underline;font-weight:700;color:var(--orange-deep)">관련 사이트 안내</a></td></tr>
@@ -71,7 +72,7 @@ ABOUT = r'''
     <p class="lead">비어 있는 공간을 다시 일하게 만들고, 그 성과를 함께한 사람들과 나눕니다.</p></div>
     <div class="grid g3">
       <div class="card rv"><div class="card-ic">🎯</div><h3>공실을 자산으로</h3><p>도시 곳곳에 멈춰 있는 상가를 수요가 있는 용도로 바꿉니다. 부동산의 문제를 푸는 일이자, 도시의 유휴 공간을 되살리는 일입니다.</p></div>
-      <div class="card rv"><div class="card-ic">🔗</div><h3>한 자산, 여러 수익</h3><p>보관·판매·방송이 한 건물에서 물류 코어를 공유합니다. 단일 임차 구조로는 만들 수 없는 현금흐름을 설계합니다.</p></div>
+      <div class="card rv"><div class="card-ic">🔗</div><h3>한 자산, 여러 수익</h3><p>보관·판매·방송이 한 건물에서 통합물류를 공유하고, 오렌지 멤버십이 고객을 잇습니다. 단일 임차 구조로는 만들 수 없는 현금흐름을 설계합니다.</p></div>
       <div class="card rv"><div class="card-ic">🤝</div><h3>함께 성장하는 구조</h3><p>본사 인프라를 파트너에게 개방하고, 입점 셀러의 판매를 그룹 채널로 확장합니다. 우리가 커질수록 파트너도 커지는 구조를 지향합니다.</p></div>
     </div>
   </div>
@@ -109,12 +110,11 @@ ORG = r'''
     <div class="org rv">
       <div class="org-node org-lead"><b>HMK 홀딩스그룹</b><span>그룹 전략 · 최종 의사결정</span></div>
       <div class="org-line"></div>
-      <div class="org-row" style="grid-template-columns:repeat(5,1fr)">
+      <div class="org-row" style="grid-template-columns:repeat(4,1fr)">
         <div class="org-node"><b>HMK 대부</b><span>AI 소싱 · 매입<br>1단계</span></div>
         <div class="org-node"><b>HMK 스토리지</b><span>공유창고 운영<br>2단계</span></div>
-        <div class="org-node"><b>HMK 오렌지마켓</b><span>창고형 할인매장<br>2단계</span></div>
-        <div class="org-node"><b>HMK 라이브커머스</b><span>방송·셀러 관리<br>2단계</span></div>
-        <div class="org-node"><b>HMK E커머스</b><span>온라인 판매<br>2단계</span></div>
+        <div class="org-node"><b>오렌지 마켓</b><span>창고형 할인매장·온라인몰<br>2단계</span></div>
+        <div class="org-node"><b>오렌지 라이브커머스</b><span>방송·셀러 관리<br>2단계</span></div>
       </div>
       <div class="org-line"></div>
       <div class="org-row" style="grid-template-columns:repeat(4,1fr)">
@@ -124,7 +124,7 @@ ORG = r'''
         <div class="org-node"><b>경영지원</b><span>재무 · 법무 · 커뮤니케이션</span></div>
       </div>
     </div>
-    <p class="note-plain rv" style="margin-top:22px">· 부문별 책임자 정보는 공개 범위 확정 후 게재합니다. 신설·개편 중인 조직은 확정 시점에 반영합니다.<br>· 각 계열사와 사업부는 개별 홈페이지를 운영합니다. <a href="/sites/" style="text-decoration:underline;font-weight:700">관련 사이트 안내</a>에서 확인하실 수 있습니다.</p>
+    <p class="note-plain rv" style="margin-top:22px">· 부문별 책임자 정보는 공개 범위 확정 후 게재합니다. 신설·개편 중인 조직은 확정 시점에 반영합니다.<br>· 각 계열사와 사업부는 개별 홈페이지를 운영합니다. <a href="/affiliates/" style="text-decoration:underline;font-weight:700">HMK그룹사 전체보기</a>에서 확인하실 수 있습니다.</p>
   </div>
 </section>
 
@@ -170,6 +170,9 @@ LOCATION = r'''
 PAGES = {
     "/group/message/": {
         "title": "회장 인사말 | HMK 홀딩스그룹", "active": "그룹소개",
+        "extra_head": """<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"김재동","alternateName":"Kim Jae-dong","jobTitle":"회장","worksFor":{"@type":"Organization","name":"HMK홀딩스그룹","url":"https://www.hmkholdings.com"},"url":"https://kimjaedong.com","image":"https://www.hmkholdings.com/assets/chairman.jpg","description":"국내 AI부동산 초저가 매입시스템을 최초 구축한 HMK홀딩스그룹 회장. 20년간 부실채권·특수자산 분야에서 부동산 밸류업 노하우를 쌓았다.","knowsAbout":["상업용 부동산 매입","부동산 밸류업","AI 프롭테크","공유창고"],"sameAs":["https://kimjaedong.com"]}
+</script>""",
         "desc": "20년간 부실채권·특수자산 분야를 걸어온 경험 위에 AI와 IoT를 접목한 새로운 시장을 개척합니다 — HMK홀딩스그룹 회장 김재동 인사말.",
         "crumbs": CR + [("회장 인사말", "/group/message/")],
         "eyebrow": "GROUP / MESSAGE", "h1": "회장 인사말",

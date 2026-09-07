@@ -8,9 +8,9 @@ BODY = r'''
 <section class="hero">
   <div class="hero-in">
     <div>
-      <span class="eyebrow">HMK HOLDINGS GROUP</span>
+      <span class="eyebrow">상업용 부동산 자산가치 밸류업 플랫폼</span>
       <h1>싸게 사고,<br>자산가치 극대화,<br><span class="accent">자산을 유동화</span>합니다.</h1>
-      <p class="lead">AI 프롭테크로 저평가 부동산을 감정가 대비 20% 이하로 확보하고, 한 건물에 세 개의 수익을 겹쳐 넣는 공간수익화 모델로 임대수익을 끌어올립니다. 그리고 그 자산을 유동화해 다시 다음 자산으로 순환시킵니다.</p>
+      <p class="lead">500억 이상 대형 상업용 부동산을 AI 프롭테크와 20년 노하우로 초저가에 매입하고, 창고형마켓·라이브커머스·공유창고 세 가지 사업의 시너지로 임대수익과 자산가치를 끌어올립니다. 그리고 그 자산을 유동화해 다음 자산으로 순환시킵니다.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="/model/">사업모델 보기 __ARR__</a>
         <a class="btn btn-ghost" href="/model/assets/">보유 자산 보기</a>
@@ -18,8 +18,8 @@ BODY = r'''
       <p class="hero-note">보유 자산의 매각·활용을 검토 중이신가요? 권리관계가 복잡한 물건도 검토 대상입니다.</p>
     </div>
     <div class="hero-visual">
-      <img src="/assets/model/building.jpg" alt="HMK Value-Up Asset — B1 공유창고, 1F 창고형 할인매장, 2F 라이브커머스가 결합된 복합 자산" width="1600" height="1032">
-      <div class="cap"><b>HMK Value-Up Asset</b><span>한 건물에서 세 가지 수익이 동시에 발생합니다</span></div>
+      <img src="/assets/platform/cutaway-night.jpg" alt="HMK 밸류업 자산 — 2F 오렌지 라이브쇼핑, 1F 오렌지 창고마켓, B1 오렌지 공유창고" width="1491" height="1055">
+      <div class="cap"><b>HMK 밸류업 자산</b><span>2F 라이브쇼핑 · 1F 창고마켓 · B1 공유창고</span></div>
     </div>
   </div>
   <div class="hero-steps"><ol>
@@ -93,7 +93,12 @@ BODY = r'''
   <div class="wrap">
     <div class="sec-head rv">
       <div><span class="eyebrow">SPACE MONETIZING</span><h2>HMK의 3 in 1<br>공간수익화 전략</h2></div>
-      <p class="lead">층마다 다른 콘텐츠를 넣고 물류 동선을 공유합니다. 같은 면적에서 더 많은 수익이 나오는 이유입니다.</p>
+      <p class="lead">사고 · 보고 · 맡기고. 초저가로 매입한 부동산에 세 가지 사업을 넣어 매출과 임대수익을 극대화합니다.</p>
+    </div>
+    <div class="trio rv">
+      <a href="https://orange1000.com" target="_blank" rel="noopener"><span class="verb">사고</span><div><b>창고형마켓</b><span class="brand">오렌지 마켓</span></div></a>
+      <a href="https://orangeliveon.com" target="_blank" rel="noopener"><span class="verb">보고</span><div><b>라이브커머스</b><span class="brand">오렌지 라이브커머스</span></div></a>
+      <a href="https://storage-orange.co.kr" target="_blank" rel="noopener"><span class="verb">맡기고</span><div><b>공유창고</b><span class="brand">오렌지 공유창고</span></div></a>
     </div>
     <div class="split">
       <figure class="figure rv">
@@ -122,8 +127,34 @@ BODY = r'''
     </div>
     <figure class="figure rv">
       <img src="/assets/model/before-after.jpg" alt="저활용 자산과 HMK Value-Up 자산의 수익 구조 비교" width="1448" height="1086">
-      <figcaption>수익 구조 개선에 따른 밸류업 예시 — 자산 조건에 따라 결과는 달라질 수 있습니다</figcaption>
+      <figcaption>단일 임차 구조에서 3 in 1 복합 수익 구조로 — 연간 수익·임대수익률·자산가치가 함께 상승합니다</figcaption>
     </figure>
+  </div>
+</section>
+
+<!-- 06+ 시너지: 통합물류 + 멤버십 -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="eyebrow">SYNERGY</span><h2>세 사업을 하나로 묶는<br>통합물류와 오렌지 멤버십</h2></div>
+      <p class="lead">상품은 자체 통합물류·유통시스템으로, 고객은 HMK 오렌지 멤버십으로 연결됩니다. 시너지가 매출을 활성화하고 자산가치를 밀어올립니다.</p>
+    </div>
+    <div class="split">
+      <div class="rv">
+        <div class="floors">
+          <div class="floor"><div class="lv" style="width:64px">물류</div><div><b>자체 통합물류·유통시스템</b><span>창고마켓이 매입한 재고 하나가 매장·라이브·온라인 세 채널에서 팔리고, 같은 건물에서 당일 출고됩니다. 별도 물류센터 없이 재고 회전은 빠르게, 운영비는 나눠서.</span></div></div>
+          <div class="floor"><div class="lv" style="width:64px">멤버십</div><div><b>HMK 오렌지 멤버십</b><span>세 사업장의 고객을 하나의 회원으로 묶습니다. 창고 이용자에게 마켓 쿠폰, 마켓 고객에게 방송 특가, 시청자에게 창고 혜택 — 한 명이 세 번 방문합니다.</span></div></div>
+          <div class="floor core"><div class="lv" style="width:64px">결과</div><div><b>매출 활성화 → 임대수익 상승 → 자산가치 밸류업</b><span>교차 방문과 재방문이 늘면 건물의 순영업이익이 커지고, 그 수익이 자산의 평가가치를 끌어올립니다.</span></div></div>
+        </div>
+        <div class="extlinks" style="margin-top:22px"><a class="btn btn-ghost" href="/model/synergy/">시너지 구조 자세히 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </div>
+      <div class="gallery g2 tall rv">
+        <figure><img src="/assets/live/logistics.jpg" alt="주문부터 배송까지 오렌지 통합 물류 프로세스" loading="lazy"><figcaption>통합물류 — 주문·피킹·포장·출고·배송</figcaption></figure>
+        <figure><img src="/assets/membership/card-hero.jpg" alt="HMK 오렌지 멤버십 카드" loading="lazy"><figcaption>오렌지 멤버십 — 하나의 회원, 세 개의 혜택</figcaption></figure>
+        <figure><img src="/assets/membership/use-market.jpg" alt="창고마켓에서 멤버십 카드 결제" loading="lazy"><figcaption>창고마켓에서 적립</figcaption></figure>
+        <figure><img src="/assets/membership/use-storage.jpg" alt="공유창고에서 멤버십 카드 사용" loading="lazy"><figcaption>공유창고에서 할인</figcaption></figure>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -131,25 +162,26 @@ BODY = r'''
 <section class="sec sec-warm">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><span class="eyebrow">AFFILIATES</span><h2>다섯 개 계열사가<br>한 흐름으로 움직입니다</h2></div>
+      <div><span class="eyebrow">AFFILIATES</span><h2>상업용 부동산 매입부터<br>자산가치 밸류업까지</h2></div>
+      <a class="link-more" href="/affiliates/">HMK그룹사 전체보기 __ARR__</a>
     </div>
-    <div class="grid g5">
+    <div class="grid g4">
       <a class="card rv" href="/affiliates/loan/"><div class="card-ic">🏢</div><h3 style="font-size:17px">HMK 대부</h3><p>AI 프롭테크 소싱 · 채권매입 · 경공매</p></a>
       <a class="card rv" href="/affiliates/storage/"><div class="card-ic">📦</div><h3 style="font-size:17px">HMK 스토리지</h3><p>공유창고 오렌지 조성·운영 · IoT 관리</p></a>
-      <a class="card rv" href="/affiliates/market/"><div class="card-ic">🛒</div><h3 style="font-size:17px">HMK 오렌지마켓</h3><p>창고형 할인매장 · 공동구매</p></a>
-      <a class="card rv" href="/affiliates/live/"><div class="card-ic">🎥</div><h3 style="font-size:17px">HMK 라이브커머스</h3><p>방송 제작·송출 · 셀러 통합관리</p></a>
-      <a class="card rv" href="/affiliates/ecommerce/"><div class="card-ic">💻</div><h3 style="font-size:17px">HMK E커머스</h3><p>오렌지 1,000원마켓 · 온라인 쇼핑몰</p></a>
+      <a class="card rv" href="/affiliates/market/"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 마켓</h3><p>창고형 할인매장 · 온라인몰 · 공동구매</p></a>
+      <a class="card rv" href="/affiliates/live/"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브커머스</h3><p>방송 제작·송출 · 셀러 통합관리</p></a>
     </div>
 
     <div class="sec-head rv" style="margin-top:clamp(56px,6vw,80px)">
-      <div><span class="eyebrow">SERVICE SITES</span><h2>서비스는 각 사이트에서<br>바로 이용하실 수 있습니다</h2></div>
-      <a class="link-more" href="/sites/">관련 사이트 전체 보기 __ARR__</a>
+      <div><span class="eyebrow">ORANGE WORLD</span><h2>가치를 올리는<br>오렌지월드</h2></div>
+      <div style="text-align:right"><p class="lead" style="max-width:24em">HMK와 한번에 "가치"하세요.<br>사고·보고·맡기고, 그리고 잇고. 각 서비스는 아래 사이트에서 바로 이용하실 수 있습니다.</p>
+      <a class="link-more" style="margin-top:10px" href="/sites/">관련 사이트 전체 보기 __ARR__</a></div>
     </div>
     <div class="grid g4">
-      <a class="card rv" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="card-ic">🧡</div><h3 style="font-size:17px">오렌지 공유창고</h3><p>무인 보관 서비스 · 지점과 요금 안내</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card rv" href="https://hmkorangemarket.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>창고형 할인매장 · 공동구매</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card rv" href="https://orangelivehub.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브쇼핑</h3><p>라이브 방송 · 셀러 입점</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card rv" href="https://orangemembership.pages.dev" target="_blank" rel="noopener"><div class="card-ic">💳</div><h3 style="font-size:17px">오렌지 멤버십</h3><p>회원 혜택 · 가입 안내</p><span class="link-more" style="margin-top:14px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card pf-card rv" href="https://orange1000.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/market/exterior.jpg" alt="오렌지 창고마켓 매장 외관" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 창고마켓</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">사고 — 창고형 할인매장 · 온라인몰</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      <a class="card pf-card rv" href="https://orangeliveon.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/live/seller.jpg" alt="오렌지 라이브쇼핑 셀러 방송" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 라이브커머스</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">보고 — 라이브 방송 · 셀러 입점</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      <a class="card pf-card rv" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="ph"><img src="/assets/storage/entrance.jpg" alt="오렌지 공유창고 매장 입구" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 공유창고</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">맡기고 — 무인 보관 · 24시간</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
+      <a class="card pf-card rv" href="https://orangemembership.com" target="_blank" rel="noopener"><div class="ph"><img src="/assets/membership/app.jpg" alt="HMK 오렌지 멤버십 앱과 카드" loading="lazy"></div><div class="bd"><h3 style="font-size:17px">오렌지 멤버십</h3><p style="font-size:13.5px;color:var(--ink-soft);margin-top:6px">잇고 — 통합 포인트 · 교차 혜택</p><span class="link-more">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a>
     </div>
   </div>
 </section>
@@ -184,7 +216,10 @@ PAGES = {
         "desc": "AI 프롭테크로 저평가 부동산을 초저가 매입하고, 공간수익화 모델로 임대수익을 극대화하며, 자산 유동화로 순환시키는 부동산 밸류업 그룹.",
         "active": "", "no_hero": True, "body_class": "page home", "body": BODY,
         "extra_head": """<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"HMK 홀딩스그룹","alternateName":"HMK Holdings Group","url":"https://www.hmkholdings.com","logo":"https://www.hmkholdings.com/assets/logo.png","address":{"@type":"PostalAddress","streetAddress":"봉은사로 129-1, 751빌딩 3층","addressLocality":"강남구","addressRegion":"서울특별시","addressCountry":"KR"},"contactPoint":{"@type":"ContactPoint","telephone":"+82-1555-5335","contactType":"customer service"}}
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://www.hmkholdings.com/#org","name":"HMK홀딩스그룹","alternateName":["HMK Holdings Group","HMK홀딩스","에이치엠케이홀딩스"],"url":"https://www.hmkholdings.com","logo":"https://www.hmkholdings.com/assets/logo.png","image":"https://www.hmkholdings.com/assets/og.jpg","description":"상업용 부동산을 초저가 매입해 창고형마켓·라이브커머스·공유창고 3가지 사업으로 임대수익과 자산가치를 높이는 부동산 밸류업 플랫폼","slogan":"HMK와 한번에 가치하세요","founder":{"@type":"Person","name":"김재동","jobTitle":"회장","url":"https://kimjaedong.com"},"address":{"@type":"PostalAddress","streetAddress":"봉은사로 129-1, 751빌딩 3층","addressLocality":"강남구","addressRegion":"서울특별시","postalCode":"06120","addressCountry":"KR"},"telephone":"+82-1555-5335","email":"hmkholdings@hmkholdings.com","areaServed":"KR","contactPoint":{"@type":"ContactPoint","telephone":"+82-1555-5335","contactType":"customer service","availableLanguage":"Korean"},"sameAs":["https://hmknplauction.pages.dev","https://hmkstorage.com","https://kimjaedong.com","https://orange1000.com","https://orangeliveon.com","https://storage-orange.co.kr","https://orangemembership.com","https://hmkpartner.com","https://hmkinvestment.pages.dev"],"brand":[{"@type":"Brand","name":"오렌지 공유창고"},{"@type":"Brand","name":"오렌지 마켓"},{"@type":"Brand","name":"오렌지 라이브커머스"},{"@type":"Brand","name":"오렌지 멤버십"}],"knowsAbout":["상업용 부동산 매입","부동산 밸류업","무인 공유창고","창고형 할인매장","라이브커머스","AI 프롭테크","부동산 자산 유동화"]},
+{"@type":"WebSite","@id":"https://www.hmkholdings.com/#website","url":"https://www.hmkholdings.com","name":"HMK홀딩스그룹","publisher":{"@id":"https://www.hmkholdings.com/#org"},"inLanguage":"ko-KR"}
+]}
 </script>""",
     },
 }

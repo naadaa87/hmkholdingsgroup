@@ -6,7 +6,10 @@
 /construction     /model/space/       301
 /academy          /model/             301
 /portfolio        /model/assets/      301
+/portfolio/*      /model/assets/      301
 /business/*       /model/             301
 /expertise/*      /model/             301
 /insight/*        /news/              301
 /technology       /model/ai-sourcing/ 301
+/affiliates/npl-platform  /affiliates/ 301
+/affiliates/ecommerce/*   /affiliates/ 301

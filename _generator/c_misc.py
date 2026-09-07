@@ -57,7 +57,7 @@ CAREERS = r'''
     <div class="sec-head rv"><div><span class="eyebrow">WORK ENVIRONMENT</span><h2>일하는 환경</h2></div></div>
     <div class="grid g3">
       <div class="card rv"><h3>본사 인프라</h3><p>강남 신논현역 563평 본사에 독립 사무공간, 사무기기, 대형 세미나룸, 카페테리아를 갖추고 있습니다.</p></div>
-      <div class="card rv"><h3>파트너 개방</h3><p>직원뿐 아니라 함께 일하는 파트너에게도 본사 인프라를 제공합니다.</p></div>
+      <div class="card rv"><h3>파트너 개방</h3><p>직원뿐 아니라 함께 일하는 파트너에게도 본사 인프라를 제공합니다. 파트너 모집은 <a href="https://hmkpartner.com" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:700">hmkpartner.com</a>에서 진행합니다.</p></div>
       <div class="card rv"><h3>현장 중심</h3><p>책상에서만 판단하지 않습니다. 현장 확인과 데이터가 의사결정의 기준입니다.</p></div>
     </div>
   </div>
@@ -74,7 +74,10 @@ CAREERS = r'''
     </div>
     <div class="prose rv" style="margin-top:34px">
       <p>수시 채용으로 운영합니다. 이력서를 <a href="mailto:hmkholdings@hmkholdings.com" style="text-decoration:underline;font-weight:700">hmkholdings@hmkholdings.com</a>으로 보내주시면 검토 후 개별 연락드립니다. 지원 서류는 채용 목적 외에 사용하지 않으며, 전형 종료 후 관계 법령에 따라 파기합니다.</p>
-      <p style="font-size:14.5px;color:var(--ink-soft)">· <b>인재·파트너 모집 전용 홈페이지</b>를 준비하고 있습니다. 오픈 전까지는 위 이메일 또는 <a href="/contact/?type=partner" style="text-decoration:underline">문의 페이지</a>를 이용해 주세요.<br>· 계열사별 채용 소식은 <a href="/sites/" style="text-decoration:underline">각 계열사 홈페이지</a>에서도 안내됩니다.</p>
+      <div class="note-box" style="margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+        <div><b>사업 파트너 모집</b><br>사업총괄·분야별 파트너·투자 파트너 모집은 전용 사이트에서 진행합니다. 계열사별 채용 소식도 각 그룹사 홈페이지에서 안내됩니다.</div>
+        <a class="btn btn-primary btn-sm" href="https://hmkpartner.com" target="_blank" rel="noopener">HMK 파트너모집 사이트 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
@@ -183,16 +186,14 @@ TERMS = r'''
   <div class="wrap"><div class="prose rv" style="max-width:52em">
     <p class="lead">본 약관은 HMK 홀딩스그룹 홈페이지 이용에 관한 기본 사항을 정합니다.</p>
     <h2>1. 목적과 적용</h2>
-    <p>본 홈페이지는 그룹과 소속 법인의 사업을 소개하기 위한 정보 제공 채널입니다. 게재된 내용은 특정 상품·계약에 대한 청약이나 투자 권유가 아닙니다.</p>
+    <p>본 홈페이지는 그룹과 소속 법인의 사업을 소개하기 위한 정보 제공 채널입니다.</p>
     <h2>2. 정보의 정확성</h2>
-    <p>그룹은 게재 정보의 정확성을 위해 노력하며, 실적 수치에는 기준 시점을 표기합니다. 다만 사업 환경 변화에 따라 내용은 예고 없이 갱신될 수 있습니다. 사업 계획·목표에 관한 기재는 장래 예측에 해당하며 실제 결과와 다를 수 있습니다.</p>
+    <p>그룹은 게재 정보의 정확성을 위해 노력하며, 실적 수치에는 기준 시점을 표기합니다. 사업 환경 변화에 따라 내용은 갱신될 수 있습니다.</p>
     <h2>3. 법적 행위의 주체</h2>
     <p>계약 등 법적 행위는 해당 업무를 수행하는 개별 법인과 이루어집니다. 각 법인의 정보는 홈페이지 하단 표기를 따릅니다.</p>
-    <h2>4. 금융투자상품 관련 고지</h2>
-    <p>토큰증권 등 자산 유동화와 관련한 기재는 준비 현황에 대한 안내이며, 금융투자상품의 청약 권유가 아닙니다. 관련 제도는 2027년 2월 4일 시행 예정이며, 발행이 이루어지는 경우 관계 법령이 정한 절차와 공시를 따릅니다.</p>
-    <h2>5. 지식재산권</h2>
+    <h2>4. 지식재산권</h2>
     <p>홈페이지의 콘텐츠(글·도표·디자인)에 대한 권리는 그룹에 있습니다. 출처를 표기한 인용은 환영하며, 상업적 무단 전재는 금합니다.</p>
-    <h2>6. 책임의 한계</h2>
+    <h2>5. 책임의 한계</h2>
     <p>이용자가 홈페이지 정보를 근거로 한 의사결정의 결과에 대하여, 관계 법령이 허용하는 범위에서 그룹은 책임을 지지 않습니다. 중요한 의사결정 전에는 반드시 개별 상담과 전문가 확인을 거치시기 바랍니다.</p>
     <p style="font-size:14px;color:var(--ink-soft)">시행일: 2026년 8월</p>
   </div></div>

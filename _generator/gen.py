@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """HMK 홀딩스그룹 공식 홈페이지 생성기"""
-import os, base64, io, shutil
+import os, base64, io, shutil, json
+from seo import meta_for, SITE_NAME
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.environ.get("HMK_OUT") or os.path.join(BASE, "..")
@@ -17,16 +18,17 @@ NAV = [
         ("밸류업 순환모델", "/model/"),
         ("AI 초저가 매입", "/model/ai-sourcing/"),
         ("공간수익화 모델", "/model/space/"),
+        ("통합물류·멤버십 시너지", "/model/synergy/"),
         ("자산 유동화", "/model/liquidity/"),
         ("보유 자산", "/model/assets/"),
     ]),
     ("그룹사소개", "/affiliates/", "AFFILIATES", [
-        ("계열사 한눈에", "/affiliates/"),
+        ("HMK그룹사 전체보기", "/affiliates/"),
         ("HMK 대부", "/affiliates/loan/"),
         ("HMK 스토리지", "/affiliates/storage/"),
-        ("HMK 오렌지마켓", "/affiliates/market/"),
-        ("HMK 라이브커머스", "/affiliates/live/"),
-        ("HMK E커머스", "/affiliates/ecommerce/"),
+        ("오렌지 마켓", "/affiliates/market/"),
+        ("오렌지 라이브커머스", "/affiliates/live/"),
+        ("오렌지 멤버십", "/affiliates/membership/"),
         ("관련 사이트 안내", "/sites/"),
     ]),
     ("뉴스", "/news/", "NEWS", []),
@@ -53,31 +55,57 @@ FAV_B64 = _b64(os.path.join(A, "favicon.png"), 48, 24)
 
 def head(path, m):
     url = DOMAIN + path
+    seo = meta_for(path)
+    title = seo["title"] or m["title"]
+    desc = seo["desc"] or m["desc"]
+    robots = "noindex, nofollow" if seo["noindex"] else "index, follow, max-image-preview:large"
+    kw = f'<meta name="keywords" content="{seo["keywords"]}">\n' if seo["keywords"] else ""
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
-<title>{m['title']}</title>
-<meta name="description" content="{m['desc']}">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+{kw}<meta name="robots" content="{robots}">
+<meta name="author" content="{SITE_NAME}">
 <link rel="canonical" href="{url}">
+<!-- 검색엔진 소유확인: 네이버 서치어드바이저·구글 서치콘솔에서 발급받은 태그를 아래 줄에 넣거나, HTML 파일 업로드 방식을 이용하세요 -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="HMK 홀딩스그룹">
-<meta property="og:title" content="{m['title']}">
-<meta property="og:description" content="{m['desc']}">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="{SITE_NAME}">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{DOMAIN}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HMK홀딩스그룹 — 상업용 부동산 자산가치 밸류업 플랫폼">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="{DOMAIN}/assets/og.jpg">
 <link rel="icon" type="image/png" href="data:image/png;base64,{FAV_B64}">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="/css/style.css">
 {m.get('extra_head','')}
+{breadcrumb_ld(m.get('crumbs'))}
 </head>
 <body class="{m.get('body_class','page')}">
 <a class="skip" href="#main">본문 바로가기</a>
 """
+
+
+def breadcrumb_ld(crumbs):
+    if not crumbs:
+        return ""
+    items = [{"@type": "ListItem", "position": 1, "name": "홈", "item": DOMAIN + "/"}]
+    for i, (t, h) in enumerate(crumbs, 2):
+        items.append({"@type": "ListItem", "position": i, "name": t, "item": DOMAIN + h})
+    data = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items}
+    return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False) + '</script>'
 
 
 def header_html(active):
@@ -130,7 +158,7 @@ FOOTER = f"""<footer class="footer"><div class="wrap">
   <div class="ftop">
     <div class="fbrand">
       <span class="logo-mark white" role="img" aria-label="HMK 홀딩스그룹"></span>
-      <p>AI 프롭테크로 저평가 부동산을 확보하고, 공간수익화 모델로 수익을 만들며, 자산 유동화로 순환시키는 부동산 밸류업 그룹입니다.</p>
+      <p><b style="color:#fff">상업용 부동산 자산가치 밸류업 플랫폼.</b> AI 프롭테크로 상업용 부동산을 초저가 매입하고, 창고형마켓·라이브커머스·공유창고 3가지 사업으로 임대수익과 자산가치를 높이며, 자산 유동화로 순환시킵니다.</p>
     </div>
     <div><h4>그룹소개</h4><ul>
       <li><a href="/group/message/">회장 인사말</a></li>
@@ -141,6 +169,7 @@ FOOTER = f"""<footer class="footer"><div class="wrap">
       <li><a href="/model/">밸류업 순환모델</a></li>
       <li><a href="/model/ai-sourcing/">AI 초저가 매입</a></li>
       <li><a href="/model/space/">공간수익화 모델</a></li>
+      <li><a href="/model/synergy/">통합물류·멤버십 시너지</a></li>
       <li><a href="/model/assets/">보유 자산</a></li></ul></div>
     <div><h4>문의</h4><ul>
       <li><a href="tel:1555-5335">대표전화 1555-5335</a></li>
@@ -152,14 +181,15 @@ FOOTER = f"""<footer class="footer"><div class="wrap">
   <div class="family">
     <span class="flabel">FAMILY SITES</span>
     <div class="flinks">
-      <a href="https://hmkstorage.pages.dev" target="_blank" rel="noopener">HMK 스토리지</a>
       <a href="https://hmknplauction.pages.dev" target="_blank" rel="noopener">HMK 대부</a>
+      <a href="https://hmkstorage.com" target="_blank" rel="noopener">HMK 스토리지</a>
+      <a href="https://kimjaedong.com" target="_blank" rel="noopener">김재동 회장</a>
+      <a href="https://orange1000.com" target="_blank" rel="noopener">오렌지 마켓</a>
+      <a href="https://orangeliveon.com" target="_blank" rel="noopener">오렌지 라이브커머스</a>
       <a href="https://storage-orange.co.kr" target="_blank" rel="noopener">오렌지 공유창고</a>
-      <a href="https://hmkorangemarket.pages.dev" target="_blank" rel="noopener">오렌지 창고마켓</a>
-      <a href="https://orangelivehub.pages.dev" target="_blank" rel="noopener">오렌지 라이브쇼핑</a>
-      <a href="https://orangemembership.pages.dev" target="_blank" rel="noopener">오렌지 멤버십</a>
-      <a href="https://hmkinvestment.pages.dev" target="_blank" rel="noopener">HMK 투자안내</a>
-      <a href="/sites/" class="fall">전체 보기 →</a>
+      <a href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십</a>
+      <a href="https://hmkpartner.com" target="_blank" rel="noopener">HMK 파트너모집</a>
+      <a href="/affiliates/" class="fall">그룹사 전체보기 →</a>
     </div>
   </div>
   <div class="fbot">
@@ -217,14 +247,25 @@ def build(pages):
 
 
 def aux(pages):
-    urls = "".join(
-        f'<url><loc>{DOMAIN}{p}</loc><changefreq>monthly</changefreq>'
-        f'<priority>{"1.0" if p=="/" else "0.8"}</priority></url>'
-        for p in pages if not p.endswith(".html"))
+    import datetime
+    today = datetime.date.today().isoformat()
+    rows = []
+    for p in pages:
+        if p.endswith(".html"):
+            continue
+        pri = meta_for(p)["pri"] or "0.5"
+        freq = "weekly" if p in ("/", "/news/") else "monthly"
+        rows.append(f"  <url><loc>{DOMAIN}{p}</loc><lastmod>{today}</lastmod>"
+                    f"<changefreq>{freq}</changefreq><priority>{pri}</priority></url>")
     open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
-        f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(rows) + "\n</urlset>\n")
     open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(
-        f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
+        "# HMK Holdings Group\n"
+        "User-agent: *\nAllow: /\nDisallow: /_generator/\n\n"
+        "User-agent: Yeti\nAllow: /\n\n"
+        "User-agent: Googlebot\nAllow: /\n\n"
+        f"Sitemap: {DOMAIN}/sitemap.xml\n")
     open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write(
         "\n".join([
             "# 구 URL → 신규 구조",
@@ -235,16 +276,20 @@ def aux(pages):
             "/construction     /model/space/       301",
             "/academy          /model/             301",
             "/portfolio        /model/assets/      301",
+            "/portfolio/*      /model/assets/      301",
             "/business/*       /model/             301",
             "/expertise/*      /model/             301",
             "/insight/*        /news/              301",
             "/technology       /model/ai-sourcing/ 301",
+            "/affiliates/npl-platform  /affiliates/ 301",
+            "/affiliates/ecommerce/*   /affiliates/ 301",
         ]) + "\n")
     open(os.path.join(OUT, "_headers"), "w", encoding="utf-8").write(
         "/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n"
         "/css/*\n  Cache-Control: public, max-age=604800\n"
         "/js/*\n  Cache-Control: public, max-age=604800\n"
-        "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n")
+        "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
+        "  X-Frame-Options: SAMEORIGIN\n")
 
 
 if __name__ == "__main__":

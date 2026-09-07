@@ -48,7 +48,7 @@ HUB = r'''
     <p class="lead">아래 순서는 실제 자산 하나가 지나가는 순서 그대로입니다.</p></div>
     <div class="cyc">
       <a class="cyc-c rv" href="/model/ai-sourcing/"><div class="no">01</div><h3>AI 프롭테크<br>초저가 매입</h3><p>월 23만 건 이상 분석 → 저평가 물건 선별 → 권리 해결 → 감정가 대비 20% 이하 확보</p><div class="arw">→</div></a>
-      <a class="cyc-c rv" href="/model/space/"><div class="no">02</div><h3>HMK<br>공간수익화 모델</h3><p>공유창고 · 창고형 할인매장 · 라이브커머스를 한 건물에 결합해 임대수익 극대화</p><div class="arw">→</div></a>
+      <a class="cyc-c rv" href="/model/space/"><div class="no">02</div><h3>3 in 1<br>공간수익화 + 시너지</h3><p>창고마켓 · 라이브커머스 · 공유창고를 한 건물에 결합하고, 통합물류와 오렌지 멤버십으로 매출을 활성화</p><div class="arw">→</div></a>
       <a class="cyc-c rv" href="/model/liquidity/"><div class="no">03</div><h3>토큰증권<br>자산 유동화</h3><p>운영 수익 기반 자산가치 재평가 → 2027년 2월 4일 시행 제도에 맞춘 발행·상장 준비</p><div class="arw">→</div></a>
       <div class="cyc-c last rv"><div class="no">04</div><h3>재투자<br>선순환 확장</h3><p>회수 자금을 다음 자산 매입에 재투입. 반복할수록 속도와 정확도가 올라갑니다.</p></div>
     </div>
@@ -75,9 +75,16 @@ HUB = r'''
       <div class="card rv"><h3>운영 데이터 → 소싱 기준</h3><p>어떤 입지·평형·유닛 구성이 잘 되는지 운영에서 확인된 데이터가 다음 매입의 기준이 됩니다.</p></div>
       <div class="card rv"><h3>반복 → 확장</h3><p>같은 체계를 반복할수록 속도와 정확도가 올라갑니다. 다점포 확장은 이 반복 위에 서 있습니다.</p></div>
     </div>
-    <div class="note-box rv" style="margin-top:24px"><b>안내</b> — 이 페이지의 단계 설명은 사업 구조에 대한 안내이며, 특정 자산의 수익이나 성과를 보장하는 내용이 아닙니다. 개별 자산의 결과는 물건과 시장 상황에 따라 달라집니다.</div>
   </div>
 </section>
+<section class="sec sec-warm">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">FAQ</span><h2>자주 묻는 질문</h2></div>
+    <p class="lead">부동산 밸류업과 HMK의 사업모델에 대해 가장 많이 받는 질문입니다.</p></div>
+    <div class="faq-list"><details class="faq rv"><summary>부동산 밸류업이란 무엇인가요?</summary><div class="faq-a">저평가된 부동산을 확보한 뒤 용도 전환·운영 개선으로 임대수익을 높이고, 그 수익을 근거로 자산가치를 다시 평가받는 과정입니다. HMK홀딩스그룹은 매입부터 유동화까지 네 단계를 직접 수행합니다.</div></details><details class="faq rv"><summary>어떤 부동산을 매입하나요?</summary><div class="faq-a">배후 수요가 검증된 상권에 있으면서 공실·권리 문제로 가격이 눌려 있는 상업용 부동산입니다. AI 프롭테크로 월 23만 건 이상의 물건을 분석해 후보를 고르고, 현장 검증을 거쳐 감정가 대비 20% 이하로 확보합니다.</div></details><details class="faq rv"><summary>3 in 1 공간수익화 모델은 무엇인가요?</summary><div class="faq-a">한 건물에 창고형마켓(사고), 라이브커머스(보고), 공유창고(맡기고) 세 가지 사업을 결합하는 방식입니다. 세 사업이 통합 물류 코어를 공유해 운영비는 낮추고 임대수익은 높입니다.</div></details><details class="faq rv"><summary>토큰증권(STO) 발행은 언제 가능한가요?</summary><div class="faq-a">개정 전자증권법·자본시장법에 따른 제도가 2027년 2월 4일 시행됩니다. HMK홀딩스그룹은 그 시행일에 맞춰 토큰증권 발행과 상장을 준비하고 있습니다.</div></details><details class="faq rv"><summary>보유 부동산을 매각하거나 활용을 검토하고 싶습니다.</summary><div class="faq-a">문의 페이지에서 물건 개요(소재지, 규모, 현황)만 보내주시면 검토를 시작합니다. 권리관계가 복잡한 물건도 검토 대상이며, 영업일 기준 2일 안에 회신드립니다.</div></details></div>
+  </div>
+</section>
+
 ''' + CTA
 
 # ───────────────── AI 소싱 ─────────────────
@@ -92,7 +99,7 @@ AI_SPEC = spec([
     ("권리 문제를 푸는 힘",
      "<p>유치권, 법정지상권, 선순위 임차권, 점유 분쟁 — 가격이 눌려 있는 이유는 대개 문제를 풀어줄 사람이 없기 때문입니다. 20여 년간 축적한 권리분석·협상 경험과 법무 파트너 네트워크로 이 구간을 해결합니다.</p>"),
     ("확보 기준",
-     "<p>복잡한 권리관계를 해결하여 최적의 입지를 <strong>감정가 대비 20% 이하</strong>로 확보하는 것이 매입 기준입니다. 매입가는 전환 후 만들 수 있는 수익에서 역산하므로, 단지 싸다는 이유만으로 사지 않습니다.</p>"),
+     "<p>500억 이상 대형 상업용 부동산을 대상으로, 복잡한 권리관계를 해결하여 최적의 입지를 <strong>감정가 대비 20% 이하</strong>로 확보하는 것이 매입 기준입니다. 매입가는 전환 후 만들 수 있는 수익에서 역산하므로, 단지 싸다는 이유만으로 사지 않습니다.</p>"),
     ("사람의 역할",
      "<p>시스템은 판단의 재료를 만들고, 결정은 사람이 합니다. 현장 검증, 리스크 등급 확정, 매입 심의는 모두 담당 조직과 전문가가 수행합니다. 어떤 시스템도 매입이나 계약을 스스로 결정하지 않습니다.</p>"),
 ])
@@ -140,8 +147,8 @@ SPACE_BODY = r'''
         <p>공간수익화는 밸류업 모델의 엔진입니다. 여기서 만들어지는 안정적인 운영 수익이 있어야 다음 단계인 자산가치 재평가와 유동화가 가능해집니다.</p>
       </div>
       <figure class="figure rv">
-        <img src="/assets/model/building.jpg" alt="B1 공유창고, 1F 창고형 할인매장, 2F 라이브커머스로 구성된 HMK Value-Up Asset" width="1600" height="1032">
-        <figcaption>HMK Value-Up Asset — 한 자산에서 세 가지 수익이 발생하는 복합 구조</figcaption>
+        <img src="/assets/platform/exterior-day.jpg" alt="2F 오렌지 라이브쇼핑, 1F 오렌지 창고마켓, B1 오렌지 공유창고로 구성된 HMK 밸류업 자산 외관" width="1491" height="1055">
+        <figcaption>HMK 밸류업 자산 — 2F 오렌지 라이브쇼핑 · 1F 오렌지 창고마켓 · B1 오렌지 공유창고</figcaption>
       </figure>
     </div>
   </div>
@@ -153,10 +160,10 @@ SPACE_BODY = r'''
     <p class="lead">각 층은 독립적으로 수익을 내면서, 상품과 물류를 통해 서로 연결됩니다.</p></div>
 
     <div class="split rv" style="margin-bottom:34px">
-      <figure class="figure"><img src="/assets/model/floor-b1.jpg" alt="B1 공유창고 내부 — 오렌지 도어 유닛과 입출고 동선" loading="lazy" width="1448" height="1086"></figure>
+      <figure class="figure"><img src="/assets/storage/using.jpg" alt="오렌지 공유창고 유닛에 짐을 넣는 이용 고객" loading="lazy" width="1600" height="1131"></figure>
       <div>
         <span class="badge">B1</span>
-        <h3 style="margin:14px 0 10px;font-size:24px">무인 공유창고 오렌지</h3>
+        <h3 style="margin:14px 0 10px;font-size:24px">오렌지 공유창고</h3>
         <p class="lead">개인과 소상공인의 짐을 보관하는 무인 시설입니다. 비대면 계약·결제, 스마트 출입, 24시간 CCTV 관제로 상주 인력 없이 운영합니다.</p>
         <ul class="pts" style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
           <li style="position:relative;padding-left:15px;font-size:14.5px"><span style="position:absolute;left:0;top:10px;width:7px;height:2px;background:var(--orange);display:block"></span>개인 · 소상공인 보관 수요를 안정적 임대수익으로</li>
@@ -169,7 +176,7 @@ SPACE_BODY = r'''
     <div class="split rev rv" style="margin-bottom:34px">
       <div>
         <span class="badge">1F</span>
-        <h3 style="margin:14px 0 10px;font-size:24px">창고형 할인매장 · 공동구매</h3>
+        <h3 style="margin:14px 0 10px;font-size:24px">오렌지 창고마켓</h3>
         <p class="lead">그룹이 직접 매입한 상품을 창고형으로 진열해 판매합니다. 오프라인 집객이 상권을 회복시키고, 온라인 판매의 기반이 됩니다.</p>
         <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
           <li style="position:relative;padding-left:15px;font-size:14.5px"><span style="position:absolute;left:0;top:10px;width:7px;height:2px;background:var(--orange);display:block"></span>식품 · 생활용품 · 가전리빙 · 대량벌크 카테고리 운영</li>
@@ -177,14 +184,14 @@ SPACE_BODY = r'''
           <li style="position:relative;padding-left:15px;font-size:14.5px"><span style="position:absolute;left:0;top:10px;width:7px;height:2px;background:var(--orange);display:block"></span>집객이 만드는 유동 인구가 상권 가치를 끌어올림</li>
         </ul>
       </div>
-      <figure class="figure"><img src="/assets/model/floor-1f.jpg" alt="1F 창고형 할인매장 내부 — 카테고리 진열과 계산대" loading="lazy" width="1448" height="1086"></figure>
+      <figure class="figure"><img src="/assets/market/interior.jpg" alt="오렌지 창고마켓 내부 — 식품·생활용품 카테고리 진열과 초저가 특가 코너" loading="lazy" width="1491" height="1055"></figure>
     </div>
 
     <div class="split rv">
-      <figure class="figure"><img src="/assets/model/floor-2f.jpg" alt="2F 라이브커머스 스튜디오 — 방송 촬영과 상품 포장 구역" loading="lazy" width="1448" height="1086"></figure>
+      <figure class="figure"><img src="/assets/live/studio.jpg" alt="오렌지 라이브쇼핑 스튜디오 — 조명·카메라와 상품 진열대" loading="lazy" width="1491" height="1055"></figure>
       <div>
         <span class="badge">2F</span>
-        <h3 style="margin:14px 0 10px;font-size:24px">라이브커머스 스튜디오</h3>
+        <h3 style="margin:14px 0 10px;font-size:24px">오렌지 라이브커머스</h3>
         <p class="lead">촬영·방송·판매가 한 공간에서 이루어집니다. 아래층 상품을 그대로 방송하고, 주문은 아래층 물류에서 바로 출고됩니다.</p>
         <ul style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
           <li style="position:relative;padding-left:15px;font-size:14.5px"><span style="position:absolute;left:0;top:10px;width:7px;height:2px;background:var(--orange);display:block"></span>유튜브 · 네이버 등 외부 채널로 전국 판매 확장</li>
@@ -200,10 +207,14 @@ SPACE_BODY = r'''
   <div class="wrap">
     <div class="sec-head rv"><div><span class="eyebrow">LOGISTICS CORE</span><h2>세 개를 하나로 묶는<br>통합 물류·운영 코어</h2></div>
     <p class="lead">재고 관리 · 포장 · 검수 · 배송 · 출고가 하나의 시스템으로 연결됩니다. 이 코어가 있어야 세 콘텐츠가 겹쳐질 수 있습니다.</p></div>
-    <figure class="figure rv">
-      <img src="/assets/model/logistics-core.jpg" alt="재고 관리, 포장·검수, 배송·출고로 이어지는 통합 물류 운영 시스템" width="1448" height="1086">
-      <figcaption>① 재고 관리 → ② 포장·검수 → ③ 배송·출고 — 세 가지 비즈니스가 하나의 운영 코어로 연결됩니다</figcaption>
-    </figure>
+    <div class="gallery g2 tall rv">
+      <figure><img src="/assets/model/logistics-core.jpg" alt="재고 관리, 포장·검수, 배송·출고로 이어지는 통합 물류 운영 시스템" loading="lazy"><figcaption>① 재고 관리 → ② 포장·검수 → ③ 배송·출고 — 하나의 운영 코어</figcaption></figure>
+      <figure><img src="/assets/platform/aerial-zoning.jpg" alt="창고마켓 65%, 공유창고 20%, 라이브쇼핑 15% 공간 배분 조감도" loading="lazy"><figcaption>공간 배분 예시 — 창고마켓 65% · 공유창고 20% · 라이브쇼핑 15%</figcaption></figure>
+    </div>
+    <div class="note-box rv" style="margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+      <div><b>물류가 상품을 잇고, 멤버십이 고객을 잇습니다.</b><br>세 사업의 시너지가 만들어지는 원리를 별도 페이지에 정리했습니다.</div>
+      <a class="btn btn-primary btn-sm" href="/model/synergy/">통합물류·멤버십 시너지 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
   </div>
 </section>
 
@@ -213,14 +224,14 @@ SPACE_BODY = r'''
     <p class="lead">단일 임차 구조에서 복합 수익 구조로 바꾸면 현금흐름과 자산가치가 함께 움직입니다.</p></div>
     <figure class="figure rv">
       <img src="/assets/model/before-after.jpg" alt="저활용 자산과 HMK Value-Up 자산의 연간 수익·임대수익률·자산가치 비교" width="1448" height="1086">
-      <figcaption>수익 구조 개선에 따른 밸류업 예시입니다. 자산 조건과 시장 상황에 따라 결과는 달라질 수 있습니다.</figcaption>
+      <figcaption>단일 임차 구조에서 3 in 1 복합 수익 구조로 — 연간 수익·임대수익률·자산가치가 함께 상승합니다</figcaption>
     </figure>
     <div class="grid g3 rv" style="margin-top:26px">
       <a class="card" href="https://storage-orange.co.kr" target="_blank" rel="noopener"><div class="card-ic">🧡</div><h3 style="font-size:17px">오렌지 공유창고</h3><p>B1 무인 보관 서비스 — 지점·요금·비대면 계약 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card" href="https://hmkorangemarket.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 창고마켓</h3><p>1F 창고형 할인매장 — 취급 상품·매장·입점 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-      <a class="card" href="https://orangelivehub.pages.dev" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브쇼핑</h3><p>2F 라이브커머스 — 방송 일정·상품·셀러 입점</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://orange1000.com" target="_blank" rel="noopener"><div class="card-ic">🛒</div><h3 style="font-size:17px">오렌지 마켓</h3><p>1F 창고형 할인매장 — 취급 상품·매장·입점 안내</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="card" href="https://orangeliveon.com" target="_blank" rel="noopener"><div class="card-ic">🎥</div><h3 style="font-size:17px">오렌지 라이브커머스</h3><p>2F 라이브커머스 — 방송 일정·상품·셀러 입점</p><span class="link-more" style="margin-top:12px">사이트 방문 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
     </div>
-    <div class="note-box rv" style="margin-top:22px"><b>안내</b> — 공간수익화 모델을 적용한 자산은 <strong>일반 상가 대비 450% 이상의 수익 창출</strong>을 목표로 설계됩니다. 위 도표의 수치는 모델 적용 예시이며, 실제 결과는 자산의 입지·면적·운영 상황에 따라 달라집니다. 수익을 보장하지 않습니다.</div>
+    <div class="loop rv" style="margin-top:22px">공간수익화 모델을 적용한 자산은 <strong>&nbsp;일반 상가 대비 450% 이상의 수익 창출&nbsp;</strong>을 목표로 설계됩니다.</div>
   </div>
 </section>
 ''' + CTA
@@ -234,8 +245,7 @@ LIQ_SPEC = spec([
     ("어떻게 진행하는가",
      "<p>① 운영 안정화 후 NOI를 정리하고 ② 시장 환원율·거래 사례를 조사한 뒤 ③ 외부 감정평가로 검증받습니다. 내부 계산만으로 가치를 주장하지 않습니다.</p>"),
     ("토큰증권(STO) 준비 현황",
-     "<p>개정 전자증권법·자본시장법에 따라 <strong>2027년 2월 4일</strong> 관련 제도가 시행됩니다. HMK는 그 시행일에 맞춰 <strong>토큰증권 발행 및 상장을 준비 중</strong>이며, 현재는 구조 설계·법률 검토·요건 정비 단계에 있습니다.</p>"
-     "<p>제도 시행 전에는 발행이 불가능하므로, 현재 어떠한 청약·모집도 진행하지 않습니다.</p>"),
+     "<p>개정 전자증권법·자본시장법에 따라 <strong>2027년 2월 4일</strong> 관련 제도가 시행됩니다. HMK는 그 시행일에 맞춰 <strong>토큰증권 발행 및 상장을 준비 중</strong>이며, 현재는 구조 설계·법률 검토·요건 정비 단계에 있습니다.</p>"),
     ("보수적으로 봅니다",
      "<p>환원율은 보수적 구간으로 잡고, 일시적 매출 상승분은 평가 근거에서 제외합니다. 평가기관이 실제로 인정할 수 있는 수준을 기준으로 삼습니다.</p>"),
     ("유동화 이후",
@@ -245,11 +255,7 @@ LIQ_SPEC = spec([
 LIQ_BODY = r'''
 <section class="sec" style="padding-top:clamp(56px,6vw,84px)">
   <div class="wrap">
-    <div class="note-box rv" style="border-width:2px;padding:24px 26px">
-      <b style="font-size:16px;display:block;margin-bottom:8px">먼저 분명히 말씀드립니다</b>
-      이 페이지는 HMK 홀딩스그룹의 <strong>사업 구조를 소개하기 위한 정보</strong>이며, 금융투자상품에 대한 <strong>투자 권유나 청약의 권유가 아닙니다.</strong> 토큰증권은 개정 전자증권법·자본시장법 시행일인 <strong>2027년 2월 4일</strong> 이후에 발행이 가능하며, 그 이전에는 어떠한 발행·모집·청약도 진행하지 않습니다. 향후 발행이 이루어지는 경우에도 관련 법령이 정한 절차와 공시를 통해서만 진행됩니다.
-    </div>
-    <div class="grid g3" style="margin-top:34px">
+    <div class="grid g3">
       <div class="card rv"><span class="eyebrow" style="margin-bottom:10px">INPUT</span><h3>안정된 운영 수익</h3><p>공간수익화 모델로 만들어지는 지속적·검증 가능한 현금흐름. 재평가 논리의 출발점입니다.</p></div>
       <div class="card rv"><span class="eyebrow" style="margin-bottom:10px">LOGIC</span><h3>수익환원 평가</h3><p>NOI를 시장 환원율로 환산해 자산가치를 설명합니다. 외부 감정평가가 이 논리를 검증합니다.</p></div>
       <div class="card rv"><span class="eyebrow" style="margin-bottom:10px">OUTPUT</span><h3>유동화 · 재투자</h3><p>회수된 자금은 다음 자산 매입의 재원이 됩니다. 순환의 속도를 결정하는 단계입니다.</p></div>
@@ -274,14 +280,126 @@ LIQ_BODY = r'''
         <tr><td><b>발행·상장</b></td><td>관련 법령상 절차와 공시에 따른 발행 및 상장</td><td><span class="chip chip-goal">시행일 이후 준비</span></td></tr>
       </table>
     </div>
-    <p class="note-plain rv" style="margin-top:18px">· 위 일정은 현재 준비 상황에 대한 안내이며, 규제 환경과 시장 여건에 따라 변경될 수 있습니다. 확정 사항은 공식 채널로 공지합니다.</p>
-    <div class="note-box rv" style="margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
-      <div><b>사업 개요를 더 자세히 보고 싶으시다면</b><br>그룹의 사업 구조와 강점을 정리한 안내 채널을 별도로 운영하고 있습니다. 게재 내용은 사업 소개이며 투자 권유가 아닙니다.</div>
+    <div class="note-box rv" style="margin-top:8px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+      <div><b>사업 개요를 더 자세히 보고 싶으시다면</b><br>그룹의 사업 구조와 강점을 정리한 안내 채널을 별도로 운영하고 있습니다.</div>
       <a class="btn btn-primary btn-sm" href="https://hmkinvestment.pages.dev" target="_blank" rel="noopener">HMK 투자안내 <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
 </section>
 '''.replace("__SPEC__", LIQ_SPEC) + CTA
+
+# ───────────────── 시너지 — 통합물류·유통 + 오렌지 멤버십 ─────────────────
+EXT = '<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+
+SYNERGY_BODY = r"""
+<section class="sec" style="padding-top:clamp(56px,6vw,84px)">
+  <div class="wrap">
+    <div class="split">
+      <div class="prose rv">
+        <h2 style="margin-top:0">세 사업이 따로 돌면<br>세 개의 매출입니다.<br>하나로 묶으면 <span class="accent">시너지</span>입니다.</h2>
+        <p>창고마켓, 라이브커머스, 공유창고는 각각 독립된 사업입니다. 그러나 HMK가 이 셋을 한 건물에 넣은 이유는 단순히 임대 면적을 채우기 위해서가 아닙니다. <strong>상품과 고객이 세 사업 사이를 오가게 만들기 위해서</strong>입니다.</p>
+        <p>그 연결을 담당하는 두 개의 장치가 있습니다. 상품의 흐름을 잇는 <strong>자체 통합물류·유통시스템</strong>, 그리고 고객의 흐름을 잇는 <strong>HMK 오렌지 멤버십</strong>입니다. 이 둘이 작동할 때 세 사업의 매출은 더해지는 것이 아니라 서로를 끌어올립니다.</p>
+      </div>
+      <figure class="figure rv">
+        <img src="/assets/platform/aerial-zoning.jpg" alt="오렌지 창고마켓 65%, 오렌지 공유창고 20%, 오렌지 라이브쇼핑 15%로 구성된 HMK 밸류업 자산 조감도" width="1491" height="1055">
+        <figcaption>한 자산의 공간 배분 예시 — 창고마켓 · 공유창고 · 라이브쇼핑이 물류 동선을 공유합니다</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-warm">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">SYNERGY MAP</span><h2>상품은 물류로, 고객은 멤버십으로<br>연결됩니다</h2></div>
+    <p class="lead">왼쪽의 세 사업이 가운데 두 장치를 거쳐 오른쪽 결과로 이어집니다.</p></div>
+    <div class="syn rv">
+      <div class="syn-col">
+        <div class="syn-node"><b>🛒 오렌지 창고마켓</b><span>대량 매입 상품 · 오프라인 집객</span></div>
+        <div class="syn-node"><b>🎥 오렌지 라이브커머스</b><span>방송 판매 · 전국 온라인 주문</span></div>
+        <div class="syn-node"><b>🧡 오렌지 공유창고</b><span>개인·소상공인 보관 · 고정 방문 수요</span></div>
+      </div>
+      <div class="syn-mid">
+        <div class="hub">통합물류·유통<small>PRODUCT FLOW</small></div>
+        <div class="arr">↕</div>
+        <div class="hub" style="background:var(--orange)">오렌지 멤버십<small>CUSTOMER FLOW</small></div>
+      </div>
+      <div class="syn-col right">
+        <div class="syn-node"><b>재고 하나로 세 채널 판매</b><span>같은 상품이 매장·방송·온라인에서 동시에 팔립니다</span></div>
+        <div class="syn-node"><b>교차 방문 · 재방문 증가</b><span>창고 고객이 마켓에서 사고, 마켓 고객이 방송을 봅니다</span></div>
+        <div class="syn-node orange"><b>매출 활성화 → 임대수익 상승 → 자산가치 밸류업</b><span>운영 수익이 커질수록 자산의 평가가치가 함께 오릅니다</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">01 · PRODUCT FLOW</span><h2>자체 통합물류·유통시스템</h2></div>
+    <p class="lead">별도 물류센터 없이, 한 건물 안에서 매입부터 배송까지 끝냅니다.</p></div>
+    <div class="split rv" style="margin-bottom:34px">
+      <figure class="figure"><img src="/assets/live/logistics.jpg" alt="주문 접수부터 배송 완료까지 오렌지 통합 물류 프로세스" loading="lazy" width="1491" height="1055"></figure>
+      <div class="prose">
+        <p>창고마켓이 대량으로 매입한 상품은 건물 내 보관 구역에 들어갑니다. 1층 매장에서 팔리고, 2층 스튜디오에서 방송되고, 온라인 주문이 들어오면 같은 재고에서 바로 포장·출고됩니다. <strong>재고를 한 번만 사서 세 채널로 파는 구조</strong>입니다.</p>
+        <p>물류가 한 곳에 있으니 배송이 빠르고, 재고 회전이 빨라지고, 운영비는 나뉩니다. 입점 셀러도 창고와 방송 장비를 따로 마련할 필요 없이 판매에만 집중할 수 있습니다.</p>
+      </div>
+    </div>
+    <ol class="flow5 rv">
+      <li><span class="n">STEP 1</span><b>주문 접수</b><span>매장 · 라이브 · 온라인 통합</span></li>
+      <li><span class="n">STEP 2</span><b>상품 피킹</b><span>건물 내 재고에서 바로</span></li>
+      <li><span class="n">STEP 3</span><b>포장 · 검수</b><span>바코드 검수 · 파손 방지</span></li>
+      <li><span class="n">STEP 4</span><b>출고 처리</b><span>당일 출고 원칙</span></li>
+      <li><span class="n">STEP 5</span><b>배송 완료</b><span>픽업 · 택배 · 직접 배송</span></li>
+    </ol>
+    <div class="grid g4" style="margin-top:26px">
+      <div class="card rv"><h3 style="font-size:16.5px">재고 통합</h3><p>매장·방송·온라인 재고를 하나의 시스템으로 관리해 품절과 과잉을 줄입니다.</p></div>
+      <div class="card rv"><h3 style="font-size:16.5px">당일 출고</h3><p>보관과 출고가 같은 건물이라 주문 당일 배송 준비가 끝납니다.</p></div>
+      <div class="card rv"><h3 style="font-size:16.5px">픽업 연계</h3><p>온라인 주문을 매장에서 찾아가는 픽업으로 방문을 유도합니다.</p></div>
+      <div class="card rv"><h3 style="font-size:16.5px">셀러 물류 지원</h3><p>입점 셀러의 상품을 대신 보관·포장·출고해 판매 진입장벽을 낮춥니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-cool">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">02 · CUSTOMER FLOW</span><h2>HMK 오렌지 멤버십</h2></div>
+    <p class="lead">하나의 회원으로 세 사업의 혜택을 씁니다. 고객이 사업 사이를 오가게 만드는 장치입니다.</p></div>
+    <div class="split rev rv" style="margin-bottom:34px">
+      <div class="prose">
+        <p>창고마켓에서 장을 본 고객, 라이브 방송을 보고 주문한 고객, 공유창고에 짐을 맡긴 고객은 원래 서로 다른 사람입니다. 오렌지 멤버십은 이 세 고객을 <strong>하나의 회원 계정</strong>으로 묶습니다.</p>
+        <p>포인트가 통합되고 혜택이 교차되면 고객은 자연스럽게 다른 사업을 경험하게 됩니다. 창고 이용자가 마켓 할인을 받고, 마켓 고객이 방송 쿠폰을 받고, 방송 시청자가 창고 첫 달 혜택을 받습니다. <strong>한 명의 고객이 세 번 방문하는 구조</strong>가 만들어집니다.</p>
+      </div>
+      <figure class="figure"><img src="/assets/membership/card-hero.jpg" alt="HMK 오렌지 멤버십 카드 — 멤버십 전용 혜택, 포인트 적립, VIP 서비스, 이벤트 초대" loading="lazy" width="1448" height="1086"></figure>
+    </div>
+    <div class="benefit rv">
+      <div><span class="where">🧡 공유창고에서</span><b>보관료 할인 · 장기 이용 혜택</b><p>멤버 등급별 월 이용료 할인, 이사·계절 보관 시즌 프로모션. 창고 이용자에게 마켓 할인 쿠폰이 함께 발급됩니다.</p></div>
+      <div><span class="where">🛒 창고마켓에서</span><b>구매 포인트 · 멤버 특가</b><p>결제 금액의 일정 비율을 포인트로 적립하고 멤버 전용 특가를 엽니다. 적립 포인트는 라이브 방송 구매에도 씁니다.</p></div>
+      <div><span class="where">🎥 라이브커머스에서</span><b>방송 쿠폰 · 우선 알림</b><p>멤버에게 방송 특가 쿠폰과 사전 알림을 보냅니다. 방송 시청자에게는 창고 첫 달 혜택으로 보관 서비스를 소개합니다.</p></div>
+    </div>
+    <div class="gallery g3 rv" style="margin-top:22px">
+      <figure><img src="/assets/membership/use-market.jpg" alt="오렌지 창고마켓 계산대에서 멤버십 카드로 결제하는 모습" loading="lazy"><figcaption>창고마켓 — 카드 결제와 포인트 적립</figcaption></figure>
+      <figure><img src="/assets/membership/use-live.jpg" alt="라이브커머스 스튜디오에서 멤버십 카드를 소개하는 셀러" loading="lazy"><figcaption>라이브커머스 — 방송 특가 쿠폰</figcaption></figure>
+      <figure><img src="/assets/membership/use-storage.jpg" alt="HMK 스토리지 카운터에서 멤버십 카드를 확인하는 고객" loading="lazy"><figcaption>공유창고 — 보관료 할인</figcaption></figure>
+    </div>
+    <div class="extlinks rv" style="justify-content:center;margin-top:26px">
+      <a class="btn btn-primary" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 사이트 __EXT__</a>
+      <a class="btn btn-ghost" href="/affiliates/membership/">멤버십 소개 보기 __ARR__</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><div><span class="eyebrow">RESULT</span><h2>시너지는 결국<br>자산가치로 돌아옵니다</h2></div></div>
+    <div class="cyc">
+      <div class="cyc-c rv"><div class="no">①</div><h3>세 채널 매출</h3><p>재고 하나가 매장·방송·온라인에서 팔리며 매출이 겹칩니다.</p><div class="arw">→</div></div>
+      <div class="cyc-c rv"><div class="no">②</div><h3>교차 방문 · 재방문</h3><p>멤버십이 고객을 사업 사이로 이동시켜 객단가와 방문 빈도가 올라갑니다.</p><div class="arw">→</div></div>
+      <div class="cyc-c rv"><div class="no">③</div><h3>운영 수익(NOI) 상승</h3><p>매출은 늘고 운영비는 나뉘어, 건물이 만드는 순영업이익이 커집니다.</p><div class="arw">→</div></div>
+      <div class="cyc-c last rv"><div class="no">④</div><h3>자산가치 밸류업</h3><p>안정된 NOI가 자산의 평가가치를 끌어올리고, 유동화의 근거가 됩니다.</p></div>
+    </div>
+    <div class="loop rv">가치를 올리는 오렌지월드 — HMK와 한번에 "가치"하세요</div>
+  </div>
+</section>
+""".replace("__EXT__", EXT).replace("__ARR__", ARROW) + CTA
 
 # ───────────────── 보유 자산 ─────────────────
 
@@ -310,7 +428,7 @@ ASSETS_BODY = (r'''
     <div class="prose rv" style="max-width:46em">
       <h2 style="margin-top:0">숫자보다 먼저, 입지를 보여드립니다</h2>
       <p>HMK가 확보하는 자산의 기준은 단순합니다. <strong>배후 수요가 검증된 입지에서, 시장이 가격을 눌러놓은 공간</strong>을 찾는 것. 아래 세 자산은 그 기준을 통과해 현재 공간수익화 전환을 진행 중인 보유 부동산입니다.</p>
-      <p style="font-size:14px;color:var(--ink-soft)">· 본 페이지는 자산과 입지에 대한 소개이며, 매매가·감정가 등 가격 정보와 투자 조건은 게재하지 않습니다. 면적은 등기·건축물대장 기준의 분양면적(전용면적) 표기입니다. <span class="chip" style="vertical-align:middle;margin-left:4px">2026.08 기준</span></p>
+      <p style="font-size:14px;color:var(--ink-soft)">· 면적은 등기·건축물대장 기준의 분양면적(전용면적) 표기입니다. <span class="chip" style="vertical-align:middle;margin-left:4px">2026.08 기준</span></p>
     </div>
   </div>
 </section>
@@ -340,7 +458,7 @@ ASSETS_BODY = (r'''
          ("연간 약 3,200만 명 관광 수요 기대", "새솔동 상권이 직접 흡수하게 될 배후 상권 규모입니다."),
          ("핵심 배후 상권의 확장 여력", "상권 확장에 따라 자산 가치 상승이 기대되는 성장 초입의 입지입니다.")],
         "미래가치",
-        "지금은 신도시의 생활 수요를, 앞으로는 대규모 개발의 파급을 받는 이중 구조의 입지입니다. 개발 계획은 해당 사업 주체의 일정에 따라 변동될 수 있습니다.")
+        "지금은 신도시의 생활 수요를, 앞으로는 대규모 개발의 파급을 받는 이중 구조의 입지입니다.")
 + asset("gangdong", "03", "강동 로데오팰리스 B103", "서울 강동구 천호동 · 지하 1층 B103", "gangdong",
         [("규모", "90평 (전용 60평)"), ("형태", "지하 1층 단일 공간"), ("활용", "공간수익화 전환 조성 중")],
         [("천호역 5·8호선 더블 역세 생활권", "강동의 핵심 생활상권 안쪽에 자리한, 접근성이 검증된 입지입니다."),
@@ -354,13 +472,13 @@ ASSETS_BODY = (r'''
         "미래가치·운영 여건",
         "서울 도심의 검증된 수요와 정비사업의 변화를 함께 안고 가는 자산입니다.")
 + r'''
-  <div class="note-box rv" style="margin-top:40px"><b>안내</b> — 이 페이지는 보유 자산의 입지와 활용 계획을 소개하는 자료이며, 특정 상품·계약에 대한 청약의 권유가 아닙니다. 기재된 세대수·인구·개발계획 등은 공개 자료 기준이며, 외부 개발 사업은 해당 주체의 사정에 따라 변경될 수 있습니다.</div>
 </div></section>
 ''' + CTA)
 
 PAGES = {
     "/model/": {
         "title": "밸류업 순환모델 | HMK 홀딩스그룹", "active": "사업모델",
+        "extra_head": '''<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "부동산 밸류업이란 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "저평가된 부동산을 확보한 뒤 용도 전환·운영 개선으로 임대수익을 높이고, 그 수익을 근거로 자산가치를 다시 평가받는 과정입니다. HMK홀딩스그룹은 매입부터 유동화까지 네 단계를 직접 수행합니다."}}, {"@type": "Question", "name": "어떤 부동산을 매입하나요?", "acceptedAnswer": {"@type": "Answer", "text": "배후 수요가 검증된 상권에 있으면서 공실·권리 문제로 가격이 눌려 있는 상업용 부동산입니다. AI 프롭테크로 월 23만 건 이상의 물건을 분석해 후보를 고르고, 현장 검증을 거쳐 감정가 대비 20% 이하로 확보합니다."}}, {"@type": "Question", "name": "3 in 1 공간수익화 모델은 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "한 건물에 창고형마켓(사고), 라이브커머스(보고), 공유창고(맡기고) 세 가지 사업을 결합하는 방식입니다. 세 사업이 통합 물류 코어를 공유해 운영비는 낮추고 임대수익은 높입니다."}}, {"@type": "Question", "name": "토큰증권(STO) 발행은 언제 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "개정 전자증권법·자본시장법에 따른 제도가 2027년 2월 4일 시행됩니다. HMK홀딩스그룹은 그 시행일에 맞춰 토큰증권 발행과 상장을 준비하고 있습니다."}}, {"@type": "Question", "name": "보유 부동산을 매각하거나 활용을 검토하고 싶습니다.", "acceptedAnswer": {"@type": "Answer", "text": "문의 페이지에서 물건 개요(소재지, 규모, 현황)만 보내주시면 검토를 시작합니다. 권리관계가 복잡한 물건도 검토 대상이며, 영업일 기준 2일 안에 회신드립니다."}}]}</script>''',
         "desc": "AI 초저가 매입 → 공간수익화 → 자산 유동화 → 재투자. 네 단계를 그룹이 직접 수행하는 HMK 밸류업 순환모델을 소개합니다.",
         "crumbs": [("사업모델", "/model/")],
         "eyebrow": "BUSINESS MODEL", "h1": "밸류업 순환모델",
@@ -382,6 +500,14 @@ PAGES = {
         "eyebrow": "STEP 02 / SPACE MONETIZING", "h1": "HMK<br>공간수익화 모델",
         "lead": "한 건물에 보관·판매·방송 세 개의 수익을 겹쳐 넣습니다. 단일 임차 구조로는 나올 수 없는 수익 구조입니다.",
         "hero_extra": minirail({2}), "body": SPACE_BODY,
+    },
+    "/model/synergy/": {
+        "title": "통합물류·멤버십 시너지 | HMK 홀딩스그룹", "active": "사업모델",
+        "desc": "자체 통합물류·유통시스템으로 상품을, HMK 오렌지 멤버십으로 고객을 연결합니다.",
+        "crumbs": CR + [("통합물류·멤버십 시너지", "/model/synergy/")],
+        "eyebrow": "STEP 02+ / SYNERGY", "h1": "통합물류 · 멤버십<br>시너지",
+        "lead": "세 사업을 하나로 묶는 두 개의 장치. 상품은 물류로, 고객은 멤버십으로 연결되어 매출이 서로를 끌어올립니다.",
+        "hero_extra": minirail({2}), "body": SYNERGY_BODY,
     },
     "/model/liquidity/": {
         "title": "자산 유동화 | HMK 홀딩스그룹", "active": "사업모델",

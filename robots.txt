@@ -1,4 +1,12 @@
+# HMK Holdings Group
 User-agent: *
+Allow: /
+Disallow: /_generator/
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
 Allow: /
 
 Sitemap: https://www.hmkholdings.com/sitemap.xml
