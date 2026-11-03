@@ -146,6 +146,8 @@ html.js .rv.in{opacity:1;transform:none}
 a.card::after{content:"";position:absolute;left:30px;bottom:0;width:0;height:2px;background:var(--orange);transition:width .3s var(--ease)}
 a.card:hover::after{width:calc(100% - 60px)}
 .card-ic{width:44px;height:44px;border-radius:12px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:16px}
+.affiliate-icon{color:var(--orange-deep);box-shadow:inset 0 0 0 1px rgba(231,109,39,.10)}
+.affiliate-icon svg{display:block;flex:none}
 .card.navy{background:var(--navy);border-color:var(--navy)}
 .card.navy h3{color:#fff}
 .card.navy p{color:rgba(255,255,255,.7)}
