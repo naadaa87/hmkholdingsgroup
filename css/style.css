@@ -580,11 +580,15 @@ a.card:hover::after{width:calc(100% - 60px)}
 
 /* 뉴스 분류 필터 */
 .news-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:34px}
-.news-filter .chip{cursor:pointer;transition:.2s var(--ease);background:#fff}
+.news-filter .chip{height:36px;padding:0 15px;font-size:14px;cursor:pointer;transition:.2s var(--ease);background:#fff}
 .news-filter .chip:hover{border-color:var(--orange);color:var(--orange-deep)}
 .news-filter .chip.on{border-color:var(--orange-line);background:var(--orange-soft);color:var(--orange-deep);font-weight:600}
 article.post-card{transition:border-color .25s var(--ease)}
 article.post-card:hover{transform:none;box-shadow:none;border-color:var(--line)}
+#news-list .post-meta{font-size:13px;flex-wrap:wrap;row-gap:4px}
+#news-list .post-card h3{font-size:19px;line-height:1.5}
+#news-list .post-card p{font-size:16px;line-height:1.8}
+#news-list + .note-plain{font-size:15px;line-height:1.8}
 .post-card[hidden]{display:none}
 
 /* 조직도 계층 라벨 */
