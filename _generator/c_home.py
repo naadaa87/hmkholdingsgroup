@@ -103,32 +103,30 @@ BODY = r'''
 </section>
 
 <!-- 05 공간수익화 -->
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">SPACE MONETIZING</span><h2>HMK의 3 in 1<br>공간수익화 전략</h2></div>
-      <p class="lead">사고 · 보고 · 맡기고. 초저가로 매입한 부동산에 세 가지 사업을 넣어 매출과 임대수익을 극대화합니다.</p>
+<section class="space-showcase" aria-labelledby="space-title">
+  <div class="space-watermark" aria-hidden="true"><b>HMK</b><span>HOLDINGS GROUP</span></div>
+  <div class="space-wrap">
+    <div class="space-heading">
+      <div><span class="eyebrow">SPACE MONETIZING</span><h2 id="space-title">HMK의 3 in 1<br>공간수익화 전략</h2></div>
+      <p>사고 · 보고 · 맡기고. 초저가로 매입한 부동산에 세 가지 사업을<br class="space-desktop-break"> 넣어 매출과 임대수익을 극대화합니다.</p>
     </div>
-    <div class="trio rv">
-      <a href="https://orange1000.com" target="_blank" rel="noopener"><span class="verb">사고</span><div><b>창고형마켓</b><span class="brand">오렌지 창고마켓</span></div></a>
-      <a href="https://orangeliveon.com" target="_blank" rel="noopener"><span class="verb">보고</span><div><b>라이브커머스</b><span class="brand">오렌지 라이브커머스</span></div></a>
-      <a href="https://storage-orange.co.kr" target="_blank" rel="noopener"><span class="verb">맡기고</span><div><b>공유창고</b><span class="brand">오렌지 공유창고</span></div></a>
-    </div>
-    <div class="split">
-      <figure class="figure rv">
-        <img src="/assets/model/ecosystem.jpg" alt="한 자산에서 세 가지 수익이 연결되는 HMK Value-Up 생태계 구조도" width="1448" height="1086">
-        <figcaption>공유창고 · 창고형 할인매장 · 라이브커머스가 통합 물류 코어로 연결됩니다</figcaption>
+    <div class="space-channels" aria-label="세 가지 사업"><a href="https://orange1000.com" target="_blank" rel="noopener"><span class="space-channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6M9 19h.01M18 19h.01"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></span><strong>사고</strong><b>창고형마켓</b><span class="space-channel-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span></a><a href="https://orangeliveon.com" target="_blank" rel="noopener"><span class="space-channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="m17 10 5-3v10l-5-3M7 9l5 3-5 3Z"/></svg></span><strong>보고</strong><b>라이브커머스</b><span class="space-channel-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span></a><a href="https://storage-orange.co.kr" target="_blank" rel="noopener"><span class="space-channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5v10l-10 5-10-5V7l10-5Zm0 10L2 7m10 5L22 7M12 12v10M7 4.5l10 5V15"/></svg></span><strong>맡기고</strong><b>공유창고</b><span class="space-channel-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span></a></div>
+    <div class="space-content">
+      <figure class="space-ecosystem" aria-labelledby="ecosystem-title">
+        <div class="space-ecosystem-brand"><span>HMK</span> HOLDINGS GROUP</div>
+        <h3 id="ecosystem-title">한 자산에서 <em>3가지 수익</em>이 연결되는 통합 수익 생태계</h3>
+        <p class="space-ecosystem-caption">공유창고 · 창고형 할인매장 · 라이브커머스가 결합된 복합형 Value-Up 자산</p>
+        <div class="space-diagram">
+          <div class="space-diagram-floors"><span class="space-single-asset">한 자산 <small>(부동산)</small></span>
+            <div><b>2F</b><span>라이브커머스<br>스튜디오</span></div>
+            <div><b>1F</b><span>창고형 할인매장 ·<br>공동구매</span></div>
+            <div><b>B1</b><span>무인 공유창고<br>오렌지</span></div>
+          </div>
+          <div class="space-building-crop"><img src="/assets/model/ecosystem.jpg" alt="2층 라이브커머스, 1층 창고형 마켓, 지하 공유창고로 구성된 HMK 복합 수익 자산" width="1448" height="1086" loading="lazy"></div>
+          <div class="space-income"><strong>3가지 수익원 연계</strong><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="9" cy="6" rx="7" ry="3"/><path d="M2 6v10c0 4 14 4 14 0V6M2 11c0 4 14 4 14 0M18 8c6 0 6 6 0 6m0 0v5c6 0 6-5 0-5"/></svg><b>상품 판매 수익</b><span>(할인매장 · 공동구매)</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="m17 10 5-3v10l-5-3M7 9l5 3-5 3Z"/></svg><b>콘텐츠 기반 수익</b><span>(라이브커머스)</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5v10l-10 5-10-5V7l10-5Zm0 10L2 7m10 5L22 7M12 12v10M7 4.5l10 5V15"/></svg><b>공간 임대 수익</b><span>(무인 공유창고)</span></li></ul></div></div>
+        <figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-6h4v6M10 21V9h4v12M17 21V3h4v18M2 9l7-6 5 3 7-5"/></svg><span>한 자산에서 3가지 콘텐츠가 유기적으로 연결되어, <em>4가지 가치</em>를 창출하는 <em>HMK Value-Up</em> 생태계</span></figcaption>
       </figure>
-      <div class="rv">
-        <div class="floors">
-          <div class="floor"><div class="lv">2F</div><div><b>라이브커머스 스튜디오</b><span>입점 셀러의 방송 제작과 송출. 유튜브·네이버 등 외부 채널로 판매를 확장합니다.</span></div></div>
-          <div class="floor"><div class="lv">1F</div><div><b>창고형 할인매장 · 공동구매</b><span>오프라인 고객 접점. 매입한 상품을 직접 판매하고 온라인 쇼핑몰과 연동합니다.</span></div></div>
-          <div class="floor"><div class="lv">B1</div><div><b>무인 공유창고 오렌지</b><span>비대면 계약·스마트 출입·24시간 CCTV로 상주 인력 없이 운영합니다.</span></div></div>
-          <div class="floor core"><div class="lv">CORE</div><div><b>통합 물류·운영 코어</b><span>재고 관리 → 포장·검수 → 배송·출고를 하나의 시스템으로 연결해 운영비를 낮춥니다.</span></div></div>
-        </div>
-        <a class="btn btn-ghost" style="margin-top:24px" href="/model/space/">공간수익화 모델 자세히 __ARR__</a>
-      </div>
-    </div>
+      <div class="space-floor-list" aria-label="층별 공간수익화 모델"><article class="space-floor-card"><span class="space-floor-level">2F</span><span class="space-floor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="m17 10 5-3v10l-5-3M7 9l5 3-5 3Z"/></svg></span><div><h3>라이브커머스 스튜디오</h3><p>입점 셀러의 방송 제작과 송출. 유튜브·네이버 등 외부 채널로 판매를 확장합니다.</p></div></article><article class="space-floor-card"><span class="space-floor-level">1F</span><span class="space-floor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6M9 19h.01M18 19h.01"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></span><div><h3>창고형 할인매장 · 공동구매</h3><p>오프라인 고객 접점. 매입한 상품을 직접 판매하고 온라인 쇼핑몰과 연동합니다.</p></div></article><article class="space-floor-card"><span class="space-floor-level">B1</span><span class="space-floor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5v10l-10 5-10-5V7l10-5Zm0 10L2 7m10 5L22 7M12 12v10M7 4.5l10 5V15"/></svg></span><div><h3>무인 공유창고 오렌지</h3><p>비대면 계약·스마트 출입·24시간 CCTV로 상주 인력 없이 운영합니다.</p></div></article><article class="space-floor-card space-floor-core"><span class="space-floor-level">CORE</span><span class="space-floor-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/></svg></span><div><h3>통합 물류·운영 코어</h3><p>재고 관리 → 포장·검수 → 배송·출고를 하나의 시스템으로 연결해 운영비를 낮춥니다.</p></div></article></div></div><div class="space-cta"><a href="/model/space/">공간수익화 모델 자세히 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></a></div>
   </div>
 </section>
 
