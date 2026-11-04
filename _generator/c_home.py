@@ -74,17 +74,30 @@ BODY = r'''
       <div class="portfolio-dots"><button type="button" data-portfolio-index="0" aria-label="일산 엠시티타워 강조" aria-pressed="false"></button><button type="button" data-portfolio-index="1" aria-label="화성 송산시티 L-Tower 강조" aria-pressed="true"></button><button type="button" data-portfolio-index="2" aria-label="강동 로데오팰리스 강조" aria-pressed="false"></button></div><button type="button" class="portfolio-next" aria-label="다음 자산 강조"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button></div></div></section>
 
 <!-- 04 순환플랫폼 -->
-<section class="sec sec-warm">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">BUSINESS MODEL</span><h2>네 단계가<br>하나의 고리로 돌아갑니다</h2></div>
-      <p class="lead">각 단계를 다른 회사에 맡기지 않습니다. 발굴부터 유동화까지 그룹이 직접 수행하기 때문에 판단이 빠르고 정확합니다.</p>
+<section class="business-cycle" aria-labelledby="business-cycle-title">
+  <div class="business-wrap">
+    <svg class="business-skyline" viewBox="0 0 460 300" fill="none" stroke="currentColor" aria-hidden="true"><path d="M80 290V83L190 15l92 57v218M190 15v275M80 83l110 65 92-76M105 68v222m28-238v238m28-255v255m56-259v259m28-242v242M80 126l110 63 92-74M80 170l110 61 92-74M80 215l110 59 92-74M295 290V118l68-44 67 43v173M363 74v216m-45-188v188m22-202v202m46-201v201m22-187v187M295 162l68 43 67-43M295 207l68 43 67-43"/></svg>
+    <div class="business-heading">
+      <div><span class="eyebrow">BUSINESS MODEL</span><h2 id="business-cycle-title">네 단계가<br><span>하나의 고리</span>로 돌아갑니다</h2></div>
+      <p>각 단계를 그룹이 직접 수행하기 때문에<br>판단이 빠르고 정확합니다.</p>
     </div>
-    <div class="cyc">
-      <div class="cyc-c rv"><div class="no">01</div><h3>AI 프롭테크<br>초저가 매입</h3><p>월 23만 건 이상의 물건 데이터를 분석해 저평가 자산을 선별하고, 권리 문제를 해결해 감정가 대비 20% 이하로 확보합니다.</p><div class="arw">→</div></div>
-      <div class="cyc-c rv"><div class="no">02</div><h3>HMK<br>공간수익화 모델</h3><p>공유창고·창고형 할인매장·라이브커머스를 한 건물에 결합해, 단일 임차 구조로는 나올 수 없는 임대수익을 만듭니다.</p><div class="arw">→</div></div>
-      <div class="cyc-c rv"><div class="no">03</div><h3>토큰증권<br>자산 유동화</h3><p>안정된 운영 수익(NOI)을 근거로 자산가치를 재평가받고, 2027년 2월 4일 시행되는 제도에 맞춰 발행·상장을 준비하고 있습니다.</p><div class="arw">→</div></div>
-      <div class="cyc-c last rv"><div class="no">04</div><h3>재투자<br>선순환 확장</h3><p>유동화로 회수한 자금을 다음 자산 매입에 다시 투입합니다. 반복할수록 속도와 정확도가 올라갑니다.</p></div>
+    <div class="business-diagram">
+      <svg class="business-return-path" viewBox="0 0 1600 420" fill="none" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="business-loop-gradient" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#ffd7b6"/><stop offset=".5" stop-color="#ffad68"/><stop offset="1" stop-color="#ffd8bd"/></linearGradient></defs>
+        <path d="M1500 114h20c88 0 88 278-30 278H110C-5 392-5 114 90 114h12" stroke="#fffaf5" stroke-width="25"/>
+        <path d="M1500 114h20c88 0 88 278-30 278H110C-5 392-5 114 90 114h12" stroke="url(#business-loop-gradient)" stroke-width="12"/>
+        <path d="m96 100 20 14-20 14Z" fill="#ff8b34"/><path d="m1018 379-23 13 23 13Z" fill="#ff801e"/>
+      </svg>
+      <ol class="business-stages"><li class="business-stage">
+          <span class="business-illustration illustration-sourcing" aria-hidden="true"></span>
+          <span class="business-step">01</span><h3>AI 프롭테크<br>초저가 매입</h3><p>월 23만 건 이상의 물건 데이터를 분석해 저평가 자산을 선별하고, 권리 문제를 해결해 감정가 대비 20% 이하로 확보합니다.</p><span class="business-connector" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></li><li class="business-stage">
+          <span class="business-illustration illustration-space" aria-hidden="true"></span>
+          <span class="business-step">02</span><h3>HMK<br>공간수익화 모델</h3><p>공유창고·창고형 할인매장·라이브커머스를 한 건물에 결합해, 단일 임차 구조로는 나올 수 없는 임대수익을 만듭니다.</p><span class="business-connector" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></li><li class="business-stage">
+          <span class="business-illustration illustration-token" aria-hidden="true"></span>
+          <span class="business-step">03</span><h3>토큰증권<br>자산 유동화</h3><p>안정된 운영 수익(NOI)을 근거로 자산가치를 재평가받고, 2027년 2월 4일 시행되는 제도에 맞춰 발행·상장을 준비하고 있습니다.</p><span class="business-connector" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></li><li class="business-stage business-stage-final">
+          <span class="business-illustration illustration-reinvest" aria-hidden="true"></span>
+          <span class="business-step">04</span><h3>재투자<br>선순환 확장</h3><p>유동화로 회수한 자금을 다음 자산 매입에 다시 투입합니다. 반복할수록 속도와 정확도가 올라갑니다.</p></li></ol>
+      <div class="business-group-badge"><span class="business-group-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>HMK</strong> Holdings Group</span></div>
     </div>
   </div>
 </section>
