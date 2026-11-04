@@ -29,7 +29,7 @@
 <link rel="preload" as="image" href="/assets/platform/cutaway-night.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="/css/style.css?v=20261104-hero">
+<link rel="stylesheet" href="/css/style.css?v=20261104-hero-panorama-v2">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"https://www.hmkholdings.com/#org","name":"HMK홀딩스그룹","alternateName":["HMK Holdings Group","HMK홀딩스","에이치엠케이홀딩스"],"url":"https://www.hmkholdings.com","logo":"https://www.hmkholdings.com/assets/logo.png","image":"https://www.hmkholdings.com/assets/og.jpg","description":"상업용 부동산을 초저가 매입해 창고형마켓·라이브커머스·공유창고 3가지 사업으로 임대수익과 자산가치를 높이는 부동산 밸류업 플랫폼","slogan":"HMK와 한번에 가치하세요","founder":{"@type":"Person","name":"김재동","jobTitle":"회장","url":"https://kimjaedong.com"},"address":{"@type":"PostalAddress","streetAddress":"봉은사로 129-1, 751빌딩 3층","addressLocality":"강남구","addressRegion":"서울특별시","postalCode":"06120","addressCountry":"KR"},"telephone":"+82-1555-5335","email":"hmkholdings@hmkholdings.com","areaServed":"KR","contactPoint":{"@type":"ContactPoint","telephone":"+82-1555-5335","contactType":"customer service","availableLanguage":"Korean"},"sameAs":["https://hmknplauction.pages.dev","https://hmkstorage.com","https://kimjaedong.com","https://orange1000.com","https://orangeliveon.com","https://storage-orange.co.kr","https://orangemembership.com","https://hmkpartner.com","https://hmkinvestment.pages.dev"],"brand":[{"@type":"Brand","name":"오렌지 공유창고"},{"@type":"Brand","name":"오렌지 창고마켓"},{"@type":"Brand","name":"오렌지 라이브커머스"},{"@type":"Brand","name":"오렌지 멤버십"}],"knowsAbout":["상업용 부동산 매입","부동산 밸류업","무인 공유창고","창고형 할인매장","라이브커머스","AI 프롭테크","부동산 자산 유동화"]},
@@ -64,7 +64,10 @@
 <main id="main">
 <!-- 01 히어로 -->
 <section class="hero hero-reference">
-  <img class="hero-backdrop" src="/assets/platform/cutaway-night.jpg" alt="" fetchpriority="high">
+  <picture class="hero-art" aria-hidden="true">
+    <source media="(min-width: 1900px)" srcset="/assets/platform/hero-panorama-v2.webp">
+    <img class="hero-backdrop" src="/assets/platform/hero-desktop-v2.webp" alt="" width="1774" height="887" fetchpriority="high" decoding="async">
+  </picture>
   <div class="hero-in">
     <div class="hero-copy">
       <span class="eyebrow">상업용 부동산 자산가치 밸류업 플랫폼</span>

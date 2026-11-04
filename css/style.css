@@ -609,7 +609,8 @@ body.home:not(.stuck) .nav-toggle span,body.home:not(.stuck) .nav-toggle::before
 body.home .hwrap,body.home .uwrap{max-width:1420px}
 .hero-reference{height:735px;background:#13243f;color:#fff;isolation:isolate}
 .hero-reference::after{inset:0;opacity:1;mask-image:none;-webkit-mask-image:none;background:linear-gradient(90deg,rgba(9,26,48,.97) 0%,rgba(17,36,65,.89) 28%,rgba(18,36,62,.43) 49%,rgba(14,27,45,.04) 77%),linear-gradient(0deg,rgba(11,27,48,.55),transparent 30%);z-index:-1}
-.hero-backdrop{position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center 43%;z-index:-2}
+.hero-art{position:absolute;inset:0;z-index:-2;display:block;pointer-events:none}
+.hero-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
 .hero-reference .hero-in{max-width:1396px;display:block;padding:151px 28px 0;height:588px}
 .hero-reference .hero-copy{position:relative;z-index:1;max-width:680px}
 .hero-reference .eyebrow{font-family:var(--font);font-size:18px;letter-spacing:.025em;color:var(--orange);gap:14px}
@@ -651,3 +652,8 @@ body.home .hwrap,body.home .uwrap{max-width:1420px}
 @media(max-width:1150px){.hero-reference .hero-copy{max-width:590px}.hero-reference h1{font-size:42px}.hero-asset{width:310px}.hero-asset-thumb{width:85px}.reference-process{grid-template-columns:240px 1fr;gap:25px}.reference-process ol{gap:20px}.reference-process li,.reference-process li:first-child{padding:16px}.reference-process b{font-size:17px}.reference-process li>span:last-child{font-size:12px}.reference-process li:not(:last-child)::after{right:-16px}.process-heading h2{font-size:28px}.hero-facts .fact{gap:14px}}
 @media(max-width:800px){.hero-reference{height:auto;min-height:840px}.hero-backdrop{width:100%;opacity:.65;object-position:65% center}.hero-reference::after{background:linear-gradient(90deg,#10223be8,#10223b60),linear-gradient(0deg,#10223bdd,transparent)}.hero-reference .hero-in{padding:135px 24px 0;height:auto;min-height:650px}.hero-reference .hero-copy{max-width:100%}.hero-reference h1{font-size:clamp(30px,5.5vw,44px)}.hero-reference .eyebrow{font-size:14px}.hero-reference .lead{font-size:15px}.desktop-break{display:none}.hero-reference .hero-cta{gap:10px}.hero-reference .btn{padding:0 16px;font-size:14px;height:48px}.hero-asset{position:relative;right:auto;bottom:auto;margin:26px 0 25px;width:340px;max-width:100%}.hero-pagination{margin-top:24px}.hero-stats-wrap{padding:0 24px 24px}.hero-facts{grid-template-columns:repeat(2,1fr);gap:24px 0;padding:24px 8px}.hero-facts .fact{justify-content:flex-start;padding:0 18px}.hero-facts .fact:nth-child(3){border-left:0}.hero-facts .num{font-size:28px}.hero-facts .num small{font-size:13px}.hero-facts .lb{font-size:12px}.hero-facts .fact-icon{width:28px}.reference-process{grid-template-columns:1fr;padding:36px 24px;gap:25px}.reference-process ol{grid-template-columns:repeat(2,1fr);gap:18px}.reference-process li:not(:last-child)::after{display:none}.reference-process li,.reference-process li:first-child{padding:20px}.reference-process b{font-size:19px}.reference-process li>span:last-child{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.hero-reference *{transition:none}}
+
+/* Preserve the complete building on ultrawide and tablet displays. */
+@media(min-width:1900px){.hero-backdrop{object-position:center center}}
+@media(min-width:801px) and (max-width:1200px){.hero-backdrop{object-fit:cover;object-position:right center}.hero-reference{height:auto;min-height:800px}.hero-facts{row-gap:24px}.hero-facts .fact{border-top:0}.hero-facts .fact:nth-child(3){border-left:0}}
+@media(max-width:800px){.hero-backdrop{object-fit:cover;object-position:74% center}}

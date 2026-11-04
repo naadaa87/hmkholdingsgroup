@@ -6,7 +6,10 @@ ARROW = '<svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden
 BODY = r'''
 <!-- 01 히어로 -->
 <section class="hero hero-reference">
-  <img class="hero-backdrop" src="/assets/platform/cutaway-night.jpg" alt="" fetchpriority="high">
+  <picture class="hero-art" aria-hidden="true">
+    <source media="(min-width: 1900px)" srcset="/assets/platform/hero-panorama-v2.webp">
+    <img class="hero-backdrop" src="/assets/platform/hero-desktop-v2.webp" alt="" width="1774" height="887" fetchpriority="high" decoding="async">
+  </picture>
   <div class="hero-in">
     <div class="hero-copy">
       <span class="eyebrow">상업용 부동산 자산가치 밸류업 플랫폼</span>

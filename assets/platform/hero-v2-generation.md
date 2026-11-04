@@ -1,0 +1,15 @@
+# Hero background v2
+
+Generated using the built-in image_gen tool. The reference was the user's desired hero screenshot; generated files contain the scene only. HTML renders all interface elements separately.
+
+Selected web assets:
+- `hero-panorama-v2.webp`: 2172 × 724, for viewports at least 1900px wide.
+- `hero-desktop-v2.webp`: 1774 × 887, for other viewports.
+
+## Panorama prompt
+
+Use case: ads-marketing. Generate a production website BACKGROUND PHOTOGRAPH ONLY, no website UI or overlaid text. Input images: the user's second screenshot is the definitive reference for architecture, mood and composition; first screenshot shows incorrect close crop to avoid. Create a very wide 3:1 panoramic architectural visualization, ideally 3072x1024 or 3840x1280. Reproduce the SCENE of the second reference, excluding all UI, headings, buttons, logos, statistics and cards. A beautiful modern Korean commercial building of three glass-front levels with black metal cladding on the RIGHT 55 percent of frame, seen from across a generous wet plaza at blue hour, warm orange lit shops and live commerce studios visible through glass, discreet physically mounted Korean building signage '오렌지 라이브 쇼핑' and '오렌지 창고마켓'. Whole roof, full building frontage, base and plaza must fit comfortably with margins; building spans x=44% to 95%, y=17% to 81%. Left 43 percent contains open soft dark blue dusk sky, distant city skyline and tranquil open plaza, naturally low detail suitable for white webpage headings added later. Foreground reflective wet paving, warm landscape lighting, a little foliage at outer edges only. Sky extends above full roof. Cinematic premium photorealistic architectural rendering, navy blue and warm amber palette matching reference. Camera pulled BACK, NOT close-up, not facade filling frame. Leave 12% top sky and 15% bottom plaza safe margins for responsive crops. Absolutely NO website mockup, interface elements, floating panels, buttons, words or headlines outside physically mounted building signage. This is a standalone background bitmap that will sit behind existing HTML.
+
+## Desktop prompt
+
+Create a SECOND RESPONSIVE VERSION of this exact architectural background. Image 1 is the edit target. Preserve its building design, navy blue dusk and amber lighting, details and physically mounted Korean signs. CRITICAL OUTPUT ASPECT RATIO: 2:1 landscape, NOT 3:1. Recompose/outpaint the sky and foreground to provide a taller 2:1 image with the ENTIRE building visible on the RIGHT HALF (building x=44 to96%, y=18 to80%). Left 43% remains open blue sky and low distant skyline with no buildings in foreground, suitable for website text. Full rooftop and full entrance must be comfortably visible with 12% top sky and 15% bottom plaza. Camera distant, whole building exterior shot. DO NOT zoom into or enlarge/crop the building. This is a background bitmap only, no website interface, no floating text or panels. Match the initial source's photorealistic architectural rendering exactly. Output wide 2:1 rectangle.
