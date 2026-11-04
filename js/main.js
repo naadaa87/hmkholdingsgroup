@@ -7,6 +7,51 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  /* Portfolio selection and locally saved properties. */
+  var portfolio = d.querySelector(".portfolio-showcase");
+  if (portfolio) {
+    var assetCards = Array.prototype.slice.call(portfolio.querySelectorAll(".portfolio-card"));
+    var assetDots = Array.prototype.slice.call(portfolio.querySelectorAll("[data-portfolio-index]"));
+    var selectedAsset = 1;
+    var selectAsset = function (index, scroll) {
+      selectedAsset = (index + assetCards.length) % assetCards.length;
+      assetCards.forEach(function (card, i) { card.classList.toggle("is-featured", i === selectedAsset); });
+      assetDots.forEach(function (dot, i) { dot.setAttribute("aria-pressed", String(i === selectedAsset)); });
+      if (scroll && window.matchMedia("(max-width: 800px)").matches) {
+        var rail = portfolio.querySelector(".portfolio-cards");
+        rail.scrollTo({ left: assetCards[selectedAsset].offsetLeft - assetCards[0].offsetLeft,
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      }
+    };
+    portfolio.querySelector(".portfolio-prev").addEventListener("click", function () { selectAsset(selectedAsset - 1, true); });
+    portfolio.querySelector(".portfolio-next").addEventListener("click", function () { selectAsset(selectedAsset + 1, true); });
+    assetDots.forEach(function (dot, i) { dot.addEventListener("click", function () { selectAsset(i, true); }); });
+    var savedAssets = [];
+    try { var storedAssets = JSON.parse(localStorage.getItem("hmk-saved-assets") || "[]"); if (Array.isArray(storedAssets)) savedAssets = storedAssets; } catch (e) {}
+    Array.prototype.forEach.call(portfolio.querySelectorAll("[data-save]"), function (button) {
+      var key = button.getAttribute("data-save");
+      button.setAttribute("aria-pressed", String(savedAssets.indexOf(key) !== -1));
+      button.addEventListener("click", function () {
+        var index = savedAssets.indexOf(key);
+        if (index === -1) savedAssets.push(key); else savedAssets.splice(index, 1);
+        button.setAttribute("aria-pressed", String(savedAssets.indexOf(key) !== -1));
+        try { localStorage.setItem("hmk-saved-assets", JSON.stringify(savedAssets)); } catch (e) {}
+      });
+    });
+    if (window.matchMedia("(max-width: 800px)").matches) selectAsset(0, false);
+    var assetRail = portfolio.querySelector(".portfolio-cards");
+    assetRail.addEventListener("scroll", function () {
+      if (!window.matchMedia("(max-width: 800px)").matches) return;
+      var railLeft = assetRail.getBoundingClientRect().left;
+      var nearest = 0, distance = Infinity;
+      assetCards.forEach(function (card, i) {
+        var delta = Math.abs(card.getBoundingClientRect().left - railLeft);
+        if (delta < distance) { distance = delta; nearest = i; }
+      });
+      selectAsset(nearest, false);
+    }, { passive: true });
+  }
+
   /* 모바일 드로어 */
   var toggle = d.querySelector(".nav-toggle"),
       drawer = d.querySelector(".drawer"),

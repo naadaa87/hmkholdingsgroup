@@ -42,34 +42,36 @@ BODY = r'''
   </ol></div>
 
 <!-- 03 보유 자산 -->
-<section class="sec" style="padding-top:clamp(56px,6vw,84px)">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">PORTFOLIO</span><h2>좋은 입지 위에 서 있는<br>보유 부동산</h2></div>
-      <p class="lead">배후 수요가 검증된 상권에서만 확보합니다. 가격이 아니라 입지가 말해주는 가치를 보여드립니다.</p>
-    </div>
-    <div class="grid g3">
-      <a class="card pf-card rv" href="/model/assets/#ilsan">
-        <div class="ph"><img src="/assets/portfolio/ilsan.jpg" alt="일산 엠시티타워 전경" loading="lazy"><span class="badge tag">보유 물건 01</span></div>
-        <div class="bd"><h3>일산 엠시티타워</h3><div class="addr">고양 일산동구 · 일산호수공원 인접 · 179평</div>
-          <ul class="pts"><li>단지 950세대 + 오피스텔 646세대 자체 배후</li><li>반경 2km 인구 10만 명 생활권</li><li>일산테크노밸리 · GTX-A 수혜권</li></ul>
-          <span class="link-more">입지 자세히 보기 __ARR__</span></div>
-      </a>
-      <a class="card pf-card rv" href="/model/assets/#hwaseong">
-        <div class="ph"><img src="/assets/portfolio/hwaseong.jpg" alt="화성 송산시티 L-Tower 전경" loading="lazy"><span class="badge tag">보유 물건 02</span></div>
-        <div class="bd"><h3>화성 송산시티 L-Tower</h3><div class="addr">화성 새솔동 · 송산그린시티 중심상권 · 91.4평</div>
-          <ul class="pts"><li>아파트 5개 단지 8,700세대 배후</li><li>1인·신혼 가구 밀집 — 보관 수요 발생 구조</li><li>신세계 국제테마파크(예정) 배후권</li></ul>
-          <span class="link-more">입지 자세히 보기 __ARR__</span></div>
-      </a>
-      <a class="card pf-card rv" href="/model/assets/#gangdong">
-        <div class="ph"><img src="/assets/portfolio/gangdong.jpg" alt="강동 로데오팰리스 전경" loading="lazy"><span class="badge tag">보유 물건 03</span></div>
-        <div class="bd"><h3>강동 로데오팰리스</h3><div class="addr">서울 강동구 천호동 · 지하 1층 · 90평</div>
-          <ul class="pts"><li>천호역 5·8호선 더블 역세 생활권</li><li>로데오거리 · 현대백화점 천호점 인접</li><li>천호 재정비촉진지구 수혜권</li></ul>
-          <span class="link-more">입지 자세히 보기 __ARR__</span></div>
-      </a>
-    </div>
-  </div>
-</section>
+<section class="portfolio-showcase" id="portfolio" aria-labelledby="portfolio-title">
+  <svg class="portfolio-skyline" viewBox="0 0 460 300" fill="none" stroke="currentColor" aria-hidden="true"><path d="M80 290V83L190 15l92 57v218M190 15v275M80 83l110 65 92-76M105 68v222m28-238v238m28-255v255m56-259v259m28-242v242M80 126l110 63 92-74M80 170l110 61 92-74M80 215l110 59 92-74M295 290V118l68-44 67 43v173M363 74v216m-45-188v188m22-202v202m46-201v201m22-187v187M295 162l68 43 67-43M295 207l68 43 67-43"/></svg>
+  <div class="portfolio-wrap">
+    <div class="portfolio-heading">
+      <div class="portfolio-intro"><span class="eyebrow">PORTFOLIO</span>
+        <h2 id="portfolio-title">좋은 입지 위에 서 있는<br>검증된 <span>보유 부동산</span></h2>
+        <p>배후 수요가 검증된 상권에서만 확보합니다.<br>가격이 아니라 입지가 말해주는 가치를 보여드립니다.</p>
+      </div>
+      <dl class="portfolio-metrics"><div class="portfolio-metric"><span class="metric-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V7l8-4v18M12 9h7v12M2 21h20M7 9v1m0 3v1m0 3v1m9-5v1m0 3v1"/></svg></span><div><dt>확보·전환 자산</dt><dd>3<small>개</small></dd></div></div><div class="portfolio-metric"><span class="metric-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M2 21v-3a7 7 0 0 1 14 0v3M16 4a3 3 0 0 1 0 6M18 14a5 5 0 0 1 4 5v2"/></svg></span><div><dt>송산 배후 수요</dt><dd>8,700<small>세대+</small></dd></div></div><div class="portfolio-metric"><span class="metric-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-7h4v7M10 21V8h4v13M17 21V3h4v18"/></svg></span><div><dt>공간수익화 모델</dt><dd>3<small> in 1</small></dd></div></div><div class="portfolio-metric"><span class="metric-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/></svg></span><div><dt>운영 노하우</dt><dd>20<small>년+</small></dd></div></div></dl></div><div class="portfolio-cards" aria-label="보유 부동산 목록"><article class="portfolio-card" data-asset="ilsan" aria-labelledby="asset-title-ilsan">
+      <div class="portfolio-photo"><a href="/model/assets/#ilsan" tabindex="-1" aria-hidden="true"><img src="/assets/portfolio/ilsan.jpg" alt="" loading="lazy" width="900" height="500"></a>
+        <span class="portfolio-tag"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> 보유 물건 01</span>
+        <button class="portfolio-save" type="button" data-save="ilsan" aria-label="일산 엠시티타워 관심 자산 저장" aria-pressed="false"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button>
+      </div>
+      <div class="portfolio-body"><h3 id="asset-title-ilsan"><a href="/model/assets/#ilsan">일산 엠시티타워</a></h3>
+        <div class="portfolio-meta"><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>고양 일산동구</span><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V7l8-4v18M12 9h7v12M2 21h20M7 9v1m0 3v1m0 3v1m9-5v1m0 3v1"/></svg>일산호수공원 인접</span><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M8 8h8v8H8Z"/></svg>179평</span></div><ul class="portfolio-points"><li>단지 950세대 + 오피스텔 646세대 자체 배후</li><li>반경 2km 인구 10만 명 생활권</li><li>일산테크노밸리 · GTX-A 수혜권</li></ul><a class="portfolio-detail" href="/model/assets/#ilsan">입지 자세히 보기 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div></article><article class="portfolio-card is-featured" data-asset="hwaseong" aria-labelledby="asset-title-hwaseong">
+      <div class="portfolio-photo"><a href="/model/assets/#hwaseong" tabindex="-1" aria-hidden="true"><img src="/assets/portfolio/hwaseong.jpg" alt="" loading="lazy" width="900" height="500"></a>
+        <span class="portfolio-tag"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> 보유 물건 02</span>
+        <button class="portfolio-save" type="button" data-save="hwaseong" aria-label="화성 송산시티 L-Tower 관심 자산 저장" aria-pressed="false"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button>
+      </div>
+      <div class="portfolio-body"><h3 id="asset-title-hwaseong"><a href="/model/assets/#hwaseong">화성 송산시티 L-Tower</a></h3>
+        <div class="portfolio-meta"><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>화성 새솔동</span><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V7l8-4v18M12 9h7v12M2 21h20M7 9v1m0 3v1m0 3v1m9-5v1m0 3v1"/></svg>송산그린시티 중심상권</span><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M8 8h8v8H8Z"/></svg>91.4평</span></div><ul class="portfolio-points"><li>아파트 5개 단지 8,700세대 배후</li><li>1인·신혼 가구 밀집 — 보관 수요 발생 구조</li><li>신세계 국제테마파크(예정) 배후권</li></ul><a class="portfolio-detail" href="/model/assets/#hwaseong">입지 자세히 보기 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div></article><article class="portfolio-card" data-asset="gangdong" aria-labelledby="asset-title-gangdong">
+      <div class="portfolio-photo"><a href="/model/assets/#gangdong" tabindex="-1" aria-hidden="true"><img src="/assets/portfolio/gangdong.jpg" alt="" loading="lazy" width="900" height="500"></a>
+        <span class="portfolio-tag"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> 보유 물건 03</span>
+        <button class="portfolio-save" type="button" data-save="gangdong" aria-label="강동 로데오팰리스 관심 자산 저장" aria-pressed="false"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></button>
+      </div>
+      <div class="portfolio-body"><h3 id="asset-title-gangdong"><a href="/model/assets/#gangdong">강동 로데오팰리스</a></h3>
+        <div class="portfolio-meta"><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>서울 강동구 천호동</span><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V7l8-4v18M12 9h7v12M2 21h20M7 9v1m0 3v1m0 3v1m9-5v1m0 3v1"/></svg>지하 1층</span><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M8 8h8v8H8Z"/></svg>90평</span></div><ul class="portfolio-points"><li>천호역 5·8호선 더블 역세 생활권</li><li>로데오거리 · 현대백화점 천호점 인접</li><li>천호 재정비촉진지구 수혜권</li></ul><a class="portfolio-detail" href="/model/assets/#gangdong">입지 자세히 보기 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div></article></div>
+    <div class="portfolio-controls" role="group" aria-label="강조 자산 선택">
+      <button type="button" class="portfolio-prev" aria-label="이전 자산 강조"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+      <div class="portfolio-dots"><button type="button" data-portfolio-index="0" aria-label="일산 엠시티타워 강조" aria-pressed="false"></button><button type="button" data-portfolio-index="1" aria-label="화성 송산시티 L-Tower 강조" aria-pressed="true"></button><button type="button" data-portfolio-index="2" aria-label="강동 로데오팰리스 강조" aria-pressed="false"></button></div><button type="button" class="portfolio-next" aria-label="다음 자산 강조"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button></div></div></section>
 
 <!-- 04 순환플랫폼 -->
 <section class="sec sec-warm">
