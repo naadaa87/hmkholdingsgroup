@@ -131,16 +131,30 @@ BODY = r'''
 </section>
 
 <!-- 06 밸류업 효과 -->
-<section class="sec sec-cool">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">VALUE-UP EFFECT</span><h2>같은 건물, 달라지는 수익 구조</h2></div>
-      <p class="lead">단일 임차 구조에서는 임대료 하나가 전부입니다. 세 개의 수익원을 겹치면 현금흐름과 자산가치가 함께 움직입니다.</p>
-    </div>
-    <figure class="figure rv">
-      <img src="/assets/model/before-after.jpg" alt="저활용 자산과 HMK Value-Up 자산의 수익 구조 비교" width="1448" height="1086">
-      <figcaption>단일 임차 구조에서 3 in 1 복합 수익 구조로 — 연간 수익·임대수익률·자산가치가 함께 상승합니다</figcaption>
-    </figure>
+<section class="effect-showcase" aria-labelledby="effect-title">
+  <div class="effect-skyline" aria-hidden="true"></div>
+  <div class="effect-wrap">
+    <header class="effect-heading">
+      <div><span class="eyebrow">VALUE-UP EFFECT</span><h2 id="effect-title">같은 건물, 달라지는 <span>수익 구조</span></h2></div>
+      <p>단일 임차 구조에서는 임대료 하나가 전부입니다.<br>세 가지 사업을 결합하면 현금흐름과 자산가치가 함께 움직입니다.</p>
+    </header>
+    <div class="effect-comparison">
+      <article class="effect-before" aria-labelledby="effect-before-title">
+        <div class="effect-scene effect-scene-before" role="img" aria-label="저활용 상태의 낡은 상업용 건물"></div>
+        <div class="effect-scene-heading"><span class="effect-state">Before</span><h3 id="effect-before-title">저활용 · 저수익 자산</h3><p>단일 임차, 낮은 임대 수익 구조</p></div>
+        <div class="effect-income effect-income-before"><span>연간 수익</span><strong>1.2<small>억 원</small></strong></div>
+      </article>
+      <article class="effect-after" aria-labelledby="effect-after-title">
+        <div class="effect-scene effect-scene-after" role="img" aria-label="라이브커머스, 창고형 할인매장, 공유창고가 결합된 HMK 밸류업 건물"></div>
+        <div class="effect-scene-heading"><span class="effect-state">After</span><h3 id="effect-after-title">HMK <span>Value-Up</span> Asset</h3><p>3가지 콘텐츠가 결합된 복합 수익형 자산</p></div>
+        <div class="effect-service-labels" aria-label="복합 수익 사업"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="m16 10 6-3v10l-6-3M7 9l4 3-4 3Z"/></svg>라이브커머스 스튜디오</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>창고형 할인매장</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5v10l-10 5-10-5V7l10-5ZM2 7l10 5 10-5M12 12v10M7 4.5l10 5"/></svg>공유창고</span></div>
+        <div class="effect-income effect-income-after"><span>연간 수익</span><strong>3.9<small>억 원</small></strong></div>
+      </article>
+      <span class="effect-transform-arrow" aria-hidden="true"><svg viewBox="0 0 100 85" fill="none"><path d="M3 78C20 41 45 23 76 23V7l22 28-30 20 4-17C43 37 20 50 3 78Z" fill="currentColor"/></svg></span>
+      <dl class="effect-results"><div class="effect-result"><dt><span class="effect-result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="8" cy="7" rx="6" ry="3"/><path d="M2 7v11c0 4 12 4 12 0V7M2 12c0 4 12 4 12 0M2 17c0 4 12 4 12 0M16 3c7 0 7 6 0 6m0 0v5c7 0 7-5 0-5"/></svg></span><span class="effect-result-label">연간 수익</span></dt><dd>3.3<small>배 증가</small></dd></div><div class="effect-result"><dt><span class="effect-result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-7h4v7M10 21V8h4v13M17 21V3h4v18"/></svg></span><span class="effect-result-label">임대 수익률</span></dt><dd>2.7<small>배 상승</small></dd></div><div class="effect-result"><dt><span class="effect-result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V3h12v18M16 10h5v11M2 21h21M8 7h1m3 0h1M8 11h1m3 0h1M8 15h1m3 0h1M9 21v-3h3v3"/></svg></span><span class="effect-result-label">자산 가치</span></dt><dd>2.0<small>배 상승</small></dd></div><div class="effect-result"><dt><span class="effect-result-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6l9-4Z"/><path d="m8 12 3 3 6-6"/></svg></span><span class="effect-result-label">운영 안정성</span></dt><dd>리스크 분산</dd></div></dl></div>
+    <div class="effect-process">
+      <div class="effect-process-intro"><h3>밸류업 프로세스</h3><p>저활용 자산을 복합 공간으로 전환해<br>수익과 자산가치를 동시에 높입니다.</p></div>
+      <ol><li><span class="effect-process-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 7 7"/></svg></span><div><span class="effect-process-step">Step 01</span><h4>자산 진단·분석</h4></div><span class="effect-process-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span></li><li><span class="effect-process-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/></svg></span><div><span class="effect-process-step">Step 02</span><h4>공간 기획·설계</h4></div><span class="effect-process-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span></li><li><span class="effect-process-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 3 1-1h4l1 3 3 1 3-1 2 4-2 2v3l2 2-2 4-3-1-3 1-1 3h-4l-1-3-3-1-3 1-2-4 2-2v-3L1 9l2-4 3 1 3-1Z"/><circle cx="12" cy="12" r="4"/></svg></span><div><span class="effect-process-step">Step 03</span><h4>복합 모델 구축</h4><p>(창고·매장·라이브)</p></div><span class="effect-process-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></span></li><li><span class="effect-process-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 19 7-7 5 4 8-12M15 4h7v7"/></svg></span><div><span class="effect-process-step">Step 04</span><h4>운영·수익 극대화</h4></div></li></ol></div>
   </div>
 </section>
 
