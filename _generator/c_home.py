@@ -159,27 +159,18 @@ BODY = r'''
 </section>
 
 <!-- 06+ 시너지: 통합물류 + 멤버십 -->
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">SYNERGY</span><h2>세 사업을 하나로 묶는<br>통합물류와 오렌지 멤버십</h2></div>
-      <p class="lead">상품은 자체 통합물류·유통시스템으로, 고객은 HMK 오렌지 멤버십으로 연결됩니다. 시너지가 매출을 활성화하고 자산가치를 밀어올립니다.</p>
-    </div>
-    <div class="split">
-      <div class="rv">
-        <div class="floors">
-          <div class="floor"><div class="lv" style="width:64px">물류</div><div><b>자체 통합물류·유통시스템</b><span>창고마켓이 매입한 재고 하나가 매장·라이브·온라인 세 채널에서 팔리고, 같은 건물에서 당일 출고됩니다. 별도 물류센터 없이 재고 회전은 빠르게, 운영비는 나눠서.</span></div></div>
-          <div class="floor"><div class="lv" style="width:64px">멤버십</div><div><b>HMK 오렌지 멤버십</b><span>세 사업장의 고객을 하나의 회원으로 묶습니다. 창고 이용자에게 마켓 쿠폰, 마켓 고객에게 방송 특가, 시청자에게 창고 혜택 — 한 명이 세 번 방문합니다.</span></div></div>
-          <div class="floor core"><div class="lv" style="width:64px">결과</div><div><b>매출 활성화 → 임대수익 상승 → 자산가치 밸류업</b><span>교차 방문과 재방문이 늘면 건물의 순영업이익이 커지고, 그 수익이 자산의 평가가치를 끌어올립니다.</span></div></div>
-        </div>
-        <div class="extlinks" style="margin-top:22px"><a class="btn btn-ghost" href="/model/synergy/">시너지 구조 자세히 <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-ghost" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true"><path d="M3 9L9 3M9 3H4.2M9 3v4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+<section class="synergy-showcase" aria-labelledby="synergy-title">
+  <div class="synergy-wrap">
+    <div class="synergy-kicker"><span>SYNERGY</span></div>
+    <header class="synergy-heading">
+      <h2 id="synergy-title">세 사업을 하나로 묶는<br>통합물류와 <span>오렌지 멤버십</span>의 시너지</h2>
+      <p>상품은 자체 통합물류·유통시스템으로, 고객은 HMK 오렌지 멤버십으로<br class="synergy-desktop-break"> 연결됩니다. 시너지가 매출을 활성화하고 자산가치를 높여드립니다.</p>
+    </header>
+    <div class="synergy-content">
+      <div class="synergy-left"><div class="synergy-benefits"><article class="synergy-benefit"><div class="synergy-benefit-label"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5v10l-10 5-10-5V7l10-5ZM2 7l10 5 10-5M12 12v10M7 4.5l10 5"/></svg></span><b>물류</b></div><div class="synergy-benefit-copy"><h3>자체 통합물류·유통시스템</h3><p>창고마켓이 매입한 재고 하나가 매장·라이브·온라인 세 채널에서 팔리고, 같은 건물에서 당일 출고됩니다. 별도 물류센터 없이 재고 회전은 빠르게, 운영비는 나눠서.</p></div></article><article class="synergy-benefit"><div class="synergy-benefit-label"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 5 5 4-8 4 8 5-5-2 14H5L3 6Z"/><path d="M5 17h14"/></svg></span><b>멤버십</b></div><div class="synergy-benefit-copy"><h3>HMK 오렌지 멤버십</h3><p>세 사업장의 고객을 하나의 회원으로 묶습니다. 창고 이용자에게 마켓 쿠폰, 마켓 고객에게 방송 특가, 시청자에게 창고 혜택 — 한 명이 세 번 방문합니다.</p></div></article><article class="synergy-benefit synergy-benefit-result"><div class="synergy-benefit-label"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-6h4v6M10 21V10h4v11M17 21V6h4v15M3 9l6-5 5 3 7-5M16 2h5v5"/></svg></span><b>결과</b></div><div class="synergy-benefit-copy"><h3>매출 활성화 <i>→</i> 임대수익 상승 <i>→</i> 자산가치 밸류업</h3><p>교차 방문과 재방문이 늘면 건물의 순영업이익이 커지고, 그 수익이 자산의 평가가치를 끌어올립니다.</p></div></article></div>
+        <div class="synergy-actions"><a class="synergy-primary" href="/model/synergy/">시너지 구조 자세히 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a><a class="synergy-secondary" href="https://orangemembership.com" target="_blank" rel="noopener">오렌지 멤버십 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 19 14-14M8 5h11v11"/></svg></a></div>
       </div>
-      <div class="gallery g2 tall rv">
-        <figure><img src="/assets/live/logistics.jpg" alt="주문부터 배송까지 오렌지 통합 물류 프로세스" loading="lazy"><figcaption>통합물류 — 주문·피킹·포장·출고·배송</figcaption></figure>
-        <figure><img src="/assets/membership/card-hero.jpg" alt="HMK 오렌지 멤버십 카드" loading="lazy"><figcaption>오렌지 멤버십 — 하나의 회원, 세 개의 혜택</figcaption></figure>
-        <figure><img src="/assets/membership/use-market.jpg" alt="창고마켓에서 멤버십 카드 결제" loading="lazy"><figcaption>창고마켓에서 적립</figcaption></figure>
-        <figure><img src="/assets/membership/use-storage.jpg" alt="공유창고에서 멤버십 카드 사용" loading="lazy"><figcaption>공유창고에서 할인</figcaption></figure>
-      </div>
+      <div class="synergy-gallery"><figure class="synergy-image-card synergy-card-logistics"><div class="synergy-image"><img src="/assets/live/logistics.jpg" alt="주문부터 배송까지 오렌지 통합 물류 프로세스" loading="lazy" width="960" height="540"></div><figcaption><span class="synergy-caption-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h12v13H2V4Zm12 5h5l3 5v3h-8M18 9v5h4"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span><div><h3>통합물류로 지원하는 라이브 커머스</h3><p>주문·피킹·포장·출고까지 원스톱</p></div></figcaption></figure><figure class="synergy-image-card"><div class="synergy-image"><img src="/assets/membership/card-hero.jpg" alt="HMK 오렌지 멤버십 카드" loading="lazy" width="960" height="540"></div><figcaption><span class="synergy-caption-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 5 5 4-8 4 8 5-5-2 14H5L3 6Z"/><path d="M5 17h14"/></svg></span><div><h3>HMK 오렌지 멤버십</h3><p>하나의 회원, 세 가지 혜택을 한 번에</p></div></figcaption></figure><figure class="synergy-image-card"><div class="synergy-image"><img src="/assets/membership/use-market.jpg" alt="창고마켓에서 멤버십 카드 결제" loading="lazy" width="960" height="540"></div><figcaption><span class="synergy-caption-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg></span><div><h3>창고마켓에서 포인트 적립</h3><p>구매할수록 커지는 멤버십 혜택</p></div></figcaption></figure><figure class="synergy-image-card"><div class="synergy-image"><img src="/assets/membership/use-storage.jpg" alt="공유창고에서 멤버십 카드 사용" loading="lazy" width="960" height="540"></div><figcaption><span class="synergy-caption-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5h20v5a2 2 0 0 0 0 4v5H2v-5a2 2 0 0 0 0-4V5Z"/><path d="m9 15 6-6"/><circle cx="9" cy="9" r=".8"/><circle cx="15" cy="15" r=".8"/></svg></span><div><h3>공유창고에서 할인 혜택</h3><p>멤버십 전용 요금으로 더 합리적으로</p></div></figcaption></figure></div>
     </div>
   </div>
 </section>
