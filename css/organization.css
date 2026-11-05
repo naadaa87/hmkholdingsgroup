@@ -24,7 +24,7 @@ main:has(.organization-section) .phero .lead{font-size:18px;max-width:none;margi
 .organization-section .org-lead b{font-size:28px}
 .organization-section .org-lead span{font-size:18px}
 .organization-section .org-line{height:24px;width:1px;background:#bfa68e}
-.organization-section .org-tier{position:relative;z-index:2;display:inline-flex;justify-content:center;align-items:center;gap:16px;min-width:164px;height:40px;margin:-2px 0 35px;border:1px solid #e1c6b2;background:linear-gradient(#fffdfb,#faeee2);box-shadow:0 2px 3px #b6937529;color:#11274b;font-family:var(--font);font-size:21px;font-weight:750;letter-spacing:0}
+.organization-section .org-tier{position:relative;z-index:2;display:inline-flex;justify-content:center;align-items:center;gap:16px;min-width:164px;height:40px;margin:-2px 0 49px;border:1px solid #e1c6b2;background:linear-gradient(#fffdfb,#faeee2);box-shadow:0 2px 3px #b6937529;color:#11274b;font-family:var(--font);font-size:21px;font-weight:750;letter-spacing:0}
 .organization-section .org-tier::before{content:"♧";color:#ed7100;font-size:28px;line-height:1}
 .organization-section .org-tier:nth-of-type(2)::before{content:"◇"}
 .organization-section .org-row{position:relative;gap:16px}
