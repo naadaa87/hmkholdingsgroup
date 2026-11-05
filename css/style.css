@@ -14,9 +14,9 @@ main:has(.message-section) .phero .lead{max-width:none;margin-top:14px;font-size
 .message-section.sec{padding:0 0 74px}
 .message-section .msg-grid{grid-template-columns:344px minmax(0,1fr);gap:54px}
 .message-section .msg-photo{position:relative;top:auto;max-width:none;padding-top:34px}
-.message-section .frame{border-radius:25px 25px 0 0;box-shadow:0 16px 36px #b7907020;background:#242424}
+.message-section .msg-photo .frame{border-radius:25px 25px 0 0;box-shadow:0 16px 36px #b7907020;background:#242424}
 .message-section .frame img{width:100%;height:auto;aspect-ratio:379 / 493;object-fit:contain;display:block}
-.message-section .frame::before{display:none}
+.message-section .msg-photo .frame::before{display:none}
 .message-section .msg-photo .who{position:relative;top:auto;left:auto;right:auto;min-height:105px;margin:0;padding:16px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:center;align-items:center;gap:2px 12px;color:white;background:linear-gradient(115deg,#142d51f5,#11294cf0);border-radius:0 0 25px 25px}
 .message-section .who::before{content:"";position:absolute;bottom:100%;right:0;width:100%;height:44px;background:linear-gradient(110deg,#ff990020,#ff9400);clip-path:polygon(0 95%,65% 95%,100% 0,100% 100%,0 100%)}
 .message-section .msg-photo .who b{grid-column:1;grid-row:1;font-size:30px;color:#fff;line-height:1.4}
