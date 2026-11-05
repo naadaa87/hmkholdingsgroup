@@ -40,11 +40,12 @@ MESSAGE = r'''
 '''
 
 ABOUT = r'''
-<section class="sec" style="padding-top:clamp(56px,6vw,84px)">
+<div class="overview-page">
+<section class="sec overview-intro">
   <div class="wrap">
     <div class="split">
       <div class="prose rv">
-        <h2 style="margin-top:0">한 문장으로 말하면</h2>
+        <span class="eyebrow">WHO WE ARE</span><h2 class="overview-title">공간의 가능성을 발견하고,<br><em>자산의 가치를 높입니다.</em></h2>
         <p style="font-size:19px;font-weight:700;color:var(--navy);line-height:1.65">HMK홀딩스그룹은 500억 이상 대형 상업용 부동산을 초저가에 확보해, 창고형마켓·라이브커머스·공유창고 세 가지 사업으로 수익을 만들고, 그 자산을 유동화해 다시 투자하는 <span class="accent">상업용 부동산 자산가치 밸류업 플랫폼</span>입니다.</p>
         <p>우리는 좋은 자산을 싸게 사는 데서 멈추지 않습니다. 김재동 회장의 20년 노하우와 AI 프롭테크로 물건을 찾아내고, 권리 문제를 걷어내고, 비어 있던 공간에 <strong>사고(창고형마켓)·보고(라이브커머스)·맡기고(공유창고)</strong> 세 개의 수익 콘텐츠를 넣습니다. 그렇게 만들어진 안정적인 운영 수익이 자산가치를 다시 평가받게 하고, 유동화의 근거가 됩니다.</p>
         <p>발굴부터 유동화까지 네 단계를 그룹이 직접 수행한다는 것 — 그것이 HMK가 일하는 방식입니다.</p>
@@ -72,9 +73,9 @@ ABOUT = r'''
     <div class="sec-head rv"><div><span class="eyebrow">VISION</span><h2>우리가 만들려는 것</h2></div>
     <p class="lead">비어 있는 공간을 다시 일하게 만들고, 그 성과를 함께한 사람들과 나눕니다.</p></div>
     <div class="grid g3">
-      <div class="card rv"><div class="card-ic">🎯</div><h3>공실을 자산으로</h3><p>도시 곳곳에 멈춰 있는 상가를 수요가 있는 용도로 바꿉니다. 부동산의 문제를 푸는 일이자, 도시의 유휴 공간을 되살리는 일입니다.</p></div>
-      <div class="card rv"><div class="card-ic">🔗</div><h3>한 자산, 여러 수익</h3><p>보관·판매·방송이 한 건물에서 통합물류를 공유하고, 오렌지 멤버십이 고객을 잇습니다. 단일 임차 구조로는 만들 수 없는 현금흐름을 설계합니다.</p></div>
-      <div class="card rv"><div class="card-ic">🤝</div><h3>함께 성장하는 구조</h3><p>본사 인프라를 파트너에게 개방하고, 입점 셀러의 판매를 그룹 채널로 확장합니다. 우리가 커질수록 파트너도 커지는 구조를 지향합니다.</p></div>
+      <div class="card rv"><div class="overview-number">01</div><h3>공실을 자산으로</h3><p>도시 곳곳에 멈춰 있는 상가를 수요가 있는 용도로 바꿉니다. 부동산의 문제를 푸는 일이자, 도시의 유휴 공간을 되살리는 일입니다.</p></div>
+      <div class="card rv"><div class="overview-number">02</div><h3>한 자산, 여러 수익</h3><p>보관·판매·방송이 한 건물에서 통합물류를 공유하고, 오렌지 멤버십이 고객을 잇습니다. 단일 임차 구조로는 만들 수 없는 현금흐름을 설계합니다.</p></div>
+      <div class="card rv"><div class="overview-number">03</div><h3>함께 성장하는 구조</h3><p>본사 인프라를 파트너에게 개방하고, 입점 셀러의 판매를 그룹 채널로 확장합니다. 우리가 커질수록 파트너도 커지는 구조를 지향합니다.</p></div>
     </div>
   </div>
 </section>
@@ -83,10 +84,13 @@ ABOUT = r'''
   <div class="wrap">
     <div class="sec-head rv"><div><span class="eyebrow">PROCESS</span><h2>사업 프로세스와<br>Value-Up 로드맵</h2></div>
     <p class="lead">한 자산에서 여러 현금흐름을 만들고, 자산가치를 끌어올려 회수까지 이어갑니다.</p></div>
-    <figure class="figure rv">
-      <img src="/assets/model/roadmap.jpg" alt="저가 부동산 매입부터 금융·포트폴리오 Exit까지의 5단계 사업 프로세스" width="1448" height="1086">
-      <figcaption>매입 → 리모델링·콘텐츠 결합 → 운영 정상화 → NOI·자산가치 상승 → 금융·포트폴리오 회수</figcaption>
-    </figure>
+    <ol class="overview-process">
+<li><span>01 / SOURCING</span><h3>AI 소싱·매입</h3><p>AI 프롭테크와 현장 경험으로 가능성 있는 자산을 발굴합니다.</p></li>
+<li><span>02 / TRANSFORMATION</span><h3>공간의 재설계</h3><p>리모델링과 콘텐츠 결합으로 공간에 새로운 쓰임을 만듭니다.</p></li>
+<li><span>03 / OPERATION</span><h3>운영 수익 창출</h3><p>마켓·라이브커머스·공유창고를 연결해 운영을 정상화합니다.</p></li>
+<li><span>04 / VALUE-UP</span><h3>자산가치 상승</h3><p>안정적인 현금흐름을 기반으로 자산의 가치를 높입니다.</p></li>
+<li><span>05 / REINVESTMENT</span><h3>유동화·재투자</h3><p>금융·포트폴리오 회수를 통해 다음 자산으로 순환합니다.</p></li>
+</ol>
   </div>
 </section>
 
@@ -101,6 +105,9 @@ ABOUT = r'''
     </div>
   </div>
 </section>
+
+<section class="overview-cta"><div class="wrap"><div><span class="eyebrow">GROW TOGETHER</span><h2>더 큰 가치를 만드는 연결.</h2><p>HMK홀딩스그룹과 새로운 가능성을 함께하세요.</p></div><a class="btn btn-primary" href="/contact/">제휴·사업 문의 <span aria-hidden="true">↗</span></a></div></section>
+</div>
 '''
 
 ORG = r'''
