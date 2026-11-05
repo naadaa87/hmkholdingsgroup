@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260">
+<defs><pattern id="grid" width="20" height="25" patternUnits="userSpaceOnUse"><path d="M0 0H20V25" fill="none" stroke="#ff9b63" stroke-width=".8"/></pattern><linearGradient id="fade" x2="0" y2="1"><stop stop-color="white"/><stop offset="1" stop-color="black"/></linearGradient><mask id="m"><rect width="420" height="260" fill="url(#fade)"/></mask></defs>
+<g mask="url(#m)" fill="url(#grid)" stroke="#ff9b63" stroke-width="1"><path d="M20 260V170l34-18 24 18v90ZM92 260V119l44-25 33 25v141ZM194 260V47l75-43 43 36v220ZM324 260V110l34-19 31 23v146Z"/><path d="M54 152v108m82-166v166M269 4v256m89-169v169"/></g></svg>

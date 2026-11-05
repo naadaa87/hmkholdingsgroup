@@ -237,12 +237,13 @@ def crumbs(items):
 
 def page_hero(m):
     extra = m.get("hero_extra", "")
+    hero_title = '<span style="color:var(--navy)">회장</span> 인사말' if m.get("eyebrow") == "GROUP / MESSAGE" else m['h1']
     lead = f'<p class="lead">{m["lead"]}</p>' if m.get("lead") else ""
     if m.get("lead_pre"):
         lead = f'<p style="margin-top:12px;font-size:16px;font-weight:700;color:var(--orange-deep)">{m["lead_pre"]}</p>' + lead
     return f"""<section class="phero"><div class="wrap">
   <span class="eyebrow">{m['eyebrow']}</span>
-  <h1>{m['h1']}</h1>{lead}{extra}
+  <h1>{hero_title}</h1>{lead}{extra}
 </div></section>"""
 
 
