@@ -84,7 +84,7 @@ ABOUT = r'''
   <div class="wrap">
     <div class="sec-head rv"><div><span class="eyebrow">PROCESS</span><h2>사업 프로세스와<br>Value-Up 로드맵</h2></div>
     <p class="lead">한 자산에서 여러 현금흐름을 만들고, 자산가치를 끌어올려 회수까지 이어갑니다.</p></div>
-    <ol class="overview-process">
+    <ol class="overview-process" aria-label="Value-Up process">
 <li><span>01 / SOURCING</span><h3>AI 소싱·매입</h3><p>AI 프롭테크와 현장 경험으로 가능성 있는 자산을 발굴합니다.</p></li>
 <li><span>02 / TRANSFORMATION</span><h3>공간의 재설계</h3><p>리모델링과 콘텐츠 결합으로 공간에 새로운 쓰임을 만듭니다.</p></li>
 <li><span>03 / OPERATION</span><h3>운영 수익 창출</h3><p>마켓·라이브커머스·공유창고를 연결해 운영을 정상화합니다.</p></li>
@@ -94,7 +94,7 @@ ABOUT = r'''
   </div>
 </section>
 
-<section class="sec sec-cool">
+<section class="sec sec-cool overview-principles">
   <div class="wrap">
     <div class="sec-head rv"><div><span class="eyebrow">PRINCIPLES</span><h2>지키는 원칙</h2></div></div>
     <div class="grid g4">

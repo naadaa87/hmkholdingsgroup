@@ -27,19 +27,24 @@ main:has(.overview-page) .eyebrow{font-family:var(--font);color:#ff6b0b;font-siz
 .overview-page .card h3{font-size:24px;letter-spacing:-.035em;margin-bottom:12px}
 .overview-page .card p{font-size:15px;line-height:1.8;color:#657084;word-break:keep-all}
 .overview-number{font-size:42px;font-weight:850;color:#ff6b0b;line-height:1;margin-bottom:34px;letter-spacing:-.06em}
-.overview-process{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;counter-reset:step}
-.overview-process li{position:relative;padding:28px 22px 32px;border-radius:20px;background:#f5f7fa;border-top:3px solid #dce3ec}
-.overview-process li:last-child{background:#172e50;border-color:#ff6b0b;color:#fff}
-.overview-process span{font-size:11px;font-weight:750;letter-spacing:.04em;color:#ff6b0b}
-.overview-process h3{font-size:21px;letter-spacing:-.04em;margin:24px 0 12px}
-.overview-process li:last-child h3{color:#fff}
-.overview-process p{font-size:14px;line-height:1.8;color:#657084;word-break:keep-all}
-.overview-process li:last-child p{color:#c5cede}
+/* Explicit heading colors keep the global heading palette out of dark cards. */
+.overview-page .overview-process{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin:0;padding:0;counter-reset:step}
+.overview-page .overview-process li{position:relative;min-width:0;padding:28px 22px 30px;border:1px solid #dfe5ee;border-radius:18px;background:#f6f8fb;box-shadow:0 6px 20px #172e5004}
+.overview-page .overview-process li:not(:last-child)::after{content:"?";position:absolute;right:-13px;top:30px;z-index:1;display:grid;place-items:center;width:24px;height:24px;border:1px solid #dfe5ee;border-radius:50%;background:#fff;color:#52637a;font-size:14px}
+.overview-page .overview-process span{display:block;min-height:32px;font-size:10px;font-weight:800;line-height:1.6;letter-spacing:.035em;color:#b94300;overflow-wrap:anywhere}
+.overview-page .overview-process h3{font-size:21px;line-height:1.45;letter-spacing:-.04em;margin:16px 0 14px;color:#172e50}
+.overview-page .overview-process p{font-size:15px;line-height:1.85;color:#536176;word-break:keep-all;overflow-wrap:anywhere;margin:0}
+.overview-page .overview-process li:last-child{background:#172e50;border-color:#172e50;border-top:3px solid #ff6b0b;padding-top:26px;color:#fff}
+.overview-page .overview-process li:last-child span{color:#ffad70}
+.overview-page .overview-process li:last-child h3{color:#fff}
+.overview-page .overview-process li:last-child p{color:#dce5f2}
 .overview-page .sec-cool{background:#f4f6f9}
-.overview-page .g4{counter-reset:principle}
-.overview-page .g4 .card{padding:28px 24px;background:transparent;border:0;border-left:1px solid #d8e0ea;border-radius:0;box-shadow:none}
-.overview-page .g4 .card::before{counter-increment:principle;content:"0" counter(principle);display:block;color:#ff6b0b;font-size:15px;font-weight:750;margin-bottom:22px}
-.overview-page .g4 .card h3{font-size:19px!important}
+.overview-page .overview-principles .g4{counter-reset:principle;gap:18px}
+.overview-page .overview-principles .card{padding:28px;background:#fff;border:1px solid #dfe5ee;border-radius:16px;box-shadow:none}
+.overview-page .overview-principles .card::before{counter-increment:principle;content:"0" counter(principle);display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#fff0e5;color:#b94300;font-size:14px;font-weight:800;margin-bottom:24px}
+.overview-page .overview-principles .card h3{font-size:20px!important;color:#172e50;line-height:1.5;margin-bottom:12px}
+.overview-page .overview-principles .card p{font-size:15px;color:#536176;line-height:1.85;margin:0}
+.overview-page .sec-head .lead{word-break:keep-all;overflow-wrap:anywhere;line-height:1.85;text-wrap:pretty}
 .overview-cta{background:#132b4b;color:white;padding:54px 0}
 .overview-cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px}
 .overview-cta h2{color:white;font-size:36px;letter-spacing:-.045em;margin:10px 0}
@@ -48,3 +53,7 @@ main:has(.overview-page) .eyebrow{font-family:var(--font);color:#ff6b0b;font-siz
 @media(max-width:1050px){.overview-page .split{gap:32px}.overview-process{grid-template-columns:repeat(3,minmax(0,1fr))}.overview-page .g4{grid-template-columns:repeat(2,minmax(0,1fr))}.overview-page .card{padding:26px}}
 @media(max-width:800px){main:has(.overview-page) .phero{padding:40px 0}main:has(.overview-page) .phero::after{opacity:.2;width:220px}.overview-page .sec{padding:52px 0}.overview-page .split{grid-template-columns:1fr;gap:30px}.overview-page .g3{grid-template-columns:1fr}.overview-page .sec-head{align-items:start;flex-direction:column;gap:16px}.overview-page .overview-title{font-size:30px}.overview-page .tbl td,.overview-page .tbl th{padding:14px}.overview-process{grid-template-columns:1fr 1fr}.overview-process li:last-child{grid-column:1 / -1}.overview-process h3{font-size:20px;margin-top:16px}.overview-cta .wrap{align-items:start;flex-direction:column}.overview-cta h2{font-size:29px}.overview-page .g4{gap:12px}.overview-page .g4 .card{padding:18px 14px}}
 @media(prefers-reduced-motion:reduce){.overview-page .card{transition:none}.overview-page .card:hover{transform:none}}
+
+@media(max-width:1150px){.overview-page .overview-process{grid-template-columns:repeat(3,minmax(0,1fr))}.overview-page .overview-process li::after{display:none}.overview-page .overview-principles .g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.overview-page .overview-process{grid-template-columns:repeat(2,minmax(0,1fr))}.overview-page .overview-process li:last-child{grid-column:1 / -1}.overview-page .overview-principles .card{padding:24px}.overview-page .overview-process h3{font-size:20px}}
+@media(max-width:520px){.overview-page .overview-process,.overview-page .overview-principles .g4{grid-template-columns:1fr}.overview-page .overview-process li{padding:24px}.overview-page .overview-process li:last-child{padding-top:22px}.overview-page .overview-process span{min-height:0}.overview-page .overview-process h3{margin-top:12px}.overview-page .overview-principles .card::before{margin-bottom:18px}}

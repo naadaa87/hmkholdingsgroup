@@ -1,5 +1,5 @@
 /* ============ HMK 홀딩스그룹 — 디자인 시스템 ============ */
-@import url('/css/overview.css?v=20261105-overview-v1');
+@import url('/css/overview.css?v=20261109-overview-v3');
 @import url('/css/organization.css?v=20261105-org-v3');
 /* Chairman message: reference layout, scoped to this page. */
 main:has(.message-section){position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 5% 47%,#fff7f1,transparent 34%),#fff}
