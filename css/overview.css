@@ -32,6 +32,7 @@ main:has(.overview-page) .eyebrow{font-family:var(--font);color:#ff6b0b;font-siz
 .overview-process li:last-child{background:#172e50;border-color:#ff6b0b;color:#fff}
 .overview-process span{font-size:11px;font-weight:750;letter-spacing:.04em;color:#ff6b0b}
 .overview-process h3{font-size:21px;letter-spacing:-.04em;margin:24px 0 12px}
+.overview-process li:last-child h3{color:#fff}
 .overview-process p{font-size:14px;line-height:1.8;color:#657084;word-break:keep-all}
 .overview-process li:last-child p{color:#c5cede}
 .overview-page .sec-cool{background:#f4f6f9}
